@@ -241,6 +241,7 @@
     <Content Include="Riservata\servizis\Edit.aspx" />
     <Content Include="Riservata\servizis\Insert.aspx" />
     <Content Include="Riservata\Web.config" />
+    <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />
@@ -558,6 +559,10 @@
     <Compile Include="Migrations\201507221546147_prima.Designer.cs">
       <DependentUpon>201507221546147_prima.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507221758282_bool.cs" />
+    <Compile Include="Migrations\201507221758282_bool.Designer.cs">
+      <DependentUpon>201507221758282_bool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\attivita.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -708,6 +713,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201507221546147_prima.resx">
       <DependentUpon>201507221546147_prima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507221758282_bool.resx">
+      <DependentUpon>201507221758282_bool.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

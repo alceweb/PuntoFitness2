@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="attivitaList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.attivitas.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Gestione attività</h2><asp:Button ID="Button1" runat="server" Text="Torna alla gestione" CssClass="btn btn-primary" PostBackUrl="~/Riservata/Gestione.aspx" /> <br /><br />
-
+    <h2>attivitas List</h2>
     <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
     </p>

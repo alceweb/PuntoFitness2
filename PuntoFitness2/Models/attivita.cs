@@ -14,6 +14,6 @@ namespace PuntoFitness2.Models
         public string Nome { get; set; }
         public string Descrizione { get; set; }
         public string Orari { get; set; }
-        public int Attivo { get; set; }
+        public bool Attivo { get; set; }
     }
 }
