@@ -11,15 +11,29 @@
     <div class="row">
         <div class="col-md-4">
             <h2>Corsi</h2>
-            <p ><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Aikido</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Kick Boxing</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Allenamento funzionale</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Pilates</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Ginnastica di mantenimento</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Total Body</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Corsi di Difesa Personale Femminile</a></p>
-            <p><a href="#"><span class="glyphicon glyphicon-ok "></span> Sala Fitness e Personal Trainer</a></p>
-
+                    <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
+                    <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
+                    <ItemTemplate>
+                                <!-- Link trigger modal -->
+                                    <span class="glyphicon glyphicon-ok "> </span><a href="#" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><%# Eval("Nome") %></a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id='<%# "AModal" + Eval("IdAttivita") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel"><%# Eval("Nome") %></h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            ...<%# Eval("Descrizione") %></div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                    </ItemTemplate>
+                </asp:ListView>
         </div>
         <div class="col-md-4">
             <h2>Info e Orari</h2>
@@ -102,16 +116,14 @@
         <div class="col-md-4">
             <h2>Servizi</h2>
             <div >
-<%-- ListView promozioni e servizi (attività) --%>
-
-
-                    <asp:ListView ID="ListView2" runat="server" SelectMethod="GetDataS">
+<%-- ListView promozioni e servizi --%>
+                    <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                    <a href="#" data-toggle="modal" data-target= '<%# "#myModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
+                                    <a href="#" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
                                     <!-- Modal -->
-                                    <div class="modal fade" id='<%# "myModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id='<%# "SModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -128,12 +140,6 @@
                                     </div>
                     </ItemTemplate>
                 </asp:ListView>
- <%--Servizi
-               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [servizi] WHERE ([Attivo] = @Attivo) ORDER BY [Id] DESC">
-                    <SelectParameters>
-                        <asp:Parameter DefaultValue="1" Name="Attivo" Type="Int32" />
-                    </SelectParameters>
-                </asp:SqlDataSource>--%>
             </div>
             <h2>Promozioni</h2>
             <div >
@@ -145,9 +151,9 @@
                     </EmptyDataTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                     <a href="#" data-toggle="modal" data-target= '<%# "#myModal" + Eval("IdPromozione") %>'><%# Eval("Titolo") %></a>
+                                     <a href="#" data-toggle="modal" data-target= '<%# "#PModal" + Eval("IdPromozione") %>'><%# Eval("Titolo") %></a>
                                     <!-- Modal -->
-                                    <div class="modal fade" id='<%# "myModal" + Eval("IdPromozione") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id='<%# "PModal" + Eval("IdPromozione") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">
@@ -164,10 +170,6 @@
                                     </div>
                     </ItemTemplate>
                 </asp:ListView>  
-<%--Pomozioni
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-                    SelectCommand="SELECT * FROM [promozioni] where [DataFine] >= GETDATE() Order by [DataInizio] Asc, [DataFine] Asc">
-                </asp:SqlDataSource>--%>
             </div>
         </div>
     </div>

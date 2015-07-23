@@ -19,13 +19,13 @@ namespace PuntoFitness2
         // ESMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.attivita> GetDataA()
         {
-            return _db.attivitas;
+            return _db.attivitas.Where(a => a.Attivo==true);
         }
         //Binding al model per generare la lista oggetti per servizi
         // ESMPIO: <asp:ListView SelectMethod="GetDataS">
         public IQueryable<PuntoFitness2.Models.servizi> GetDataS()
         {
-            return _db.servizis;
+            return _db.servizis.Where(a => a.Attivo == true);
         }
         //Binding al model per generare la lista oggetti per promozioni
         // ESMPIO: <asp:ListView SelectMethod="GetDataP">

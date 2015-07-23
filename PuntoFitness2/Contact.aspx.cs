@@ -13,5 +13,9 @@ namespace PuntoFitness2
         {
 
         }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormContattiResponse.aspx");
+        }
     }
 }
