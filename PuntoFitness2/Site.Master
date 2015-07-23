@@ -88,7 +88,8 @@
                 </div>
             </div>
         </div>
-        <div id="myCarousel" class="carousel" data-ride="carousel">
+<%---Slide show ---%>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -99,14 +100,33 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img class="img-responsive" src="/Images/01.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Slide 1</h3>
+                        <p>Esercizi a corpo libero a terra con <a  href="FormPersonalTrainer.aspx">personal trainer dedicato</a>
+                        </p>
+                        <p class="btn btn-default">
+                        <a href="FormPersonalTrainer.aspx">Chiedi informazioni</a>
+
+                        </p>
+                      </div>
                 </div>
 
                 <div class="item">
                     <img class="img-responsive" src="/Images/02.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Slide due</h3>
+                        <p>Decine di macchine di ultima generazione<br />
+                            Con tabella personalizzata per utilizzo mirato
+                        </p>
+                      </div>
                 </div>
 
                 <div class="item">
                     <img class="img-responsive" src="/Images/03.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>Slide tre</h3>
+                        <p>I tapis roulant computerizzati</p>
+                      </div>
                 </div>
             </div>
 
@@ -120,6 +140,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+<%---Fine slide show ---%>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -129,7 +150,7 @@
                 <p>Via Papa Giovanni XXIII°, 23 - 24043 Caravaggio (BG) </p>
                 <p>Tel/Fax: 0363-54040</p>
                 <p>Email: puntofitness@tiscali.it</p>
-                <p>Punto Fitness &copy; 2015 - Powered by <a target="_blank" href="http://www.cr-consult.eu/zona-web">Almish&CesàreWeb</a></p>
+                <p>Punto Fitness &copy; 2015 - Powered by <a target="_blank" href="http://www.cr-consult.eu/zona-web"><span class="acweb">Almish<span class="acweb1">&</span>Cesàre<span class="acweb1">W</span>eb</span></a></p>
             </footer>
         </div>
     </form>

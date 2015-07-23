@@ -67,3 +67,10 @@ footer > p {
 .intestazione_tabella_th{
     width:181px;
 }
+.acweb {
+    font-style:italic;
+}
+.acweb1 {
+    color:red;
+    font-style:normal;
+}
