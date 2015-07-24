@@ -540,6 +540,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\carousel.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Corsi.aspx" />
     <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
     <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
     <Content Include="DynamicData\FieldTemplates\Children.ascx" />
@@ -575,6 +576,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Registrati\Main.aspx" />
     <Content Include="Riservata\attivitas\Default.aspx" />
     <Content Include="Riservata\attivitas\Delete.aspx" />
     <Content Include="Riservata\attivitas\Details.aspx" />
@@ -604,6 +606,7 @@
     <Content Include="ckeditor\samples\sample_posteddata.php" />
     <Content Include="ckeditor\skins\moono\readme.md" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
+    <Content Include="Registrati\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />
@@ -776,6 +779,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Corsi.aspx.cs">
+      <DependentUpon>Corsi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Corsi.aspx.designer.cs">
+      <DependentUpon>Corsi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -952,6 +962,13 @@
     <Compile Include="Models\promozioni.cs" />
     <Compile Include="Models\servizi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrati\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrati\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Riservata\attivitas\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

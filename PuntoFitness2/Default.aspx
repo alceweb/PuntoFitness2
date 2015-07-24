@@ -36,7 +36,7 @@
                 </asp:ListView>
         </div>
         <div class="col-md-4">
-            <h2>Infoe Orari</h2>
+            <h2>Info e Orari</h2>
             <p>
                La palestra si trova a Caravaggio (BG), in via Papa Giovanni XXIII°, 23
             </p>

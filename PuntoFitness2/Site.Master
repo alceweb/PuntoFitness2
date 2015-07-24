@@ -61,6 +61,7 @@
                                 <img alt="" class="logo" src="/Images/logo.png" />
                                 <span class="blu">Punto</span><span class="bordeaux">Fitness</span> <%----%></a>
                         </div>
+
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <%--<li><a runat="server" href="~/">Home</a></li>--%>
@@ -71,8 +72,14 @@
                                         <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
                                         <%--<li><a runat="server" href="~/Account/Login">Accedi</a></li> --%>
                                         <li><a runat="server" href="~/Contact">Contatti</a></li>
-                                        <li><a runat="server" href="~/Contact">Corsi</a></li>
-                                        <li><a runat="server" href="~/Contact">Servizi</a></li>
+                                        <li><a runat="server" href="#">Servizi</a></li>
+                                        <li><a runat="server" href="#">Corsi</a>
+                                        <li><a runat="server" href="~/Registrati/Main.aspx">Area riservata</a>
+
+                                            <ul class="dropdown-menu">
+
+                                            </ul>
+                                        </li>
 
                                     </ul>
                                 </AnonymousTemplate>
