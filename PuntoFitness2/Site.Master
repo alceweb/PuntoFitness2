@@ -71,6 +71,8 @@
                                         <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
                                         <%--<li><a runat="server" href="~/Account/Login">Accedi</a></li> --%>
                                         <li><a runat="server" href="~/Contact">Contatti</a></li>
+                                        <li><a runat="server" href="~/Contact">Corsi</a></li>
+                                        <li><a runat="server" href="~/Contact">Servizi</a></li>
 
                                     </ul>
                                 </AnonymousTemplate>

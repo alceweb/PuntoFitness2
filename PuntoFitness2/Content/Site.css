@@ -40,13 +40,14 @@ input[type="select"] {
     width:60px
 }
 .bordeaux{
-    color: #f00046;
+    font-weight:bold;
+    color: #000056;
     text-shadow: 0px 0px 3px #fff;
 }
 
 .blu{
-    color: #000059;
-    text-shadow: 0px 0px 5px #fff;
+    color: #5ee93f;
+    text-shadow: 0px 0px 5px #000
 }
 .btn-gratis{
     width:90%;
