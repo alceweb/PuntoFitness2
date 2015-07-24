@@ -3355,6 +3355,8 @@ input[type="button"].btn-block {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
+    border:1px solid #5ee93f;
+    border-radius:10px;
   }
 }
 
