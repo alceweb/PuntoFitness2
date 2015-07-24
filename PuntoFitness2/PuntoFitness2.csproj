@@ -642,6 +642,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Servizi.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -1080,6 +1081,13 @@
     </Compile>
     <Compile Include="Riservata\servizis\Insert.aspx.designer.cs">
       <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servizi.aspx.cs">
+      <DependentUpon>Servizi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servizi.aspx.designer.cs">
+      <DependentUpon>Servizi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
