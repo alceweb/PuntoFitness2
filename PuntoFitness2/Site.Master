@@ -49,7 +49,7 @@
         </asp:ScriptManager>
         <div class="navbar-wrapper">
             <div class="container">
-                <div class="navbar navbar-inverse navbar-static-top barralogo">
+                <div class="navbar navbar-inverse navbar-fixed-top barralogo">
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -59,7 +59,7 @@
                             </button>
                             <a class="navbar-brand" runat="server" href="~/">
                                 <img alt="" class="logo" src="/Images/logo.png" />
-                                <span class="blu">Punto</span><span class="bordeaux">Fitness</span> <%----%></a>
+                                <span class="verde">Punto</span><span class="bianco">Fitness</span> <%----%></a>
                         </div>
 
                         <div class="navbar-collapse collapse">

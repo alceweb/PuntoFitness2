@@ -9,33 +9,7 @@
     </div>--%>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>Corsi</h2>
-                    <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
-                    <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
-                    <ItemTemplate>
-                                <!-- Link trigger modal -->
-                                    <span class="glyphicon glyphicon-ok "> </span><a href="#" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><%# Eval("Nome") %></a>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id='<%# "AModal" + Eval("IdAttivita") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                      <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel"><%# Eval("Nome") %></h4>
-                                          </div>
-                                          <div class="modal-body">
-                                            ...<%# Eval("Descrizione") %></div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                    </ItemTemplate>
-                </asp:ListView>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <h2>Info e Orari</h2>
             <p>
                La palestra si trova a Caravaggio (BG), in via Papa Giovanni XXIII°, 23
@@ -113,34 +87,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <h2>Servizi</h2>
-            <div >
-<%-- ListView promozioni e servizi --%>
-                    <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
-                    <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
-                    <ItemTemplate>
-                                <!-- Link trigger modal -->
-                                    <a href="#" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id='<%# "SModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                      <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel"><%# Eval("Titolo") %></h4>
-                                          </div>
-                                          <div class="modal-body">
-                                            ...<%# Eval("Descrizione") %></div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                    </ItemTemplate>
-                </asp:ListView>
-            </div>
+        <div class="col-md-6">
+           
             <h2>Promozioni</h2>
             <div >
 
