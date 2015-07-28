@@ -535,7 +535,7 @@
     <Content Include="ckeditor\skins\moono\images\lock.png" />
     <Content Include="ckeditor\skins\moono\images\refresh.png" />
     <Content Include="ckeditor\styles.js" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Contatti.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\carousel.css" />
     <Content Include="Content\Site.css" />
@@ -604,6 +604,7 @@
     <Content Include="ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
     <Content Include="ckeditor\samples\sample_posteddata.php" />
     <Content Include="ckeditor\skins\moono\readme.md" />
+    <None Include="Properties\PublishProfiles\puntifitness2 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <Content Include="Registrati\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -773,12 +774,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Contatti.aspx.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Contatti.aspx.designer.cs">
+      <DependentUpon>Contatti.aspx</DependentUpon>
     </Compile>
     <Compile Include="Corsi.aspx.cs">
       <DependentUpon>Corsi.aspx</DependentUpon>

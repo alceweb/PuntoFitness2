@@ -1,19 +1,23 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="PuntoFitness2.Contact" %>
+﻿<%@ Page Title="Contatti" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contatti.aspx.cs" Inherits="PuntoFitness2.Contact" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <div class="imgHeaderContainer">
+        <img class="imgHeader" src="Images/01.jpg" />
+    </div>  
+</asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
+    <div class="row bodyContact">
         <div class="col-md-4">
-            <h2><%: Title %>.</h2>
+            <h2><%: Title %></h2>
             <h3>Qui metteremo i contatti</h3>
             <address>
                 Punto Fitness<br />
                 24043 Caravaggio BG<br />
-                <abbr title="Phone">Terl:</abbr>
+                <abbr title="Phone">Tel:</abbr>
                 0363 54040
             </address>
-
             <address>
-                <strong>Mail:</strong>   <a href="mailto:Support@example.com">Info@puntofitness.eu</a><br />
+                <strong>Mail:</strong>   <a href="mailto:Support@example.com">info@puntofitnesscaravaggio.it</a><br />
             </address>
         </div>
         <div class="col-md-4">
@@ -69,5 +73,4 @@
         </div>
         </div>
     </div>
-    </address>
 </asp:Content>
