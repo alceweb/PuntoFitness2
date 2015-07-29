@@ -51,7 +51,7 @@ background-color: rgba(0,0,0,0.8);
 
 .verde{
     color: #5ee93f;
-    font-size:33px;
+    font-size:50px;
 }
 .bordomenu {
     /*border:1px solid #fff;
@@ -108,7 +108,12 @@ footer > p {
     font-style:normal;
 }
 .bodyDefault{
+    position:absolute;
+    overflow:hidden;
     margin-top: -100px;
+    width:100%;
+    left:0;
+    background:#161515;
 }
 .bodyContact{
     margin-top:-100px;

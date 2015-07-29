@@ -18,10 +18,10 @@
                     <p>
                         Esercizi a corpo libero a terra con <a href="FormPersonalTrainer.aspx">personal trainer dedicato</a>
                     </p>
-                    <p class="btn btn-default">
-                        <a href="FormPersonalTrainer.aspx">Chiedi informazioni</a>
+<%--                    <p >
+                        <a class="btn btn-fitness" href="FormPersonalTrainer.aspx">Chiedi informazioni</a>
 
-                    </p>
+                    </p>--%>
                 </div>
             </div>
 
@@ -61,59 +61,51 @@
     <div class="bodyDefault">
         <div class="row">
             <div class="col-md-12 btn-gratis">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                    LA PRIMA PROVA<br />
-                    E' GRATIS!</button>
+               <h4> <button type="button" class="btn btn-fitness" data-toggle="modal" data-target="#myModal">
+                    La prima prova è gratis</button></h4>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">La prima prova per te è gratis</h4>
+                                <p class="modal-title btn btn-fitness" id="myModalLabel">La prima prova per te è gratis</p>
                             </div>
                             <div class="modal-body">
                                 <p>Se vuoi provare la nostra palestra, <strong>la prima prova la offriamo noi.</strong></p>
-                                <p>Per aderire compila il form qui sotto, invia i tuoi dati e ti contatteremo per accordarci sul giorno e la modalità della prova gratuita</p>
+                                <p>Per aderire compila il form qui sotto, invia i tuoi dati e ti contatteremo per accordarci sul giorno e la modalità della prova gratuita</p><hr />
                                 <div class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtNome" class="form-control" runat="server" required="required" placeholder="Il tuo nome"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Cognome</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtCognome" class="form-control" runat="server" required="required" placeholder="Il tuo cognome"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Città</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtCittà" class="form-control" runat="server" required="required" placeholder="Città"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Indirizzo</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtIndirizzo" class="form-control" runat="server" required="required" placeholder="Indirizzo"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputPassword3" class="col-sm-2 control-label">Telefono</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtTelefono" class="form-control" runat="server" required="required" placeholder="Telefono/cellulare"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtMail" class="form-control" runat="server" required="required" placeholder="Email"></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputPassword3" class="col-sm-2 control-label">Messaggio</label>
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtMessaggio" class="form-control" runat="server" TextMode="MultiLine" required="required" placeholder="Se hai preferenza di giorni o orari scrivili qui."></asp:TextBox>
                                         </div>
@@ -133,10 +125,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 margin-top-20 border align-right">
+            <div class="col-md-6 margin-top-20 text-center">
                 <h2>Info e Orari</h2>
                 <p>
-                    La palestra si trova a Caravaggio (BG), in via Papa Giovanni XXIII°, 23
+                    Caravaggio (BG), in via Papa Giovanni XXIII°, 23
                 </p>
                 <div>
                     <h4>Orari:</h4>
@@ -145,7 +137,7 @@
                 </div>
                 <br />
             </div>
-            <div class="col-md-6 margin-top-20">
+            <div class="col-md-5 margin-top-20  text-center">
                 <h2>Promozioni</h2>
                 <div>
                     <asp:ListView ID="ListView1" runat="server" DataKeyNames="IdPromozione" SelectMethod="GetDataP">

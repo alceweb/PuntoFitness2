@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="Servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Servizi.aspx.cs" Inherits="PuntoFitness2.Servizi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h2> <%: Title %></h2>
+    <h2> <%: Title %></h2><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                    <a href="#" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
-                                    <!-- Modal -->
+                                    <div >
+                                    <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
+</div>                                    <!-- Modal -->
                                     <div class="modal fade" id='<%# "SModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">

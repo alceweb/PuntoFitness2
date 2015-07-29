@@ -73,7 +73,11 @@ namespace PuntoFitness2
         {
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("it-IT");
             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("it-IT");
-
+            var user = HttpContext.Current.User.Identity.Name.ToString();
+            if (HttpContext.Current.User.Identity.Name.ToString() == "palestra@puntofitnesscaravaggio.it") 
+            {
+                HL1.Visible = true;
+            }
         }
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {

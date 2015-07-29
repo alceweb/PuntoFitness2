@@ -5,43 +5,36 @@
         Anche a casa tua, o nella tua palestra!</h3>
          <div class="form-horizontal">
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtNome" class="form-control" runat="server"  required="required" placeholder="Il tuo nome"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Cognome</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtCognome" class="form-control" runat="server"  required="required" placeholder="Il tuo cognome"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Città</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtCittà" class="form-control" runat="server"  required="required" placeholder="Città"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Indirizzo</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtIndirizzo" class="form-control" runat="server"  required="required" placeholder="Indirizzo"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Telefono</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtTelefono" class="form-control" runat="server"  required="required" placeholder="Telefono/cellulare"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtMail" class="form-control" runat="server"  required="required" placeholder="Email"></asp:TextBox>
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Messaggio</label>
             <div class="col-sm-10">
               <asp:TextBox ID="txtMessaggio" class="form-control" runat="server" TextMode="MultiLine" required="required" placeholder="Se hai preferenza di giorni o orari scrivili qui."></asp:TextBox>
             </div>

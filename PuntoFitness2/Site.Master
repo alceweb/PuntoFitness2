@@ -59,7 +59,11 @@
                             </button>
                             <a class="navbar-brand" runat="server" href="~/">
                                 <img alt="" class="logo" src="/Images/logo.png" />
-                                <span class="verde">Punto</span><span class="bianco">Fitness</span> <%----%></a>
+                                <span class="verde">PuntoFitness</span> <%----%></a>
+                                    <ul class="nav navbar-nav navbar-right">
+                                    <li><asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
+                                    </ul>
+                            
                         </div>
 
                         <div class="navbar-collapse collapse">
@@ -84,11 +88,15 @@
                                     </ul>
                                 </AnonymousTemplate>
                                 <LoggedInTemplate>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                        <li>
+                                    <ul class="navbar-right">
+                                        <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a>
                                             <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                         </li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
+                                        <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
+                                        <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
                                     </ul>
                                 </LoggedInTemplate>
                             </asp:LoginView>
@@ -99,13 +107,19 @@
         </div>
         <asp:ContentPlaceHolder ID="SlideshowContent" runat="server">
            </asp:ContentPlaceHolder>
+    <div style="position:absolute;
+    height: 500px;
+    background:#fff url(beach.jpg) no-repeat center center;
+    background-size:cover; z-index:-9990; left:0;
+    background:url(/Images/01.jpg) no-repeat center center">
+    </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 
             </asp:ContentPlaceHolder>
             <hr /></div>
             <footer>
-                <p><a class="glyphicon glyphicon-pencil" href="/Riservata/Gestione.aspx"></a></p>
+                <p></p>
                 <p>Via Papa Giovanni XXIII°, 23 - 24043 Caravaggio (BG) </p>
                 <p>Tel/Fax: 0363-54040</p>
                 <p>Email: puntofitness@tiscali.it</p>

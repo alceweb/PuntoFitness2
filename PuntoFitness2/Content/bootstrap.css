@@ -36,6 +36,7 @@ summary {
   display: block;
 }
 
+}
 audio,
 canvas,
 video {
@@ -55,10 +56,13 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      height:100%;
 }
-
 body {
   margin: 0;
+  height:100%;
+      background: url(/Images/01.jpg) no-repeat center center;
+      background-size:cover;
 }
 
 a:focus {
@@ -281,9 +285,7 @@ table {
   .table th {
     background-color: #fff !important;
   }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
+  .btn > .caret, 
   }
   .label {
     border: 1px solid #000;
@@ -335,13 +337,14 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #fff;
   text-decoration: none;
+  text-shadow:0px 0px 1px #000;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #5ee93f;
   text-decoration: underline;
 }
 
@@ -2048,6 +2051,48 @@ fieldset[disabled] .btn {
           box-shadow: none;
 }
 
+.btn-fitness {
+  color: #fff;
+  background-color: rgba(238, 237, 237, 0.34);
+  border:solid thin #ffffff;
+  font-size:1.8em;
+}
+
+.btn-fitness:hover,
+.btn-fitness:focus,
+.btn-fitness:active,
+.btn-fitness.active,
+.open .dropdown-toggle.btn-fitness {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.btn-fitness:active,
+.btn-fitness.active,
+.open .dropdown-toggle.btn-fitness {
+  background-image: none;
+}
+
+.btn-fitness.disabled,
+.btn-fitness[disabled],
+fieldset[disabled] .btn-fitness,
+.btn-fitness.disabled:hover,
+.btn-fitness[disabled]:hover,
+fieldset[disabled] .btn-fitness:hover,
+.btn-fitness.disabled:focus,
+.btn-fitness[disabled]:focus,
+fieldset[disabled] .btn-fitness:focus,
+.btn-fitness.disabled:active,
+.btn-fitness[disabled]:active,
+fieldset[disabled] .btn-fitness:active,
+.btn-fitness.disabled.active,
+.btn-fitness[disabled].active,
+fieldset[disabled] .btn-fitness.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+
 .btn-default {
   color: #333333;
   background-color: #ffffff;
@@ -3360,6 +3405,10 @@ input[type="button"].btn-block {
   }
 }
 
+.btn-fitness .caret {
+  border-top-color: #333333;
+}
+
 .btn-default .caret {
   border-top-color: #333333;
 }
@@ -3370,6 +3419,10 @@ input[type="button"].btn-block {
 .btn-danger .caret,
 .btn-info .caret {
   border-top-color: #fff;
+}
+
+.dropup .btn-fitness .caret {
+  border-bottom-color: #333333;
 }
 
 .dropup .btn-default .caret {
@@ -4127,7 +4180,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     border-top: 0;
     box-shadow: none;
     margin-top:25px;
-    text-shadow:0 0 10px #5ee93f
+    text-shadow:0 0 10px #5ee93f;
   }
   .navbar-collapse.collapse {
     display: block !important;
@@ -5716,11 +5769,15 @@ body.modal-open,
 .modal-title {
   margin: 0;
   line-height: 1.428571429;
+  color:#000;
+  text-shadow:none;
 }
 
 .modal-body {
   position: relative;
   padding: 20px;
+  color:#000;
+  text-shadow:none;
 }
 
 .modal-footer {

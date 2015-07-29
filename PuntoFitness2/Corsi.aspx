@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="Corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Corsi.aspx.cs" Inherits="PuntoFitness2.Corsi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class=""><h2><%: Title %></h2><hr />
+        <div class=""><h2><%: Title %></h2><hr />
                     <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
-                    <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
+                    <ItemSeparatorTemplate><br /><br /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                    <div class="box">
-                                        <a class="btn btn-primary "  href="#" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><img class="imgCorsi" src="Images/<%# Eval("Nome") %>.jpg" /><%# Eval("Nome") %></a>
+                                    <div >
+                                        <a class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><%# Eval("Nome") %></a>
 
                                     </div>
                                     <!-- Modal -->
