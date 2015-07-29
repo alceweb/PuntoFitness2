@@ -58,8 +58,8 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" runat="server" href="~/">
-                                <img alt="" class="logo" src="/Images/logo.png" />
-                                <span class="verde">PuntoFitness</span> <%----%></a>
+                                <img alt="" class="logo" src="/Images/logo1Piccolo.png" />
+                                <span class="verde">Punto</span><span class="rosso">Fitness</span> <%----%></a>
                                     <ul class="nav navbar-nav navbar-right">
                                     <li><asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
                                     </ul>
@@ -117,7 +117,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 
             </asp:ContentPlaceHolder>
-            <hr /></div>
+            </div>
             <footer>
                 <p></p>
                 <p>Via Papa Giovanni XXIII°, 23 - 24043 Caravaggio (BG) </p>

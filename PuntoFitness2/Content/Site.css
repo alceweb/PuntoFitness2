@@ -8,7 +8,8 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-        padding: 100px 0 0 0;
+    padding: 100px 0 0 0;
+  background-color:rgba(42, 57, 92, 0.44);
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -41,7 +42,9 @@ input[type="select"] {
 background-color: rgba(0,0,0,0.8);
 }
 .logo{
-    width:60px
+    width:120px;
+    position:absolute;
+    top:0;
 }
 .bianco{
     font-weight:bold;
@@ -50,8 +53,16 @@ background-color: rgba(0,0,0,0.8);
 }
 
 .verde{
-    color: #5ee93f;
+    color: #4e79ab;
     font-size:50px;
+    padding-left:120px;
+    text-transform:uppercase;
+}
+.rosso {
+    color: #8f362f;
+    font-size:50px;
+    text-transform:uppercase;
+
 }
 .bordomenu {
     /*border:1px solid #fff;

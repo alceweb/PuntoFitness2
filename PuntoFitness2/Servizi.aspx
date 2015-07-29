@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Servizi.aspx.cs" Inherits="PuntoFitness2.Servizi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h2> <%: Title %></h2><hr />
+    <h2 > <%: Title %></h2><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
                     <ItemTemplate>

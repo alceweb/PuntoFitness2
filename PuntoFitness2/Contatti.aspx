@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row ">
+    <div >
     <div class=""><h2><%: Title %></h2><hr />
         <div class="col-md-4">
             <address>
@@ -61,14 +61,13 @@
               <asp:TextBox ID="txtMessaggio" class="form-control" runat="server" TextMode="MultiLine" required="required" placeholder="Cosa vuoi sapere?"></asp:TextBox>
             </div>
           </div>
-          <div class="form-group"><hr />
+          <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <asp:Button ID="Button1" runat="server" CssClass="btn btn-default" Text="Invia messaggio" OnClick="Button1_Click"></asp:Button>
             </div>
           </div>
         </div>
         </div>
-
         </div>
     </div>
 </asp:Content>

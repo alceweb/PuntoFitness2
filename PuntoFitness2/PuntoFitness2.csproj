@@ -568,6 +568,7 @@
     <Content Include="Images\aikido.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\Logo1Piccolo.png" />
     <Content Include="Images\logo_trasp.png" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
