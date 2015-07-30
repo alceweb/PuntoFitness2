@@ -6,9 +6,7 @@ body {
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 100px 0 0 0;
+    padding: 100px 10px 10px 10px;
   background-color:rgba(42, 57, 92, 0.44);
 }
 
@@ -44,25 +42,24 @@ background-color: rgba(0,0,0,0.8);
 .logo{
     width:120px;
     position:absolute;
-    top:0;
-}
-.bianco{
-    font-weight:bold;
-    color: #ffffff;
-    font-size:33px;
 }
 
-.verde{
-    color: #4e79ab;
+.scritta{
+    color: #fff;
+    font-family:Calibri;
     font-size:50px;
     padding-left:120px;
-    text-transform:uppercase;
 }
-.rosso {
-    color: #8f362f;
-    font-size:50px;
-    text-transform:uppercase;
 
+@media (max-width:768px) {
+    .scritta{
+        font-size:1.8em;
+     padding-left:0px;
+     text-align:center;
+   }
+    .logo {
+        visibility:hidden;
+    }
 }
 .bordomenu {
     /*border:1px solid #fff;

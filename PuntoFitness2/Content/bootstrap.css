@@ -61,7 +61,7 @@ html {
 body {
   margin: 0;
   height:100%;
-      background: url(/Images/01.jpg) no-repeat center center;
+      background: url(/Images/main.jpg) no-repeat center center;
       background-size:cover;
 }
 
@@ -2054,8 +2054,13 @@ fieldset[disabled] .btn {
 .btn-fitness {
   color: #fff;
   background-color: rgba(238, 237, 237, 0.34);
-  border:solid thin #ffffff;
+  border:solid thin #5ee93f;
   font-size:1.8em;
+}
+@media(max-width:768px) {
+    .btn-fitness {
+        width:100%;
+    }
 }
 
 .btn-fitness:hover,
@@ -5726,13 +5731,13 @@ body.modal-open,
 
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   outline: none;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
 }
 
@@ -5830,7 +5835,7 @@ body.modal-open,
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -6900,3 +6905,4 @@ td.visible-print {
     display: none !important;
   }
 }
+

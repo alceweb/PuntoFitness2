@@ -12,17 +12,17 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="img-responsive" src="/Images/01.jpg" alt="">
                 <div class="carousel-caption">
                     <h3>Slide 1</h3>
                     <p>
                         Esercizi a corpo libero a terra con <a href="FormPersonalTrainer.aspx">personal trainer dedicato</a>
                     </p>
-<%--                    <p >
+                    <p >
                         <a class="btn btn-fitness" href="FormPersonalTrainer.aspx">Chiedi informazioni</a>
 
-                    </p>--%>
+                    </p>
                 </div>
+                <img class="" src="/Images/01.jpg" alt="">
             </div>
 
             <div class="item">

@@ -57,13 +57,12 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" runat="server" href="~/">
+                            <a  runat="server" href="~/">
                                 <img alt="" class="logo" src="/Images/logo1Piccolo.png" />
-                                <span class="verde">Punto</span><span class="rosso">Fitness</span> <%----%></a>
+                                <span class="scritta">Punto Fitness</span></a>
                                     <ul class="nav navbar-nav navbar-right">
                                     <li><asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
                                     </ul>
-                            
                         </div>
 
                         <div class="navbar-collapse collapse">
@@ -107,12 +106,6 @@
         </div>
         <asp:ContentPlaceHolder ID="SlideshowContent" runat="server">
            </asp:ContentPlaceHolder>
-    <div style="position:absolute;
-    height: 500px;
-    background:#fff url(beach.jpg) no-repeat center center;
-    background-size:cover; z-index:-9990; left:0;
-    background:url(/Images/01.jpg) no-repeat center center">
-    </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 
