@@ -566,8 +566,8 @@
     <Content Include="Images\02.jpg" />
     <Content Include="Images\03.jpg" />
     <Content Include="Images\corsi.jpg" />
-    <Content Include="Images\fb.png" />
-    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\faceb.png" />
+    <Content Include="Images\lkd.png" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Logo1Piccolo.png" />
@@ -576,7 +576,7 @@
     <Content Include="Images\promo.jpg" />
     <Content Include="Images\servizi.jpg" />
     <Content Include="Images\step.jpg" />
-    <Content Include="Images\tweeter.png" />
+    <Content Include="Images\twt.png" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

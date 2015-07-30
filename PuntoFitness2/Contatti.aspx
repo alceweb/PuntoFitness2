@@ -5,7 +5,7 @@
             <h2><%: Title %></h2>
             <hr />
         <div class="row">
-            <div class="col-md-4 bianco">
+            <div class="col-md-5 bianco">
                 <address>
                     Punto Fitness<br />
                     24043 Caravaggio BG<br />
@@ -15,6 +15,9 @@
                 <address>
                     <strong>Mail:</strong>   <a href="mailto:Support@example.com">info@puntofitnesscaravaggio.it</a><br />
                 </address>
+                <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="Images/faceb.png" /></a>
+                <a href="https://twitter.com/PuntoFitness1"><img class="img-social" src="Images/twt.png" /></a>
+                <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name"><img class="img-social" src="Images/lkd.png" /></a>
             </div>
             <div class="col-md-4">
                 <h2>Cerchi informazioni...</h2>

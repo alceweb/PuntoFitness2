@@ -132,15 +132,6 @@
                 </div>
             </div><hr />
             <div class="row">
-            <div class="col-md-12 text-center">
-                <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="/Images/linkedin.png" /></a>
-                <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="/Images/facebook.png" /></a>
-                <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="/Images/facebook.png" /></a>
-                <img src="Images/fb.png" /></div>
-
-            </div>
-            <hr />
-            <div class="row">
                 <div class="col-md-6">
                     <h2>Info e Orari</h2>
                     <p>
@@ -149,6 +140,12 @@
                     <div>
                         <span class="orario">LUN-VEN: 9:00 - 13:00 e 14:00 - 22:00</span><br />
                         <span class="orario">SAB: 9:00 - 13:00</span>
+                    </div>
+                    <div>
+                <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="Images/faceb.png" /></a>
+                <a href="https://twitter.com/PuntoFitness1"><img class="img-social" src="Images/twt.png" /></a>
+                <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name"><img class="img-social" src="Images/lkd.png" /></a>
+
                     </div>
                 </div>
                 <div class="col-md-5">
