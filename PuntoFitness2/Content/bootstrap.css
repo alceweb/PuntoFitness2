@@ -59,14 +59,15 @@ html {
       height:100%;
 }
 body {
+    position:relative;
   margin: 0;
   height:100%;
-      background: url(/Images/main.jpg) no-repeat center center;
-      background-size:cover;
+  background: url(/Images/main.jpg) repeat center center;
+  background-size:cover;
 }
 
 a:focus {
-  outline: thin dotted;
+  outline: 0;
 }
 
 a:active,
@@ -316,7 +317,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #000;
   background-color: #ffffff;
 }
 
@@ -344,8 +345,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #5ee93f;
-  text-decoration: underline;
+  color: #fff;
 }
 
 a:focus {
@@ -760,6 +760,7 @@ pre code {
 }
 
 .container {
+    position:relative;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -2054,7 +2055,6 @@ fieldset[disabled] .btn {
 .btn-fitness {
   color: #fff;
   background-color: rgba(238, 237, 237, 0.34);
-  border:solid thin #5ee93f;
   font-size:1.8em;
 }
 @media(max-width:768px) {
@@ -3882,12 +3882,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 15px;
+    transition: all 0.8s ease;  text-decoration: none;
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
+    transition: all 0.8s ease;  text-decoration: none;
+   -ms-transform: scale(1.5,1.5); /* IE 9 */
+    -webkit-transform: scale(1.5,1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5,1.5);
 }
 
 .nav > li.disabled > a {
@@ -4591,11 +4594,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
-  font-weight:bold;
-  background-color:  #5ee93f;
-  text-shadow:0 0 10px #000;
   margin:5px;
-  border-radius:10px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -5003,26 +5002,14 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  color: #000;
-  background: rgb(94,233,63); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(94,233,63,1) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(94,233,63,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(94,233,63,1) 25%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(94,233,63,1) 25%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(94,233,63,1) 25%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(94,233,63,1) 25%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ee93f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
+  margin: auto;
+  color: inherit;
+  max-width:1024px;
 }
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: #000;
 }
 
 .jumbotron p {
@@ -5035,7 +5022,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ee93f', end
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
     padding-bottom: 48px;
   }
   .container .jumbotron {

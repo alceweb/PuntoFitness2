@@ -6,8 +6,7 @@ body {
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding: 100px 10px 10px 10px;
-  background-color:rgba(42, 57, 92, 0.44);
+
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -29,7 +28,6 @@ input[type="select"] {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
-        margin-top: 20px;
     }
     .body-content {
        
@@ -39,18 +37,50 @@ input[type="select"] {
 .barralogo {
 background-color: rgba(0,0,0,0.8);
 }
-.logo{
-    width:120px;
-    position:absolute;
+.scritta {
+    transition: all 0.8s ease;
+    font-family:Arial;
+    margin-left:25px;
+    margin-top:5px;
+    float:left;
+    font-size:3em;
+    text-decoration: none;
+    font-weight:bold;
 }
-
-.scritta{
-    color: #fff;
-    font-family:Calibri;
-    font-size:50px;
-    padding-left:120px;
+    .scritta a {
+    transition: all 0.8s ease;
+    text-decoration: none;
+    transition: all 0.8s ease;
+    font-size:1.5em;
+    color:#000;
+    text-shadow:0px 0px 3px #fff;
+    }
+    .scritta a:hover {
+    transition: all 0.8s ease;
+    color:#000;
+    text-shadow:0px 0px 10px #fff;
+    }
+.bianco {
+    color:#fff;
 }
-
+.verde{
+    color: rgb(94,233,63);
+    font-size:2em;
+}
+.rosso {
+    color: rgb(94,233,63);
+    font-size:2em;
+}
+.body-page {
+  background-color:rgba(0, 0, 0, 0.36);
+  box-shadow:0px 0px 22px #fff;
+  margin-top:75px;
+  padding:10px;
+  border-radius:10px;
+}
+.img-social {
+    height:80px;
+}
 @media (max-width:768px) {
     .scritta{
         font-size:1.8em;
@@ -116,12 +146,14 @@ footer > p {
     font-style:normal;
 }
 .bodyDefault{
-    position:absolute;
+    position:fixed;
     overflow:hidden;
-    margin-top: -100px;
     width:100%;
+    height:100%;
     left:0;
-    background:#161515;
+    top:0;
+    background:#cecece;
+    z-index:-999;
 }
 .bodyContact{
     margin-top:-100px;
@@ -148,12 +180,9 @@ footer > p {
 .padding0{
     padding:0;
 }
-.imgCorsi{
-    opacity:0.5;
-    width:80px;
-    border-radius:50%;
+.imgList{
     margin-right:10px;
-    height:80px;
+    height:150px;
 }
 .box a{
     width:200px;

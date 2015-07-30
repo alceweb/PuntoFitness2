@@ -1,14 +1,19 @@
 ﻿<%@ Page Title="Corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Corsi.aspx.cs" Inherits="PuntoFitness2.Corsi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <div class=""><h2 ><%: Title %></h2><hr />
+        <div class="body-page">
+            <h2 ><%: Title %></h2><hr />
                     <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
-                    <ItemSeparatorTemplate><br /><br /></ItemSeparatorTemplate>
+                    <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                    <div >
+                                <div class="row">
+                                    <div class="col-md-4" >
                                         <a class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><%# Eval("Nome") %></a>
-
                                     </div>
+                                    <div class="col-md-6">
+                                        <img class="imgList" src="Images/corsi.jpg" />
+                                    </div>
+                                </div>
                                     <!-- Modal -->
                                     <div class="modal fade" id='<%# "AModal" + Eval("IdAttivita") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
@@ -26,5 +31,6 @@
                                       </div>
                                     </div>
                     </ItemTemplate>
-                </asp:ListView></div>
+                </asp:ListView>
+        </div>
 </asp:Content>

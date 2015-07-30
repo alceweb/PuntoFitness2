@@ -50,56 +50,54 @@
         <div class="navbar-wrapper">
             <div class="container">
                 <div class="navbar navbar-inverse navbar-fixed-top barralogo">
-                    <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a  runat="server" href="~/">
-                                <img alt="" class="logo" src="/Images/logo1Piccolo.png" />
-                                <span class="scritta">Punto Fitness</span></a>
-                                    <ul class="nav navbar-nav navbar-right">
-                                    <li><asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
-                                    </ul>
-                        </div>
-
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <%--<li><a runat="server" href="~/">Home</a></li>--%>
+                            <div class="scritta">
+                                <a runat="server" href="~/">Punto Fitness</a>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
                             </ul>
-                            <asp:LoginView runat="server" ViewStateMode="Disabled">
-                                <AnonymousTemplate>
-                                    <ul class="nav navbar-nav navbar-right bordomenu">
-                                        <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
-                                        <%--<li><a runat="server" href="~/Account/Login">Accedi</a></li> --%>
-                                        <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
-                                        <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
-                                        <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
-                                        <li><a runat="server" href="~/Registrati/Main.aspx">Area riservata</a>
 
-                                            <ul class="dropdown-menu">
-
-                                            </ul>
-                                        </li>
-
-                                    </ul>
-                                </AnonymousTemplate>
-                                <LoggedInTemplate>
-                                    <ul class="navbar-right">
-                                        <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a>
-                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                        </li>
-                                    </ul>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
-                                        <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
-                                        <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
-                                    </ul>
-                                </LoggedInTemplate>
-                            </asp:LoginView>
                         </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <%--<li><a runat="server" href="~/">Home</a></li>--%>
+                        </ul>
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <ul class="nav navbar-nav navbar-right bordomenu">
+                                    <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
+                                    <%--<li><a runat="server" href="~/Account/Login">Accedi</a></li> --%>
+                                    <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
+                                    <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
+                                    <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
+                                    <li><a runat="server" href="~/Registrati/Main.aspx">Area riservata</a>
+
+                                        <ul class="dropdown-menu">
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <ul class="navbar-right">
+                                    <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a>
+                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
+                                    <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
+                                    <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
+                                </ul>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
                     </div>
                 </div>
             </div>
@@ -113,7 +111,7 @@
             </div>
             <footer>
                 <p></p>
-                <p>Via Papa Giovanni XXIII°, 23 - 24043 Caravaggio (BG) </p>
+                <p>Viale Papa Giovanni XXIII, 23 - 24043 Caravaggio (BG) </p>
                 <p>Tel/Fax: 0363-54040</p>
                 <p>Email: puntofitness@tiscali.it</p>
                 <p>Punto Fitness &copy; 2015 - Powered by <a target="_blank" href="http://www.cr-consult.eu/zona-web"><span class="acweb">Almish<span class="acweb1">&</span>Cesàre<span class="acweb1">W</span>eb</span></a></p>

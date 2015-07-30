@@ -1,13 +1,20 @@
 ﻿<%@ Page Title="Servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Servizi.aspx.cs" Inherits="PuntoFitness2.Servizi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="body-page">
     <h2 > <%: Title %></h2><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
-                    <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
+                    <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                    <div >
-                                    <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
-</div>                                    <!-- Modal -->
+                                <div class="row">
+                                    <div class="col-md-4" >
+                                        <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="imgList" src="Images/servizi.jpg" />
+                                    </div>
+                                </div>
+                                    <!-- Modal -->
                                     <div class="modal fade" id='<%# "SModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -16,7 +23,7 @@
                                             <h4 class="modal-title" id="myModalLabel"><%# Eval("Titolo") %></h4>
                                           </div>
                                           <div class="modal-body">
-                                            ...<%# Eval("Descrizione") %></div>
+                                            <%# Eval("Descrizione") %></div>
                                           <div class="modal-footer">
                                             <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
                                           </div>
@@ -25,5 +32,7 @@
                                     </div>
                     </ItemTemplate>
                 </asp:ListView>
+
+    </div>
 
 </asp:Content>
