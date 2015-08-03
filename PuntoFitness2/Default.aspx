@@ -143,11 +143,11 @@
                     <span class="orario">SAB: 9:00 - 13:00</span>
                 </div>
                 <div>
-                    <a href="https://twitter.com/PuntoFitness1">
+                    <a target="_blank" href="https://twitter.com/PuntoFitness1">
                         <img class="img-social" src="Images/twt.png" /></a>
-                    <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366">
+                    <a target="_blank" href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366">
                         <img class="img-social" src="Images/faceb.png" /></a>
-                    <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name">
+                    <a target="_blank" href="https://www.linkedin.com/pub/punto-fitness-caravaggio/9a/743/b3b">
                         <img class="img-social" src="Images/lkd.png" /></a>
 
                 </div>
@@ -186,8 +186,7 @@
                                         <h4 class="modal-title" id="myModalLabel"><%# Eval("Titolo") %></h4>
                                     </div>
                                     <div class="modal-body">
-                                        ...<%# Eval("Descrizione") %>
-                                    </div>
+                                        ...<%# Eval("Descrizione") %></div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
                                     </div>
