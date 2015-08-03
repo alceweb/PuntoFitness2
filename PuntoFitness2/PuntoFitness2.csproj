@@ -40,6 +40,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.1.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
     <Reference Include="CKEditor.NET">
       <HintPath>Z:\Download\CKEditor\Ckeditor4AspNet\bin\Release\CKEditor.NET.dll</HintPath>
     </Reference>
@@ -87,9 +91,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="AspNet.ScriptManager.bootstrap">
-      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
     <Reference Include="AspNet.ScriptManager.jQuery">
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
@@ -536,6 +537,8 @@
     <Content Include="ckeditor\skins\moono\images\refresh.png" />
     <Content Include="ckeditor\styles.js" />
     <Content Include="Contatti.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\carousel.css" />
     <Content Include="Content\Site.css" />
@@ -575,12 +578,19 @@
     <Content Include="Images\main.jpg" />
     <Content Include="Images\promo.jpg" />
     <Content Include="Images\servizi.jpg" />
+    <Content Include="Images\slideshow\_MG_9680 5-2.jpg" />
+    <Content Include="Images\slideshow\_MG_9706.jpg" />
+    <Content Include="Images\slideshow\_MG_9711.jpg" />
+    <Content Include="Images\slideshow\_MG_9723.jpg" />
+    <Content Include="Images\slideshow\_MG_9727.jpg" />
+    <Content Include="Images\slideshow\_MG_9736.jpg" />
+    <Content Include="Images\slideshow\_MG_9753.jpg" />
+    <Content Include="Images\slideshow\_MG_9759.jpg" />
+    <Content Include="Images\slideshow\_MG_9776.jpg" />
+    <Content Include="Images\slideshow\_MG_9783.jpg" />
     <Content Include="Images\step.jpg" />
     <Content Include="Images\twt.png" />
     <Content Include="packages.config" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config" />
     <Content Include="Registrati\Main.aspx" />
@@ -612,6 +622,11 @@
     <Content Include="ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
     <Content Include="ckeditor\samples\sample_posteddata.php" />
     <Content Include="ckeditor\skins\moono\readme.md" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\puntifitness2 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <Content Include="Registrati\Web.config" />
@@ -1130,7 +1145,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\slideshow\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507221516410_InitialCreate.resx">

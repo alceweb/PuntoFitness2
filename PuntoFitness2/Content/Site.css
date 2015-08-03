@@ -80,7 +80,14 @@ background-color: rgba(0,0,0,0.8);
 }
 .img-social {
     height:60px;
+    transition: 1s all ease;
 }
+    .img-social :hover {
+        transition: 1s all ease;
+        transform:rotate(360deg);
+
+        
+    }
 @media (max-width:768px) {
     .scritta{
         font-size:1.8em;
@@ -196,4 +203,3 @@ footer > p {
     border:none;
 
 }
-
