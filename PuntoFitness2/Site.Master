@@ -57,7 +57,8 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <div class="scritta">
-                                <a runat="server" href="~/">Punto Fitness</a>
+
+                                <a runat="server" href="~/">Punt<img src="Images/logo1Piccolo.png" /> Fitness</a>
                             </div>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
