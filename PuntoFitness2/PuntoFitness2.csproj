@@ -1130,6 +1130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\slideshow\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507221516410_InitialCreate.resx">
