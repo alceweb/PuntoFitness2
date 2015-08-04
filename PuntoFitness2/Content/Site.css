@@ -1,6 +1,8 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
+    padding-bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Wrapping element */
@@ -39,13 +41,13 @@ background-color: rgba(0,0,0,0.8);
 }
 .scritta {
     transition: all 0.8s ease;
-    font-family:Arial;
     margin-left:25px;
     margin-top:5px;
     float:left;
-    font-size:3em;
+    font-size:3.5em;
     text-decoration: none;
     font-weight:bold;
+    font-family:Ruthie
 }
     .scritta img {
         height:40px;
@@ -75,11 +77,13 @@ background-color: rgba(0,0,0,0.8);
     font-size:2em;
 }
 .body-page {
-  background-color:rgba(0, 0, 0, 0.38);
-  box-shadow:0px 0px 22px #fff;
-  margin-top:75px;
+  background-color:rgba(0, 0, 0, 0.8);
+  /*box-shadow:8px 8px 10px  #cecece;*/
+  margin-top:111px;
   padding:10px;
-  border-radius:10px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  color:#808080
 }
 .img-social {
     height:60px;
@@ -214,4 +218,9 @@ footer > p {
     background-color:rgb(60, 180, 34);
     border:none;
 
+}
+.form-control {
+    height:20px;
+}
+.contatti h2 {
 }

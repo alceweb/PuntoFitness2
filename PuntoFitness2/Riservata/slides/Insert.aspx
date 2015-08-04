@@ -1,17 +1,17 @@
-﻿<%@ Page Title="serviziInsert" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="PuntoFitness2.Riservata.servizis.Insert" %>
+﻿<%@ Page Title="slideInsert" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Insert" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div>
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
-            ItemType="PuntoFitness2.Models.servizi" DefaultMode="Insert"
+            ItemType="PuntoFitness2.Models.slide" DefaultMode="Insert"
             InsertItemPosition="FirstItem" InsertMethod="InsertItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <InsertItemTemplate>
                 <fieldset class="form-horizontal">
-				<legend>Insert servizi</legend>
+				<legend>Insert slide</legend>
 		        <asp:ValidationSummary runat="server" CssClass="alert alert-danger" />
 						    <asp:DynamicControl Mode="Insert" DataField="Titolo" runat="server" />
-						    <asp:DynamicControl Mode="Insert" DataField="Descrizione" runat="server" />
+						    <asp:DynamicControl Mode="Insert" DataField="Didascalia" runat="server" />
 						    <asp:DynamicControl Mode="Insert" DataField="Attivo" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

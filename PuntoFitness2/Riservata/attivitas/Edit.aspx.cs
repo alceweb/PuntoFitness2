@@ -20,16 +20,16 @@ namespace PuntoFitness2.Riservata.attivitas
 
         // This is the Update methd to update the selected attivita item
         // USAGE: <asp:FormView UpdateMethod="UpdateItem">
-        public void UpdateItem(int  IdAttivita)
+        public void UpdateItem(int  Id)
         {
             using (_db)
             {
-                var item = _db.attivitas.Find(IdAttivita);
+                var item = _db.attivitas.Find(Id);
 
                 if (item == null)
                 {
                     // The item wasn't found
-                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", IdAttivita));
+                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", Id));
                     return;
                 }
 
@@ -46,16 +46,16 @@ namespace PuntoFitness2.Riservata.attivitas
 
         // This is the Select method to selects a single attivita item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.attivita GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdAttivita)
+        public PuntoFitness2.Models.attivita GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdAttivita == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-                return _db.attivitas.Find(IdAttivita);
+                return _db.attivitas.Find(Id);
             }
         }
 

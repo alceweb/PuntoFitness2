@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using System.ComponentModel.DataAnnotations;
 using PuntoFitness2.Models;
 
 
@@ -27,7 +28,38 @@ namespace PuntoFitness2.Models
             return Task.FromResult(GenerateUserIdentity(manager));
         }
     }
-
+    public class attivita
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Descrizione { get; set; }
+        public bool Attivo { get; set; }
+    }
+    public class promozioni
+    {
+        [Key]
+        public int Id { get; set; }
+        public DateTime DataInizio { get; set; }
+        public DateTime DataFine { get; set; }
+        public string Descrizione { get; set; }
+    }
+    public class servizi
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Titolo { get; set; }
+        public string Descrizione { get; set; }
+        public bool Attivo { get; set; }
+    }
+    public class slide
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Titolo { get; set; }
+        public string Didascalia { get; set; }
+        public bool Attivo { get; set; }
+    }
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -39,13 +71,12 @@ namespace PuntoFitness2.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<PuntoFitness2.Models.promozioni> promozionis { get; set; }
-
-        public System.Data.Entity.DbSet<PuntoFitness2.Models.servizi> servizis { get; set; }
-
-        public System.Data.Entity.DbSet<PuntoFitness2.Models.attivita> attivitas { get; set; }
+         public System.Data.Entity.DbSet<PuntoFitness2.Models.attivita> attivitas {get;set;}
+         public System.Data.Entity.DbSet<PuntoFitness2.Models.servizi> servizis { get; set; }
+         public System.Data.Entity.DbSet<PuntoFitness2.Models.promozioni> promozionis { get; set; }
+         public System.Data.Entity.DbSet<PuntoFitness2.Models.slide> slides { get; set; }
     }
+   
 }
 
 #region Helpers

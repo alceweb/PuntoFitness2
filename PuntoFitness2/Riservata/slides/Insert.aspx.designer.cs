@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Riservata.servizis {
+namespace PuntoFitness2.Riservata.slides {
     public partial class Insert {
         
         /// <summary>

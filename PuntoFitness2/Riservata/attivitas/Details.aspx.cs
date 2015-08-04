@@ -21,16 +21,16 @@ namespace PuntoFitness2.Riservata.attivitas
 
         // This is the Select methd to selects a single attivita item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.attivita GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdAttivita)
+        public PuntoFitness2.Models.attivita GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdAttivita == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-	            return _db.attivitas.Where(m => m.IdAttivita == IdAttivita).FirstOrDefault();
+	            return _db.attivitas.Where(m => m.Id == Id).FirstOrDefault();
             }
         }
 

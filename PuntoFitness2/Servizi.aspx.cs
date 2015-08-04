@@ -17,8 +17,6 @@ namespace PuntoFitness2
         {
 
         }
-        //Binding al model per generare la lista oggetti per servizi
-        // ESMPIO: <asp:ListView SelectMethod="GetDataS">
         public IQueryable<PuntoFitness2.Models.servizi> GetDataS()
         {
             return _db.servizis.Where(a => a.Attivo == true);

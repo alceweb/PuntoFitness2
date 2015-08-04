@@ -21,11 +21,11 @@ namespace PuntoFitness2.Riservata.promozionis
 
         // This is the Delete methd to delete the selected promozioni item
         // USAGE: <asp:FormView DeleteMethod="DeleteItem">
-        public void DeleteItem(int IdPromozione)
+        public void DeleteItem(int Id)
         {
             using (_db)
             {
-                var item = _db.promozionis.Find(IdPromozione);
+                var item = _db.promozionis.Find(Id);
 
                 if (item != null)
                 {
@@ -38,16 +38,16 @@ namespace PuntoFitness2.Riservata.promozionis
 
         // This is the Select methd to selects a single promozioni item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdPromozione)
+        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdPromozione == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-	            return _db.promozionis.Where(m => m.IdPromozione == IdPromozione).FirstOrDefault();
+	            return _db.promozionis.Where(m => m.Id == Id).FirstOrDefault();
             }
         }
 

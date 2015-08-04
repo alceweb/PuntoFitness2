@@ -611,6 +611,11 @@
     <Content Include="Riservata\servizis\Details.aspx" />
     <Content Include="Riservata\servizis\Edit.aspx" />
     <Content Include="Riservata\servizis\Insert.aspx" />
+    <Content Include="Riservata\slides\Default.aspx" />
+    <Content Include="Riservata\slides\Delete.aspx" />
+    <Content Include="Riservata\slides\Details.aspx" />
+    <Content Include="Riservata\slides\Edit.aspx" />
+    <Content Include="Riservata\slides\Insert.aspx" />
     <Content Include="Riservata\Web.config" />
     <Content Include="ckeditor\CHANGES.md" />
     <Content Include="ckeditor\LICENSE.md" />
@@ -974,19 +979,16 @@
     <Compile Include="Migrations\201507221516410_InitialCreate.Designer.cs">
       <DependentUpon>201507221516410_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201507221546147_prima.cs" />
-    <Compile Include="Migrations\201507221546147_prima.Designer.cs">
-      <DependentUpon>201507221546147_prima.cs</DependentUpon>
+    <Compile Include="Migrations\201508041312552_AppModel.cs" />
+    <Compile Include="Migrations\201508041312552_AppModel.Designer.cs">
+      <DependentUpon>201508041312552_AppModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201507221758282_bool.cs" />
-    <Compile Include="Migrations\201507221758282_bool.Designer.cs">
-      <DependentUpon>201507221758282_bool.cs</DependentUpon>
+    <Compile Include="Migrations\201508041325138_Identity.cs" />
+    <Compile Include="Migrations\201508041325138_Identity.Designer.cs">
+      <DependentUpon>201508041325138_Identity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\attivita.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\promozioni.cs" />
-    <Compile Include="Models\servizi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrati\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -1107,6 +1109,41 @@
     <Compile Include="Riservata\servizis\Insert.aspx.designer.cs">
       <DependentUpon>Insert.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Riservata\slides\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\slides\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\slides\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\slides\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\slides\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Servizi.aspx.cs">
       <DependentUpon>Servizi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1151,11 +1188,11 @@
     <EmbeddedResource Include="Migrations\201507221516410_InitialCreate.resx">
       <DependentUpon>201507221516410_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201507221546147_prima.resx">
-      <DependentUpon>201507221546147_prima.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201508041312552_AppModel.resx">
+      <DependentUpon>201508041312552_AppModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201507221758282_bool.resx">
-      <DependentUpon>201507221758282_bool.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201508041325138_Identity.resx">
+      <DependentUpon>201508041325138_Identity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

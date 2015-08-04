@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Riservata.servizis {
-    public partial class Insert {
+namespace PuntoFitness2.Riservata.slides {
+    public partial class Edit {
         
         /// <summary>
         /// form1 control.

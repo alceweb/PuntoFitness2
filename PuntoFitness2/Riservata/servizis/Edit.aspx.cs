@@ -20,16 +20,16 @@ namespace PuntoFitness2.Riservata.servizis
 
         // This is the Update methd to update the selected servizi item
         // USAGE: <asp:FormView UpdateMethod="UpdateItem">
-        public void UpdateItem(int  IdServizi)
+        public void UpdateItem(int  Id)
         {
             using (_db)
             {
-                var item = _db.servizis.Find(IdServizi);
+                var item = _db.servizis.Find(Id);
 
                 if (item == null)
                 {
                     // The item wasn't found
-                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", IdServizi));
+                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", Id));
                     return;
                 }
 
@@ -46,16 +46,16 @@ namespace PuntoFitness2.Riservata.servizis
 
         // This is the Select method to selects a single servizi item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.servizi GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdServizi)
+        public PuntoFitness2.Models.servizi GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdServizi == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-                return _db.servizis.Find(IdServizi);
+                return _db.servizis.Find(Id);
             }
         }
 

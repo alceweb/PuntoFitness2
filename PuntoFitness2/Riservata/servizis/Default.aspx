@@ -1,14 +1,13 @@
 ﻿<%@ Page Title="serviziList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.servizis.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Gestione servizi</h2>
-    <asp:Button ID="Button2" runat="server" Text="Torna alla gestione" CssClass="btn btn-primary" PostBackUrl="~/Riservata/Gestione.aspx" /> <br /><br />
+    <h2>servizis List</h2>
     <p>
-        <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Crea servizio" />
+        <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
     </p>
     <div>
         <asp:ListView id="ListView1" runat="server"
-            DataKeyNames="IdServizi" 
+            DataKeyNames="Id" 
 			ItemType="PuntoFitness2.Models.servizi"
             SelectMethod="GetData">
             <EmptyDataTemplate>
@@ -19,7 +18,7 @@
                     <thead>
                         <tr>
                             <th>
-								<asp:LinkButton Text="IdServizi" CommandName="Sort" CommandArgument="IdServizi" runat="Server" />
+								<asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="Titolo" CommandName="Sort" CommandArgument="Titolo" runat="Server" />
@@ -48,7 +47,7 @@
             <ItemTemplate>
                 <tr>
 							<td>
-								<asp:DynamicControl runat="server" DataField="IdServizi" ID="IdServizi" Mode="ReadOnly" />
+								<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 							</td>
 							<td>
 								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
@@ -60,9 +59,9 @@
 								<asp:DynamicControl runat="server" DataField="Attivo" ID="Attivo" Mode="ReadOnly" />
 							</td>
                     <td>
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Details", Item.IdServizi) %>' Text="Details" /> | 
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Edit", Item.IdServizi) %>' Text="Edit" /> | 
-                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Delete", Item.IdServizi) %>' Text="Delete" />
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Details", Item.Id) %>' Text="Details" /> | 
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Edit", Item.Id) %>' Text="Edit" /> | 
+                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/servizis/Delete", Item.Id) %>' Text="Delete" />
                     </td>
                 </tr>
             </ItemTemplate>

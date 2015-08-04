@@ -9,9 +9,9 @@ using System.Data.Entity;
 using Microsoft.AspNet.FriendlyUrls.ModelBinding;
 using PuntoFitness2.Models;
 
-namespace PuntoFitness2.Riservata.promozionis
+namespace PuntoFitness2.Riservata.slides
 {
-    public partial class Details : System.Web.UI.Page
+    public partial class Delete : System.Web.UI.Page
     {
 		protected PuntoFitness2.Models.ApplicationDbContext _db = new PuntoFitness2.Models.ApplicationDbContext();
 
@@ -19,9 +19,26 @@ namespace PuntoFitness2.Riservata.promozionis
         {
         }
 
-        // This is the Select methd to selects a single promozioni item with the id
+        // This is the Delete methd to delete the selected slide item
+        // USAGE: <asp:FormView DeleteMethod="DeleteItem">
+        public void DeleteItem(int Id)
+        {
+            using (_db)
+            {
+                var item = _db.slides.Find(Id);
+
+                if (item != null)
+                {
+                    _db.slides.Remove(item);
+                    _db.SaveChanges();
+                }
+            }
+            Response.Redirect("../Default");
+        }
+
+        // This is the Select methd to selects a single slide item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
+        public PuntoFitness2.Models.slide GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
             if (Id == null)
             {
@@ -30,7 +47,7 @@ namespace PuntoFitness2.Riservata.promozionis
 
             using (_db)
             {
-	            return _db.promozionis.Where(m => m.Id == Id).FirstOrDefault();
+	            return _db.slides.Where(m => m.Id == Id).FirstOrDefault();
             }
         }
 

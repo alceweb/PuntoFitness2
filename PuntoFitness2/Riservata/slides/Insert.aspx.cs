@@ -2,35 +2,40 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Entity;
-using Microsoft.AspNet.FriendlyUrls.ModelBinding;
 using PuntoFitness2.Models;
 
-namespace PuntoFitness2.Riservata.promozionis
+namespace PuntoFitness2.Riservata.slides
 {
-    public partial class Details : System.Web.UI.Page
+    public partial class Insert : System.Web.UI.Page
     {
 		protected PuntoFitness2.Models.ApplicationDbContext _db = new PuntoFitness2.Models.ApplicationDbContext();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
-        // This is the Select methd to selects a single promozioni item with the id
-        // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
+        // This is the Insert method to insert the entered slide item
+        // USAGE: <asp:FormView InsertMethod="InsertItem">
+        public void InsertItem()
         {
-            if (Id == null)
-            {
-                return null;
-            }
-
             using (_db)
             {
-	            return _db.promozionis.Where(m => m.Id == Id).FirstOrDefault();
+                var item = new PuntoFitness2.Models.slide();
+
+                TryUpdateModel(item);
+
+                if (ModelState.IsValid)
+                {
+                    // Save changes
+                    _db.slides.Add(item);
+                    _db.SaveChanges();
+
+                    Response.Redirect("Default");
+                }
             }
         }
 
@@ -38,9 +43,8 @@ namespace PuntoFitness2.Riservata.promozionis
         {
             if (e.CommandName.Equals("Cancel", StringComparison.OrdinalIgnoreCase))
             {
-                Response.Redirect("../Default");
+                Response.Redirect("Default");
             }
         }
     }
 }
-

@@ -1,20 +1,20 @@
-﻿<%@ Page Title="serviziEdit" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Edit.aspx.cs" Inherits="PuntoFitness2.Riservata.servizis.Edit" %>
+﻿<%@ Page Title="slideEdit" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Edit.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Edit" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div>
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
-            ItemType="PuntoFitness2.Models.servizi" DefaultMode="Edit" DataKeyNames="Id"
+            ItemType="PuntoFitness2.Models.slide" DefaultMode="Edit" DataKeyNames="Id"
             UpdateMethod="UpdateItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the servizi with Id <%: Request.QueryString["Id"] %>
+                Cannot find the slide with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <EditItemTemplate>
                 <fieldset class="form-horizontal">
-                    <legend>Edit servizi</legend>
+                    <legend>Edit slide</legend>
 					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="Titolo" runat="server" />
-						    <asp:DynamicControl Mode="Edit" DataField="Descrizione" runat="server" />
+						    <asp:DynamicControl Mode="Edit" DataField="Didascalia" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Attivo" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

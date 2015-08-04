@@ -20,16 +20,16 @@ namespace PuntoFitness2.Riservata.promozionis
 
         // This is the Update methd to update the selected promozioni item
         // USAGE: <asp:FormView UpdateMethod="UpdateItem">
-        public void UpdateItem(int  IdPromozione)
+        public void UpdateItem(int  Id)
         {
             using (_db)
             {
-                var item = _db.promozionis.Find(IdPromozione);
+                var item = _db.promozionis.Find(Id);
 
                 if (item == null)
                 {
                     // The item wasn't found
-                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", IdPromozione));
+                    ModelState.AddModelError("", String.Format("Item with id {0} was not found", Id));
                     return;
                 }
 
@@ -46,16 +46,16 @@ namespace PuntoFitness2.Riservata.promozionis
 
         // This is the Select method to selects a single promozioni item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdPromozione)
+        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdPromozione == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-                return _db.promozionis.Find(IdPromozione);
+                return _db.promozionis.Find(Id);
             }
         }
 

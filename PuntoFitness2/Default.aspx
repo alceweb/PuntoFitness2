@@ -7,6 +7,7 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -22,11 +23,11 @@
 
                     </p>
                 </div>
-                <img class="" src="/Images/01.jpg" alt="">
+                <img class="" src="/Images/Slideshow/01.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="img-responsive" src="/Images/02.jpg" alt="">
+                <img class="img-responsive" src="/Images/Slideshow/02.jpg" alt="">
                 <div class="carousel-caption">
                     <h3>Slide due</h3>
                     <p>
@@ -37,10 +38,17 @@
             </div>
 
             <div class="item">
-                <img class="img-responsive" src="/Images/03.jpg" alt="">
+                <img class="img-responsive" src="/Images/Slideshow/03.jpg" alt="">
                 <div class="carousel-caption">
                     <h3>Slide tre</h3>
                     <p>I tapis roulant computerizzati</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="/Images/Slideshow/04.jpg" alt="">
+                <div class="carousel-caption">
+                    <h3>Slide quattro</h3>
+                    <p>aaaa</p>
                 </div>
             </div>
         </div>
@@ -275,7 +283,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="btn btn-primary"><a href="Servizi.aspx">I nostri corsi</a></div>
+                <div class="btn btn-primary"><a href="Corsi.aspx">I nostri corsi</a></div>
             </div>
         </div>
     </div>

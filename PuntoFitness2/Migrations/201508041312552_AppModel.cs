@@ -3,7 +3,7 @@ namespace PuntoFitness2.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class prima : DbMigration
+    public partial class AppModel : DbMigration
     {
         public override void Up()
         {

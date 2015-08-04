@@ -21,16 +21,16 @@ namespace PuntoFitness2.Riservata.servizis
 
         // This is the Select methd to selects a single servizi item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.servizi GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdServizi)
+        public PuntoFitness2.Models.servizi GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
         {
-            if (IdServizi == null)
+            if (Id == null)
             {
                 return null;
             }
 
             using (_db)
             {
-	            return _db.servizis.Where(m => m.IdServizi == IdServizi).FirstOrDefault();
+	            return _db.servizis.Where(m => m.Id == Id).FirstOrDefault();
             }
         }
 

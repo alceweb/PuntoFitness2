@@ -4,21 +4,21 @@
 		<p>&nbsp;</p>
       
         <asp:FormView runat="server"
-            ItemType="PuntoFitness2.Models.promozioni" DataKeyNames="IdPromozione"
+            ItemType="PuntoFitness2.Models.promozioni" DataKeyNames="Id"
             SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the promozioni with IdPromozione <%: Request.QueryString["IdPromozione"] %>
+                Cannot find the promozioni with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <ItemTemplate>
                 <fieldset class="form-horizontal">
                     <legend>promozioni Details</legend>
 							<div class="row">
 								<div class="col-sm-2 text-right">
-									<strong>IdPromozione</strong>
+									<strong>Id</strong>
 								</div>
 								<div class="col-sm-4">
-									<asp:DynamicControl runat="server" DataField="IdPromozione" ID="IdPromozione" Mode="ReadOnly" />
+									<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 								</div>
 							</div>
 							<div class="row">
@@ -35,14 +35,6 @@
 								</div>
 								<div class="col-sm-4">
 									<asp:DynamicControl runat="server" DataField="DataFine" ID="DataFine" Mode="ReadOnly" />
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2 text-right">
-									<strong>Titolo</strong>
-								</div>
-								<div class="col-sm-4">
-									<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
 								</div>
 							</div>
 							<div class="row">

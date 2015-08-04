@@ -7,13 +7,13 @@ namespace PuntoFitness2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class prima : IMigrationMetadata
+    public sealed partial class AppModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(prima));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AppModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201507221546147_prima"; }
+            get { return "201508041312552_AppModel"; }
         }
         
         string IMigrationMetadata.Source

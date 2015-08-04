@@ -1,14 +1,13 @@
 ﻿<%@ Page Title="promozioniList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.promozionis.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <h2>Gestione promozioni</h2>
-    <asp:Button ID="Button1" runat="server" Text="Torna alla gestione" CssClass="btn btn-primary" PostBackUrl="~/Riservata/Gestione.aspx" /> <br /><br />
+    <h2>promozionis List</h2>
     <p>
-        <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Crea promozione" />
+        <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
     </p>
     <div>
         <asp:ListView id="ListView1" runat="server"
-            DataKeyNames="IdPromozione" 
+            DataKeyNames="Id" 
 			ItemType="PuntoFitness2.Models.promozioni"
             SelectMethod="GetData">
             <EmptyDataTemplate>
@@ -19,16 +18,13 @@
                     <thead>
                         <tr>
                             <th>
-								<asp:LinkButton Text="IdPromozione" CommandName="Sort" CommandArgument="IdPromozione" runat="Server" />
+								<asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="DataInizio" CommandName="Sort" CommandArgument="DataInizio" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="DataFine" CommandName="Sort" CommandArgument="DataFine" runat="Server" />
-							</th>
-                            <th>
-								<asp:LinkButton Text="Titolo" CommandName="Sort" CommandArgument="Titolo" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="Descrizione" CommandName="Sort" CommandArgument="Descrizione" runat="Server" />
@@ -51,7 +47,7 @@
             <ItemTemplate>
                 <tr>
 							<td>
-								<asp:DynamicControl runat="server" DataField="IdPromozione" ID="IdPromozione" Mode="ReadOnly" />
+								<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 							</td>
 							<td>
 								<asp:DynamicControl runat="server" DataField="DataInizio" ID="DataInizio" Mode="ReadOnly" />
@@ -60,15 +56,12 @@
 								<asp:DynamicControl runat="server" DataField="DataFine" ID="DataFine" Mode="ReadOnly" />
 							</td>
 							<td>
-								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
-							</td>
-							<td>
 								<asp:DynamicControl runat="server" DataField="Descrizione" ID="Descrizione" Mode="ReadOnly" />
 							</td>
                     <td>
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Details", Item.IdPromozione) %>' Text="Details" /> | 
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Edit", Item.IdPromozione) %>' Text="Edit" /> | 
-                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Delete", Item.IdPromozione) %>' Text="Delete" />
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Details", Item.Id) %>' Text="Details" /> | 
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Edit", Item.Id) %>' Text="Edit" /> | 
+                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Delete", Item.Id) %>' Text="Delete" />
                     </td>
                 </tr>
             </ItemTemplate>

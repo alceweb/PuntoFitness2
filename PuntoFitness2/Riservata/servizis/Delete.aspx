@@ -4,21 +4,21 @@
 		<p>&nbsp;</p>
         <h3>Are you sure want to delete this servizi?</h3>
         <asp:FormView runat="server"
-            ItemType="PuntoFitness2.Models.servizi" DataKeyNames="IdServizi"
+            ItemType="PuntoFitness2.Models.servizi" DataKeyNames="Id"
             DeleteMethod="DeleteItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the servizi with IdServizi <%: Request.QueryString["IdServizi"] %>
+                Cannot find the servizi with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <ItemTemplate>
                 <fieldset class="form-horizontal">
                     <legend>Delete servizi</legend>
 							<div class="row">
 								<div class="col-sm-2 text-right">
-									<strong>IdServizi</strong>
+									<strong>Id</strong>
 								</div>
 								<div class="col-sm-4">
-									<asp:DynamicControl runat="server" DataField="IdServizi" ID="IdServizi" Mode="ReadOnly" />
+									<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 								</div>
 							</div>
 							<div class="row">
