@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="attivitaDelete" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Delete.aspx.cs" Inherits="PuntoFitness2.Riservata.attivitas.Delete" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
+    <div class="body-page">
     <div>
 		<p>&nbsp;</p>
         <h3>Are you sure want to delete this attivita?</h3>
@@ -58,5 +59,7 @@
             </ItemTemplate>
         </asp:FormView>
     </div>
+</div>
+
 </asp:Content>
 

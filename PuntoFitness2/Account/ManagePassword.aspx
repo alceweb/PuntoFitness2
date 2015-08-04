@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="PuntoFitness2.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+         <div class="body-page">
+
+       <h2><%: Title %>.</h2>
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
@@ -90,4 +92,5 @@
             </asp:PlaceHolder>
         </section>
     </div>
+             </div>
 </asp:Content>

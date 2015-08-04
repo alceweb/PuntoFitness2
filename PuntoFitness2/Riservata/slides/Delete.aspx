@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="slideDelete" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Delete.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Delete" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <div>
+        <div class="body-page">
 		<p>&nbsp;</p>
         <h3>Are you sure want to delete this slide?</h3>
         <asp:FormView runat="server"

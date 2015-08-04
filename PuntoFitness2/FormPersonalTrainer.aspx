@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormPersonalTrainer.aspx.cs" Inherits="PuntoFitness2.FormPersonalTrainer" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+        <div class="body-page">
+
     <h2>Personal trainer</h2>
     <h3>Compila e invia questa form per richiedere un'attività di personal trainer personalizzata...<br />
         Anche a casa tua, o nella tua palestra!</h3>
@@ -45,5 +47,5 @@
             </div>
           </div>
         </div>
-
+            </div>
 </asp:Content>

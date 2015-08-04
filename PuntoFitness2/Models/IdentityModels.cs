@@ -42,6 +42,7 @@ namespace PuntoFitness2.Models
         public int Id { get; set; }
         public DateTime DataInizio { get; set; }
         public DateTime DataFine { get; set; }
+        public string Titolo { get; set; }
         public string Descrizione { get; set; }
     }
     public class servizi

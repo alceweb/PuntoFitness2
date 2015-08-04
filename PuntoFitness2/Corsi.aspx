@@ -8,14 +8,14 @@
                                 <!-- Link trigger modal -->
                                 <div class="row">
                                     <div class="col-md-4" >
-                                        <a class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#AModal" + Eval("IdAttivita") %>'><%# Eval("Nome") %></a>
+                                        <a class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#AModal" + Eval("Id") %>'><%# Eval("Nome") %></a>
                                     </div>
                                     <div class="col-md-6">
-                                        <img class="imgList" src="Images/corsi.jpg" />
+                                        <img class="imgList" src="Images/corsi1.jpg" />
                                     </div>
                                 </div>
                                     <!-- Modal -->
-                                    <div class="modal fade" id='<%# "AModal" + Eval("IdAttivita") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id='<%# "AModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">

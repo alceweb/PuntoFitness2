@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="serviziList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.servizis.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
+        <div class="body-page">
+
     <h2>servizis List</h2>
     <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
@@ -67,5 +69,7 @@
             </ItemTemplate>
         </asp:ListView>
     </div>
+</div>
+
 </asp:Content>
 

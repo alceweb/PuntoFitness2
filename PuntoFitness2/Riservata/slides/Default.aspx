@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="slideList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <h2>slides List</h2>
+         <div class="body-page">
+
+       <h2>slides List</h2>
     <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
     </p>
@@ -67,5 +69,7 @@
             </ItemTemplate>
         </asp:ListView>
     </div>
+</div>
+
 </asp:Content>
 

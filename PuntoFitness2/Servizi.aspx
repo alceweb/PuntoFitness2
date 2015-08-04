@@ -2,20 +2,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
     <h2 > <%: Title %></h2><hr />
-                    <asp:ListView ID="ListView2" DataKeyNames="IdServizi" runat="server" SelectMethod="GetDataS">
+                    <asp:ListView ID="ListView2" DataKeyNames="Id" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
                                 <div class="row">
                                     <div class="col-md-4" >
-                                        <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("IdServizi") %>'><%# Eval("Titolo") %></a>
+                                        <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
                                     </div>
                                     <div class="col-md-6">
-                                        <img class="imgList" src="Images/servizi.jpg" />
+                                        <img class="imgList" src="Images/servizi1.jpg" />
                                     </div>
                                 </div>
                                     <!-- Modal -->
-                                    <div class="modal fade" id='<%# "SModal" + Eval("IdServizi") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal fade" id='<%# "SModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                           <div class="modal-header">

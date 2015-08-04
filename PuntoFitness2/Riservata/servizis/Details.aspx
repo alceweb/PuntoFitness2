@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="servizi Details" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Details.aspx.cs" Inherits="PuntoFitness2.Riservata.servizis.Details" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <div>
+        <div class="body-page">
 		<p>&nbsp;</p>
       
         <asp:FormView runat="server"

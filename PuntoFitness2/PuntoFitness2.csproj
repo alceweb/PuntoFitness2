@@ -569,6 +569,7 @@
     <Content Include="Images\02.jpg" />
     <Content Include="Images\03.jpg" />
     <Content Include="Images\corsi.jpg" />
+    <Content Include="Images\corsi1.jpg" />
     <Content Include="Images\faceb.png" />
     <Content Include="Images\lkd.png" />
     <Content Include="Images\logo.jpg" />
@@ -577,8 +578,10 @@
     <Content Include="Images\logo_trasp.png" />
     <Content Include="Images\main.jpg" />
     <Content Include="Images\promo.jpg" />
+    <Content Include="Images\Scritta1.png" />
     <Content Include="Images\ScrittaLogo.png" />
     <Content Include="Images\servizi.jpg" />
+    <Content Include="Images\Servizi1.jpg" />
     <Content Include="Images\slideshow\01.jpg" />
     <Content Include="Images\slideshow\02.jpg" />
     <Content Include="Images\slideshow\03.jpg" />
@@ -981,6 +984,10 @@
     <Compile Include="Migrations\201508041325138_Identity.Designer.cs">
       <DependentUpon>201508041325138_Identity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508041721398_PromoTitolo.cs" />
+    <Compile Include="Migrations\201508041721398_PromoTitolo.Designer.cs">
+      <DependentUpon>201508041721398_PromoTitolo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1187,6 +1194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508041325138_Identity.resx">
       <DependentUpon>201508041325138_Identity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508041721398_PromoTitolo.resx">
+      <DependentUpon>201508041721398_PromoTitolo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

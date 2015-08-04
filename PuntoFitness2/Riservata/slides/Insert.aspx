@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="slideInsert" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Insert" %>
+<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
+
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <div>
+        <div class="body-page">
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
             ItemType="PuntoFitness2.Models.slide" DefaultMode="Insert"
@@ -11,7 +13,7 @@
 				<legend>Insert slide</legend>
 		        <asp:ValidationSummary runat="server" CssClass="alert alert-danger" />
 						    <asp:DynamicControl Mode="Insert" DataField="Titolo" runat="server" />
-						    <asp:DynamicControl Mode="Insert" DataField="Didascalia" runat="server" />
+                            <CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Didascalia") %>' BasePath="/ckeditor/" runat="server"></CKEditor:CKEditorControl>
 						    <asp:DynamicControl Mode="Insert" DataField="Attivo" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

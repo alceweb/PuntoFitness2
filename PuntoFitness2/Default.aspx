@@ -171,7 +171,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <asp:ListView ID="ListView1" runat="server" DataKeyNames="IdPromozione" SelectMethod="GetDataP">
+                <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" SelectMethod="GetDataP">
                     <ItemSeparatorTemplate>
                         <br />
                         <br />
@@ -181,9 +181,9 @@
                     </EmptyDataTemplate>
                     <ItemTemplate>
                         <!-- Link trigger modal -->
-                        <a href="#" data-toggle="modal" class="btn btn-danger" data-target='<%# "#PModal" + Eval("IdPromozione") %>'><%# Eval("Titolo") %></a>
+                        <a href="#" data-toggle="modal" class="btn btn-danger" data-target='<%# "#PModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
                         <!-- Modal -->
-                        <div class="modal fade " id='<%# "PModal" + Eval("IdPromozione") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal fade " id='<%# "PModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -209,7 +209,7 @@
                 <div>
                     <h3><em>I servizi per il benessere</em></h3>
                     <div>Dammi una descrizione breve che riassuma i servizi che offre PuntoFitness</div>
-                    <%--                        <asp:ListView ID="ListView2" runat="server" DataKeyNames="IdPromozione" SelectMethod="GetDataP">
+                    <%--                        <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" SelectMethod="GetDataP">
                             <ItemSeparatorTemplate>
                                 <br />
                             </ItemSeparatorTemplate>
@@ -218,9 +218,9 @@
                             </EmptyDataTemplate>
                             <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                <a href="#" data-toggle="modal" data-target='<%# "#PModal" + Eval("IdPromozione") %>'><%# Eval("Titolo") %></a>
+                                <a href="#" data-toggle="modal" data-target='<%# "#PModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
                                 <!-- Modal -->
-                                <div class="modal fade" id='<%# "PModal" + Eval("IdPromozione") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade" id='<%# "PModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -251,7 +251,7 @@
                 <div>
                     <h3><em>Tutti i corsi di Punto Fitness</em></h3>
                     <div>Dammi una descrizione breve che riassuma i servizi che offre PuntoFitness</div>
-                    <%--                        <asp:ListView ID="ListView3" runat="server" DataKeyNames="IdPromozione" SelectMethod="GetDataP">
+                    <%--                        <asp:ListView ID="ListView3" runat="server" DataKeyNames="Id" SelectMethod="GetDataP">
                             <ItemSeparatorTemplate>
                                 <br />
                             </ItemSeparatorTemplate>
@@ -260,9 +260,9 @@
                             </EmptyDataTemplate>
                             <ItemTemplate>
                                 <!-- Link trigger modal -->
-                                <a href="#" data-toggle="modal" data-target='<%# "#PModal" + Eval("IdPromozione") %>'><%# Eval("Titolo") %></a>
+                                <a href="#" data-toggle="modal" data-target='<%# "#PModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
                                 <!-- Modal -->
-                                <div class="modal fade" id='<%# "PModal" + Eval("IdPromozione") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal fade" id='<%# "PModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">

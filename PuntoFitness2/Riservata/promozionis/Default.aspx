@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="promozioniList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.promozionis.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <h2>promozionis List</h2>
+ <div class="body-page">
+       <h2>promozionis List</h2>
     <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
     </p>
@@ -25,6 +26,9 @@
 							</th>
                             <th>
 								<asp:LinkButton Text="DataFine" CommandName="Sort" CommandArgument="DataFine" runat="Server" />
+							</th>
+                            <th>
+								<asp:LinkButton Text="Titolo" CommandName="Sort" CommandArgument="Titolo" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="Descrizione" CommandName="Sort" CommandArgument="Descrizione" runat="Server" />
@@ -56,6 +60,9 @@
 								<asp:DynamicControl runat="server" DataField="DataFine" ID="DataFine" Mode="ReadOnly" />
 							</td>
 							<td>
+								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
+							</td>
+							<td>
 								<asp:DynamicControl runat="server" DataField="Descrizione" ID="Descrizione" Mode="ReadOnly" />
 							</td>
                     <td>
@@ -67,5 +74,8 @@
             </ItemTemplate>
         </asp:ListView>
     </div>
+     <div>
+
+     </div>
 </asp:Content>
 

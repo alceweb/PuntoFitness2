@@ -50,7 +50,7 @@ background-color: rgba(0,0,0,0.8);
     font-family:Ruthie
 }
     .scritta img {
-        height:40px;
+        height:80px;
     }
     .scritta a {
     transition: all 0.8s ease;
@@ -83,7 +83,7 @@ background-color: rgba(0,0,0,0.8);
   padding:10px;
   border-bottom-left-radius:10px;
   border-bottom-right-radius:10px;
-  color:#808080
+  color:#fff;
 }
 .img-social {
     height:60px;
@@ -223,4 +223,17 @@ footer > p {
     height:20px;
 }
 .contatti h2 {
+}
+legend {
+    color:#fff;
+
+}
+.control-label {
+    color:#fff;
+}
+label {
+    color:#fff;
+}
+a:hover {
+    color:red;
 }
