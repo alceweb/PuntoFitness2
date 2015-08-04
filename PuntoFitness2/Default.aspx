@@ -152,9 +152,6 @@
 
                 </div>
             </div>
-            <div class="col-md-5">
-                <img src="Images/Logo1Piccolo.png" />
-            </div>
         </div>
         <hr />
         <div class="row">

@@ -48,7 +48,7 @@ background-color: rgba(0,0,0,0.8);
     font-weight:bold;
 }
     .scritta img {
-        height:120px;
+        height:40px;
     }
     .scritta a {
     transition: all 0.8s ease;
