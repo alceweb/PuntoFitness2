@@ -1,4 +1,8 @@
 ﻿<%@ Page Title="Contatti" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contatti.aspx.cs" Inherits="PuntoFitness2.Contact" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
@@ -17,10 +21,10 @@
                 </address>
                 <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="Images/faceb.png" /></a>
                 <a href="https://twitter.com/PuntoFitness1"><img class="img-social" src="Images/twt.png" /></a>
-                <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name"><img class="img-social" src="Images/lkd.png" /></a>
+                <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name"><img class="img-social" src="Images/lkd.png" /></a><br />
             </div>
             <div class="col-md-4">
-                <h2>Cerchi informazioni...</h2>
+                <h2>Cerchi informazioni</h2>
                 <div class="form-horizontal">
                     <div class="form-group">
                         <%--            <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>--%>

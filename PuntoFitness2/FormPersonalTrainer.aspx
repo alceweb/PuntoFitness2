@@ -1,10 +1,23 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormPersonalTrainer.aspx.cs" Inherits="PuntoFitness2.FormPersonalTrainer" %>
+﻿<%@ Page Title="Contatti" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormPersonalTrainer.aspx.cs" Inherits="PuntoFitness2.FormPersonalTrainer" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div class="body-page">
-
+            <div class="row">
+                <div class="col-md-12 text-center">
     <h2>Personal trainer</h2>
     <h3>Compila e invia questa form per richiedere un'attività di personal trainer personalizzata...<br />
         Anche a casa tua, o nella tua palestra!</h3>
+                </div>
+            </div>
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4 text-center">
          <div class="form-horizontal">
           <div class="form-group">
             <div class="col-sm-10">
@@ -47,5 +60,9 @@
             </div>
           </div>
         </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+</div>
             </div>
 </asp:Content>

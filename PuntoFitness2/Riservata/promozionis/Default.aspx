@@ -22,16 +22,13 @@
 								<asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
 							</th>
                             <th>
-								<asp:LinkButton Text="DataInizio" CommandName="Sort" CommandArgument="DataInizio" runat="Server" />
+								<asp:LinkButton Text="Inizio" CommandName="Sort" CommandArgument="DataInizio" runat="Server" />
 							</th>
                             <th>
-								<asp:LinkButton Text="DataFine" CommandName="Sort" CommandArgument="DataFine" runat="Server" />
+								<asp:LinkButton Text="Fine" CommandName="Sort" CommandArgument="DataFine" runat="Server" />
 							</th>
                             <th>
 								<asp:LinkButton Text="Titolo" CommandName="Sort" CommandArgument="Titolo" runat="Server" />
-							</th>
-                            <th>
-								<asp:LinkButton Text="Descrizione" CommandName="Sort" CommandArgument="Descrizione" runat="Server" />
 							</th>
                             <th>&nbsp;</th>
                         </tr>
@@ -54,16 +51,13 @@
 								<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 							</td>
 							<td>
-								<asp:DynamicControl runat="server" DataField="DataInizio" ID="DataInizio" Mode="ReadOnly" />
+								<asp:DynamicControl runat="server" DataField="DataInizio" DataFormatString="{0:dddd dd-MMM-yy}" ID="DataInizio" Mode="ReadOnly" />
 							</td>
 							<td>
-								<asp:DynamicControl runat="server" DataField="DataFine" ID="DataFine" Mode="ReadOnly" />
+								<asp:DynamicControl runat="server" DataField="DataFine" DataFormatString="{0:dddd dd-MMM-yy}" ID="DataFine" Mode="ReadOnly" />
 							</td>
 							<td>
 								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
-							</td>
-							<td>
-								<asp:DynamicControl runat="server" DataField="Descrizione" ID="Descrizione" Mode="ReadOnly" />
 							</td>
                     <td>
 					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Details", Item.Id) %>' Text="Details" /> | 

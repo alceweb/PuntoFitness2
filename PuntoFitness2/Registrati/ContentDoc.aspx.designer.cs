@@ -10,6 +10,15 @@
 namespace PuntoFitness2.Registrati {
     
     
-    public partial class Main {
+    public partial class ContentDoc {
+        
+        /// <summary>
+        /// ListView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView1;
     }
 }

@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="Corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Corsi.aspx.cs" Inherits="PuntoFitness2.Corsi" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <div class="body-page">
+            <div  class="body-page">
             <h2 ><%: Title %></h2><hr />
                     <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
@@ -11,7 +15,6 @@
                                         <a class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#AModal" + Eval("Id") %>'><%# Eval("Nome") %></a>
                                     </div>
                                     <div class="col-md-6">
-                                        <img class="imgList" src="Images/corsi1.jpg" />
                                     </div>
                                 </div>
                                     <!-- Modal -->

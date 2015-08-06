@@ -1,4 +1,8 @@
 ﻿<%@ Page Title="Servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Servizi.aspx.cs" Inherits="PuntoFitness2.Servizi" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
     <h2 > <%: Title %></h2><hr />
@@ -9,9 +13,6 @@
                                 <div class="row">
                                     <div class="col-md-4" >
                                         <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img class="imgList" src="Images/servizi1.jpg" />
                                     </div>
                                 </div>
                                     <!-- Modal -->

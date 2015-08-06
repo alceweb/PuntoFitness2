@@ -37,7 +37,7 @@ input[type="select"] {
     }
 }
 .barralogo {
-background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.7);
 }
 .scritta {
     transition: all 0.8s ease;
@@ -77,7 +77,7 @@ background-color: rgba(0,0,0,0.8);
     font-size:2em;
 }
 .body-page {
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color:rgba(0, 0, 0, 0.7);
   /*box-shadow:8px 8px 10px  #cecece;*/
   margin-top:111px;
   padding:10px;
@@ -219,9 +219,6 @@ footer > p {
     border:none;
 
 }
-.form-control {
-    height:20px;
-}
 .contatti h2 {
 }
 legend {
@@ -236,4 +233,20 @@ label {
 }
 a:hover {
     color:red;
+}
+.lavagnaImg {
+    width:90%;
+}
+.ImgDef {
+    height:300px;
+    float:right;
+    border-radius:10px;
+}
+
+@media (max-width: 768px) 
+{
+    .ImgDef {
+        height:250px;
+        float:none;
+    }
 }

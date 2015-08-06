@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<default>
+  <sezione sezione="default">
+    <voce immagine="lavagna"/>
+    <voce immagine="promozioni"/>
+    <voce immagine="servizi"/>
+    <voce immagine="corsi"/>
+  </sezione>
+</default>

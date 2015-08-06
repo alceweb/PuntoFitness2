@@ -191,6 +191,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\Default.xml" />
     <Content Include="ckeditor\adapters\jquery.js" />
     <Content Include="ckeditor\build-config.js" />
     <Content Include="ckeditor\ckeditor.js" />
@@ -568,9 +569,12 @@
     <Content Include="Images\01.jpg" />
     <Content Include="Images\02.jpg" />
     <Content Include="Images\03.jpg" />
-    <Content Include="Images\corsi.jpg" />
+    <Content Include="Images\contatti.jpg" />
+    <Content Include="Images\riservata.jpg" />
+    <Content Include="Images\servizi.jpg" />
     <Content Include="Images\corsi1.jpg" />
     <Content Include="Images\faceb.png" />
+    <Content Include="Images\lavagna.jpg" />
     <Content Include="Images\lkd.png" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo.png" />
@@ -578,9 +582,10 @@
     <Content Include="Images\logo_trasp.png" />
     <Content Include="Images\main.jpg" />
     <Content Include="Images\promo.jpg" />
+    <Content Include="Images\promozioni.jpg" />
     <Content Include="Images\Scritta1.png" />
     <Content Include="Images\ScrittaLogo.png" />
-    <Content Include="Images\servizi.jpg" />
+    <Content Include="Images\corsi.jpg" />
     <Content Include="Images\Servizi1.jpg" />
     <Content Include="Images\slideshow\01.jpg" />
     <Content Include="Images\slideshow\02.jpg" />
@@ -591,6 +596,7 @@
     <Content Include="packages.config" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Registrati\ContentDoc.aspx" />
     <Content Include="Registrati\Main.aspx" />
     <Content Include="Riservata\attivitas\Default.aspx" />
     <Content Include="Riservata\attivitas\Delete.aspx" />
@@ -633,6 +639,13 @@
     <None Include="Properties\PublishProfiles\puntifitness2 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <Content Include="Registrati\Web.config" />
+    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_primo.pdf" />
+    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_secondo.pdf" />
+    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_primo.pdf" />
+    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_secondo.pdf" />
+    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_terzo.pdf" />
+    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_scheda.pdf" />
+    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_scheda.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />
@@ -991,6 +1004,13 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrati\ContentDoc.aspx.cs">
+      <DependentUpon>ContentDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrati\ContentDoc.aspx.designer.cs">
+      <DependentUpon>ContentDoc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registrati\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1182,9 +1202,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201507221516410_InitialCreate.resx">
       <DependentUpon>201507221516410_InitialCreate.cs</DependentUpon>

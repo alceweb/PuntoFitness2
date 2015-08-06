@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace PuntoFitness2.Registrati
 {
@@ -11,7 +13,6 @@ namespace PuntoFitness2.Registrati
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

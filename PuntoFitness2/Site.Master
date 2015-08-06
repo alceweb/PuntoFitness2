@@ -50,21 +50,23 @@
         <div class="navbar-wrapper">
             <div class="container">
                 <div class="navbar navbar-inverse navbar-fixed-top barralogo">
-                        <div class="navbar-header">
+                    <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <div class="scritta">
-                                <a href="/"><img src="/Images/Scritta1.png" /></a>
-<%--                                <a runat="server" href="~/">Punt<img src="/Images/logo1Piccolo.png" /> Fitness</a>--%>
-                            </div>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink></li>
+                                <a class="scritta" href="/"><img src="/Images/Scritta1.png" /></a>
+<%--                                <a runat="server" href="~/">Punt<img src="/Images/logo1Piccolo.png" /> Fitness</a>--%>
+                                </li>
+                                <li>
+                                    <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink>
+                                </li>
+                                <li><asp:HyperLink class="glyphicon glyphicon-home" ID="HL2" Visible="false" runat="server" NavigateUrl="/Registrati/Main.aspx"> Riservata</asp:HyperLink>
+                                </li>
                             </ul>
-
                         </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
