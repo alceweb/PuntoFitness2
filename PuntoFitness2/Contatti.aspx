@@ -17,12 +17,12 @@
                     0363 54040
                 </address>
                 <address>
-                    <strong>Mail:</strong>   <a href="mailto:Support@example.com">info@puntofitnesscaravaggio.it</a><br />
+                    <strong>Mail:</strong>   <a href="mailto:Support@example.com">palestra@puntofitnesscaravaggio.it</a><br />
                 </address>
                 <a href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366"><img class="img-social" src="Images/faceb.png" /></a>
                 <a href="https://twitter.com/PuntoFitness1"><img class="img-social" src="Images/twt.png" /></a>
                 <a href="https://www.linkedin.com/profile/view?id=153806675&trk=hp-identity-name"><img class="img-social" src="Images/lkd.png" /></a><br />
-            </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.841427085521!2d9.640698700000009!3d45.493137900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478137e0de21040b%3A0xc5850ae427ed8811!2sViale+Papa+Giovanni+XXIII%2C+23%2C+24043+Caravaggio+BG!5e0!3m2!1sit!2sit!4v1438936607944" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>            </div>
             <div class="col-md-4">
                 <h2>Cerchi informazioni</h2>
                 <div class="form-horizontal">

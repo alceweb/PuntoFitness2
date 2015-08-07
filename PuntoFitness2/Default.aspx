@@ -71,14 +71,14 @@
     <div class="jumbotron">
         <hr />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h2>Info e Orari</h2>
                 <p>
-                    Caravaggio (BG), in via Papa Giovanni XXIII°, 23
+                    Caravaggio (BG), in viale Papa Giovanni XXIII, 23
                 </p>
                 <div>
-                    <span class="orario">LUN-VEN: 9:00 - 13:00 e 14:00 - 22:00</span><br />
-                    <span class="orario">SAB: 9:00 - 13:00</span>
+                    <span class="orario">LUN-VEN: 10:00 - 22:00</span><br />
+                    <span class="orario">SAB: 14:30 - 17:30</span>
                 </div>
                 <div>
                     <a target="_blank" href="https://twitter.com/PuntoFitness1">
@@ -161,7 +161,7 @@
         </div>
         <hr />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h2>Promozioni</h2>
                 <h3><em>Non perdere l'occasione</em></h3>
                 <div>
@@ -204,7 +204,7 @@
         </div>
         <hr />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h2>Servizi</h2>
                 <div>
                     <h3><em>I servizi per il benessere</em></h3>
@@ -219,7 +219,7 @@
         </div>
         <hr />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h2>Corsi</h2>
                 <div>
                     <h3><em>Tutti i corsi di Punto Fitness</em></h3>

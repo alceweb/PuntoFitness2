@@ -1,4 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormContattiResponse.aspx.cs" Inherits="PuntoFitness2.FormContattiResponse" %>
+﻿<%@ Page Title="servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormContattiResponse.aspx.cs" Inherits="PuntoFitness2.FormContattiResponse" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
             <div class="body-page">
 

@@ -9,8 +9,8 @@
             <div class="row">
                 <div class="col-md-12 text-center">
     <h2>Personal trainer</h2>
-    <h3>Compila e invia questa form per richiedere un'attività di personal trainer personalizzata...<br />
-        Anche a casa tua, o nella tua palestra!</h3>
+    <h3>Compila e invia questa form per richiedere un'attività di personal trainer...<br />
+        Anche a casa tua, o in palestra!</h3>
                 </div>
             </div>
 <div class="row">
