@@ -15,7 +15,8 @@
 						    <asp:DynamicControl Mode="Insert" DataField="Titolo" runat="server" />
                             <CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Descrizione") %>' BasePath="/ckeditor/" runat="server"></CKEditor:CKEditorControl>
 						    <asp:DynamicControl Mode="Insert" DataField="Attivo" runat="server" />
-                    <div class="form-group">
+ 						    <asp:DynamicControl Mode="Insert" DataField="Riservata" runat="server" />
+                   <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <asp:Button runat="server" ID="InsertButton" CommandName="Insert" Text="Insert" CssClass="btn btn-primary" />
                             <asp:Button runat="server" ID="CancelButton" CommandName="Cancel" Text="Cancel" CausesValidation="false" CssClass="btn btn-default" />

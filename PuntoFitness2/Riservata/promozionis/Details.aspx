@@ -53,6 +53,14 @@
                                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Descrizione") %>'></asp:Label>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-sm-2 text-right">
+									<strong>Riservata</strong>
+								</div>
+								<div class="col-sm-4">
+									<asp:DynamicControl runat="server" DataField="Riservata" ID="Attivo" Mode="ReadOnly" />
+								</div>
+							</div>
                  	<div class="row">
 					  &nbsp;
 					</div>

@@ -13,15 +13,18 @@ namespace PuntoFitness2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
         public IQueryable<PuntoFitness2.Models.promozioni> GetDataP()
         {
-            return _db.promozionis;
+            return _db.promozionis.Where(a => a.Riservata == false && a.DataInizio <= DateTime.Today && a.DataFine >= DateTime.Today);
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("FormResponse.aspx");
+        }
+        public IQueryable<PuntoFitness2.Models.slide> GetDataSl() 
+        {
+            return _db.slides;
         }
    }
 }

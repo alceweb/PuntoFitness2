@@ -30,6 +30,9 @@
                             <th>
 								<asp:LinkButton Text="Titolo" CommandName="Sort" CommandArgument="Titolo" runat="Server" />
 							</th>
+                            <th>
+								<asp:LinkButton Text="Riservata" CommandName="Sort" CommandArgument="Riservata" runat="Server" />
+							</th>
                             <th>&nbsp;</th>
                         </tr>
                     </thead>
@@ -59,6 +62,9 @@
 							<td>
 								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
 							</td>
+                            <td>
+									<asp:DynamicControl runat="server" DataField="Riservata" ID="Attivo" Mode="ReadOnly" />
+                            </td>
                     <td>
 					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Details", Item.Id) %>' Text="Details" /> | 
 					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/promozionis/Edit", Item.Id) %>' Text="Edit" /> | 

@@ -4,9 +4,11 @@
          <div class="body-page">
 
        <h2>slides List</h2>
-    <p>
+
+<%-- blocco la creeazione di nuovo slide
+        <p>
         <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
-    </p>
+    </p>--%>
     <div>
         <asp:ListView id="ListView1" runat="server"
             DataKeyNames="Id" 
@@ -38,13 +40,14 @@
                         <tr runat="server" id="itemPlaceholder" />
                     </tbody>
                 </table>
-				<asp:DataPager PageSize="5"  runat="server">
+                <div class="text-center"><hr />
+				<asp:DataPager PageSize="1"  runat="server">
 					<Fields>
-                        <asp:NextPreviousPagerField ShowLastPageButton="False" ShowNextPageButton="False" ButtonType="Button" ButtonCssClass="btn" />
                         <asp:NumericPagerField ButtonType="Button"  NumericButtonCssClass="btn" CurrentPageLabelCssClass="btn disabled" NextPreviousButtonCssClass="btn" />
-                        <asp:NextPreviousPagerField ShowFirstPageButton="False" ShowPreviousPageButton="False" ButtonType="Button" ButtonCssClass="btn" />
                     </Fields>
 				</asp:DataPager>
+
+                </div>
             </LayoutTemplate>
             <ItemTemplate>
                 <tr>
@@ -54,16 +57,19 @@
 							<td>
 								<asp:DynamicControl runat="server" DataField="Titolo" ID="Titolo" Mode="ReadOnly" />
 							</td>
-							<td>
-								<asp:DynamicControl runat="server" DataField="Didascalia" ID="Didascalia" Mode="ReadOnly" />
+							<td> 
+                    <asp:Image ID="Image1" CssClass="img-slide-thumbnail" ImageUrl='<%# "~/Images/slideshow/" + Eval("Id") + ".jpg" %>' runat="server" />
 							</td>
 							<td>
 								<asp:DynamicControl runat="server" DataField="Attivo" ID="Attivo" Mode="ReadOnly" />
 							</td>
                     <td>
 					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/Details", Item.Id) %>' Text="Details" /> | 
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/Edit", Item.Id) %>' Text="Edit" /> | 
-                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/Delete", Item.Id) %>' Text="Delete" />
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/Edit", Item.Id) %>' Text="Edit" /> <hr /> 
+					    <asp:HyperLink CssClass="btn btn-success" runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/EditImg", Item.Id) %>' Text="Edit Images" />
+
+<%-- blocco l'eliminazione delle slide
+                            <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/slides/Delete", Item.Id) %>' Text="Delete" />--%>
                     </td>
                 </tr>
             </ItemTemplate>

@@ -566,10 +566,8 @@
     <Content Include="FormContattiResponse.aspx" />
     <Content Include="FormPersonalTrainer.aspx" />
     <Content Include="FormPTResponse.aspx" />
-    <Content Include="Images\01.jpg" />
-    <Content Include="Images\02.jpg" />
-    <Content Include="Images\03.jpg" />
     <Content Include="Images\contatti.jpg" />
+    <Content Include="Images\login.jpg" />
     <Content Include="Images\riservata.jpg" />
     <Content Include="Images\servizi.jpg" />
     <Content Include="Images\corsi1.jpg" />
@@ -580,17 +578,12 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\Logo1Piccolo.png" />
     <Content Include="Images\logo_trasp.png" />
-    <Content Include="Images\main.jpg" />
     <Content Include="Images\promo.jpg" />
     <Content Include="Images\promozioni.jpg" />
     <Content Include="Images\Scritta1.png" />
     <Content Include="Images\ScrittaLogo.png" />
     <Content Include="Images\corsi.jpg" />
     <Content Include="Images\Servizi1.jpg" />
-    <Content Include="Images\slideshow\01.jpg" />
-    <Content Include="Images\slideshow\02.jpg" />
-    <Content Include="Images\slideshow\03.jpg" />
-    <Content Include="Images\slideshow\04.jpg" />
     <Content Include="Images\step.jpg" />
     <Content Include="Images\twt.png" />
     <Content Include="packages.config" />
@@ -598,12 +591,14 @@
     <Content Include="ApplicationInsights.config" />
     <Content Include="Registrati\ContentDoc.aspx" />
     <Content Include="Registrati\Main.aspx" />
+    <Content Include="Registrati\PromoReg.aspx" />
     <Content Include="Riservata\attivitas\Default.aspx" />
     <Content Include="Riservata\attivitas\Delete.aspx" />
     <Content Include="Riservata\attivitas\Details.aspx" />
     <Content Include="Riservata\attivitas\Edit.aspx" />
     <Content Include="Riservata\attivitas\Insert.aspx" />
     <Content Include="Riservata\Gestione.aspx" />
+    <Content Include="Riservata\GestioneDocumenti.aspx" />
     <Content Include="Riservata\promozionis\Default.aspx" />
     <Content Include="Riservata\promozionis\Delete.aspx" />
     <Content Include="Riservata\promozionis\Details.aspx" />
@@ -618,6 +613,7 @@
     <Content Include="Riservata\slides\Delete.aspx" />
     <Content Include="Riservata\slides\Details.aspx" />
     <Content Include="Riservata\slides\Edit.aspx" />
+    <Content Include="Riservata\slides\EditImg.aspx" />
     <Content Include="Riservata\slides\Insert.aspx" />
     <Content Include="Riservata\Web.config" />
     <Content Include="ckeditor\CHANGES.md" />
@@ -639,13 +635,9 @@
     <None Include="Properties\PublishProfiles\puntifitness2 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <Content Include="Registrati\Web.config" />
-    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_primo.pdf" />
-    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_secondo.pdf" />
-    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_primo.pdf" />
-    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_secondo.pdf" />
-    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_terzo.pdf" />
-    <Content Include="Registrati\Documenti\6b0308a4-4b10-477d-b731-02fca91baf73_scheda.pdf" />
-    <Content Include="Registrati\Documenti\f22f2563-6aee-4407-bf27-31d8fad27437_scheda.pdf" />
+    <Content Include="Registrati\Documenti\scheda.pdf" />
+    <Content Include="Registrati\Documenti\SchedaStorico.pdf" />
+    <Content Include="Registrati\Documenti\50e8f1e2-7f41-4543-8ea1-ac97742f88f4_scheda.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />
@@ -1001,6 +993,18 @@
     <Compile Include="Migrations\201508041721398_PromoTitolo.Designer.cs">
       <DependentUpon>201508041721398_PromoTitolo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508070849406_PromoRiservata.cs" />
+    <Compile Include="Migrations\201508070849406_PromoRiservata.Designer.cs">
+      <DependentUpon>201508070849406_PromoRiservata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508071346475_ServiziRis.cs" />
+    <Compile Include="Migrations\201508071346475_ServiziRis.Designer.cs">
+      <DependentUpon>201508071346475_ServiziRis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508071535166_ClassSlide.cs" />
+    <Compile Include="Migrations\201508071535166_ClassSlide.Designer.cs">
+      <DependentUpon>201508071535166_ClassSlide.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1017,6 +1021,13 @@
     </Compile>
     <Compile Include="Registrati\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrati\PromoReg.aspx.cs">
+      <DependentUpon>PromoReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrati\PromoReg.aspx.designer.cs">
+      <DependentUpon>PromoReg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Riservata\attivitas\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -1059,6 +1070,13 @@
     </Compile>
     <Compile Include="Riservata\Gestione.aspx.designer.cs">
       <DependentUpon>Gestione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\GestioneDocumenti.aspx.cs">
+      <DependentUpon>GestioneDocumenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\GestioneDocumenti.aspx.designer.cs">
+      <DependentUpon>GestioneDocumenti.aspx</DependentUpon>
     </Compile>
     <Compile Include="Riservata\promozionis\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -1158,6 +1176,13 @@
     <Compile Include="Riservata\slides\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Riservata\slides\EditImg.aspx.cs">
+      <DependentUpon>EditImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\slides\EditImg.aspx.designer.cs">
+      <DependentUpon>EditImg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Riservata\slides\Insert.aspx.cs">
       <DependentUpon>Insert.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1215,6 +1240,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508041721398_PromoTitolo.resx">
       <DependentUpon>201508041721398_PromoTitolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508070849406_PromoRiservata.resx">
+      <DependentUpon>201508070849406_PromoRiservata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508071346475_ServiziRis.resx">
+      <DependentUpon>201508071346475_ServiziRis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508071535166_ClassSlide.resx">
+      <DependentUpon>201508071535166_ClassSlide.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

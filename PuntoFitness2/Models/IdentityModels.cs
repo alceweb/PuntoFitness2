@@ -44,6 +44,7 @@ namespace PuntoFitness2.Models
         public DateTime DataFine { get; set; }
         public string Titolo { get; set; }
         public string Descrizione { get; set; }
+        public bool Riservata { get; set; }
     }
     public class servizi
     {
@@ -52,6 +53,7 @@ namespace PuntoFitness2.Models
         public string Titolo { get; set; }
         public string Descrizione { get; set; }
         public bool Attivo { get; set; }
+        public bool Riservata { get; set; }
     }
     public class slide
     {
@@ -60,6 +62,8 @@ namespace PuntoFitness2.Models
         public string Titolo { get; set; }
         public string Didascalia { get; set; }
         public bool Attivo { get; set; }
+        public string Classe { get; set; }
+        public string Classe1 { get; set; }
     }
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

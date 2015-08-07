@@ -1,6 +1,11 @@
-﻿<%@ Page Title="Log in" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PuntoFitness2.Account.Login" Async="true" %>
+﻿<%@ Page Title="login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PuntoFitness2.Account.Login" Async="true" %>
 
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "/Images/" + Title + ".jpg" %>'/>
+</asp:Content>
+
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
@@ -62,7 +67,7 @@
             <section id="socialLoginForm">
                 <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
             </section>
-            <h2 class="text-center">Se non sei registrato chiedi nome utentte e password in palestra</h2>
+            <h2 class="text-center">Se non sei registrato chiedi nome utente e password in palestra</h2>
         </div>
     </div>
 </div>

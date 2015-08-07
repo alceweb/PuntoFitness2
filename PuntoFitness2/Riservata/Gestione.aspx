@@ -14,6 +14,7 @@
             <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Riservata/attivitas/Default.aspx">Attività (corsi)</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Riservata/servizis/Default.aspx">Servizi</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Riservata/slides/Default.aspx">Immagini slide</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Riservata/GestioneDocumenti.aspx">Documenti</asp:HyperLink></li>
         </ul>
 </div>
 

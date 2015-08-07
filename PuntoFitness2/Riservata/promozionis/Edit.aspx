@@ -19,6 +19,7 @@
 						    <asp:DynamicControl Mode="Edit" DataField="DataFine" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Titolo" runat="server" />
                             <CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Descrizione") %>' BasePath="/ckeditor/" runat="server"></CKEditor:CKEditorControl>
+						    <asp:DynamicControl Mode="Edit" DataField="Riservata" runat="server" />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
 							<asp:Button runat="server" ID="UpdateButton" CommandName="Update" Text="Update" CssClass="btn btn-primary" />

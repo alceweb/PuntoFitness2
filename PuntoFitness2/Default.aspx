@@ -2,67 +2,40 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
     <%---Slide show ---%>
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <asp:ListView ID="lvSlide" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
+                <ItemTemplate>
+                    <li data-target="#myCarousel" data-slide-to="<%# Eval("Id") %>" class="<%# Eval("Classe") %>"></li>
+
+                </ItemTemplate>
+
+            </asp:ListView>
         </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="carousel-caption">
-                    <h3>Slide 1</h3>
-                    <p>
-                        Esercizi a corpo libero a terra con <a href="FormPersonalTrainer.aspx">personal trainer dedicato</a>
-                    </p>
-                    <p>
-                        <a class="btn btn-fitness" href="FormPersonalTrainer.aspx">Chiedi informazioni</a>
-
-                    </p>
+                    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <asp:ListView ID="lvSlide1" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
+            <ItemTemplate>
+                <div class="<%# Eval("Classe1") %>">
+                    <div class="carousel-caption">
+                        <h3><%# Eval("Titolo") %></h3>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Didascalia") %>'></asp:Label>
+                    </div>
+                    <asp:Image ID="Image1" CssClass="img-slide-thumbnail" ImageUrl='<%# "~/Images/slideshow/" + Eval("Id") + ".jpg" %>' runat="server" />
                 </div>
-                <img class="" src="/Images/Slideshow/01.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img class="img-responsive" src="/Images/Slideshow/02.jpg" alt="">
-                <div class="carousel-caption">
-                    <h3>Slide due</h3>
-                    <p>
-                        Decine di macchine di ultima generazione<br />
-                        Con tabella personalizzata per utilizzo mirato
-                    </p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img class="img-responsive" src="/Images/Slideshow/03.jpg" alt="">
-                <div class="carousel-caption">
-                    <h3>Slide tre</h3>
-                    <p>I tapis roulant computerizzati</p>
-                </div>
-            </div>
-            <div class="item">
-                <img class="img-responsive" src="/Images/Slideshow/04.jpg" alt="">
-                <div class="carousel-caption">
-                    <h3>Slide quattro</h3>
-                    <p>aaaa</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            </ItemTemplate>
+        </asp:ListView>
     </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+</div>
     <%---Fine slide show ---%>
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -93,7 +66,7 @@
             <div class="col-md-2 text-center ">
             </div>
             <div class="col-md-4 text-center">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
                         La prima prova è gratis</button>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -162,11 +135,11 @@
         <hr />
         <div class="row">
             <div class="col-md-5">
-                <h2>Promozioni</h2>
+                <h2>Attività e promozioni</h2>
                 <h3><em>Non perdere l'occasione</em></h3>
-                <div>
-                    Facciamo promozioni specifiche per chi vuole iniziare e personalizzate per chi già frequenta la nostra palestra
-                </div>
+                <a class="btn btn-danger" href="Registrati/PromoReg.aspx">
+                    Riservate agli iscritti
+                </a>
             </div>
             <div class="col-md-2 text-center">
             </div>
@@ -181,7 +154,7 @@
                     </EmptyDataTemplate>
                     <ItemTemplate>
                         <!-- Link trigger modal -->
-                        <a href="#" data-toggle="modal" class="btn btn-danger" data-target='<%# "#PModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
+                        <a href="#" data-toggle="modal" class="btn btn-success" data-target='<%# "#PModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
                         <!-- Modal -->
                         <div class="modal fade " id='<%# "PModal" + Eval("Id") %>' tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">

@@ -26,7 +26,8 @@
                                           <div class="modal-body">
                                             <%# Eval("Descrizione") %></div>
                                           <div class="modal-footer">
-                                            <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                                               <a href="Contatti.aspx" class="btn btn-primary">Chiedi informazioni</a>
+                                           <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
                                           </div>
                                         </div>
                                       </div>
