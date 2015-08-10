@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="PuntoFitness2.Account.Register" %>
-
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "../Images/Riservata.jpg" %>'/>
+</asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+  
          <div class="body-page">
-
        <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />

@@ -1,4 +1,8 @@
 ﻿<%@ Page Title="slideInsert" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Insert" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "../../Images/Riservata.jpg" %>'/>
+</asp:Content>
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">

@@ -20,7 +20,7 @@ namespace PuntoFitness2
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("FormResponse.aspx");
+            Response.Redirect("FormPTResponse.aspx");
         }
         public IQueryable<PuntoFitness2.Models.slide> GetDataSl() 
         {

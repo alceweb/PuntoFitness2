@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditImg.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.EditImg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
+     <img class="imgBody" src='<%: "../../../Images/Riservata.jpg" %>'/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
         <div class="body-page">
