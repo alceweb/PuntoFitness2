@@ -584,6 +584,10 @@
     <Content Include="Images\ScrittaLogo.png" />
     <Content Include="Images\corsi.jpg" />
     <Content Include="Images\Servizi1.jpg" />
+    <Content Include="Images\slideshow\1.jpg" />
+    <Content Include="Images\slideshow\2.jpg" />
+    <Content Include="Images\slideshow\3.jpg" />
+    <Content Include="Images\slideshow\4.jpg" />
     <Content Include="Images\step.jpg" />
     <Content Include="Images\twt.png" />
     <Content Include="packages.config" />

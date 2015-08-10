@@ -19,7 +19,7 @@ namespace PuntoFitness2
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             //ATTENZIONE CHE QUANDO è ABILITATO ESEGUE IL DROP DELLE TABELLE E POI LE RICREA VUOTE
-            //Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
+            Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
 
         }
     }
