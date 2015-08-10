@@ -45,7 +45,7 @@
         <hr />
         <div class="row">
             <div class="col-md-5">
-                <h2>Info e Orari</h2>
+                <h2>Info e Orari -  CIAO</h2>
                 <p>
                     Caravaggio (BG), in viale Papa Giovanni XXIII, 23
                 </p>
