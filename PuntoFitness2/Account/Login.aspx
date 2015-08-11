@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="PuntoFitness2.Account.Login" Async="true" %>
-
+<%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
@@ -81,48 +81,53 @@
                         <div class="modal-body">
                             <h4>Modulo di iscrizione alla palestra PuntoFitness</h4>
                             <p>Compila e invia, ti contatteremo per stabilire un incontro e per comunicarti le credenziali di accesso al sito</p>
+                            <asp:Label ID="lblMessage" ForeColor="red" runat="server" Text="" ></asp:Label>
                             <hr />
                             <div class="form-horizontal">
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Il tuo nome"></asp:TextBox>
+                                        <asp:TextBox ID="txtNome" CssClass="form-control" runat="server" placeholder="Il tuo nome"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" placeholder="Il tuo cognome"></asp:TextBox>
+                                        <asp:TextBox ID="txtCognome" CssClass="form-control" runat="server" placeholder="Il tuo cognome"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox3" CssClass="form-control" runat="server" placeholder="Città"></asp:TextBox>
+                                        <asp:TextBox ID="txtCitta" CssClass="form-control" runat="server" placeholder="Città"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox4" CssClass="form-control" runat="server" placeholder="Indirizzo"></asp:TextBox>
+                                        <asp:TextBox ID="txtIndirizzo" CssClass="form-control" runat="server" placeholder="Indirizzo"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox5" CssClass="form-control" runat="server" placeholder="Telefono/cellulare"></asp:TextBox>
+                                        <asp:TextBox ID="txtTelefono" CssClass="form-control" runat="server" placeholder="Telefono/cellulare"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox6" CssClass="form-control" runat="server" placeholder="Email"></asp:TextBox>
+                                        <asp:TextBox ID="txtMail" CssClass="form-control" runat="server" placeholder="Email"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-10">
-                                        <asp:TextBox ID="TextBox7" CssClass="form-control" runat="server" TextMode="MultiLine" required="required" placeholder="Se hai preferenza di giorni o orari scrivili qui."></asp:TextBox>
+                                        <asp:TextBox ID="txtMessaggio" CssClass="form-control" runat="server" TextMode="MultiLine" required="required" placeholder="Se hai preferenza di giorni o orari scrivili qui."></asp:TextBox>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <cc1:Recaptcha ID="Recaptcha1" Theme="Blackglass" runat="server" />
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <asp:Button ID="Button2" runat="server" CssClass="btn btn-default" Text="Invia messaggio" OnClick="Button1_Click"></asp:Button>
                                     </div>
                                 </div>
+                                
                             </div>
 
                         </div>

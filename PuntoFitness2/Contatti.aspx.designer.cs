@@ -13,6 +13,15 @@ namespace PuntoFitness2 {
     public partial class Contact {
         
         /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+        
+        /// <summary>
         /// txtNome control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace PuntoFitness2 {
         protected global::System.Web.UI.WebControls.TextBox txtCognome;
         
         /// <summary>
-        /// txtCittà control.
+        /// txtCitta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCittà;
+        protected global::System.Web.UI.WebControls.TextBox txtCitta;
         
         /// <summary>
         /// txtIndirizzo control.
@@ -74,6 +83,15 @@ namespace PuntoFitness2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMessaggio;
+        
+        /// <summary>
+        /// Recaptcha1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Recaptcha.Web.UI.Controls.Recaptcha Recaptcha1;
         
         /// <summary>
         /// Button1 control.

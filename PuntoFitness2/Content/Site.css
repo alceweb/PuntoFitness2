@@ -258,3 +258,10 @@ a:hover {
         float:none;
     }
 }
+.response {
+    min-height:300px;
+}
+#recaptcha_area {
+    margin:auto !important;
+
+}
