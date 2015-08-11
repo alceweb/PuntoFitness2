@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
         var appInsights=window.appInsights||function(config){
             function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
@@ -23,6 +23,26 @@
         
         window.appInsights=appInsights;
         appInsights.trackPageView();
+
+        $(document).ready(function () {
+            var url = window.location.pathname;
+            var substr = url.split('/');
+            
+            var urlaspx = substr[substr.length - 1];
+            $('#menu').find('.active').removeClass('active');
+            if (!urlaspx) {
+                $('#home').addClass('active');
+            }
+            else {
+
+
+                $('#menu li a').each(function () {
+                    if (this.href.indexOf(urlaspx) >= 0) {
+                        $(this).parent().addClass('active');
+                    }
+                });
+            }
+        });
     </script>
 </head>
 <body>
@@ -56,7 +76,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul  class="nav navbar-nav navbar-right">
                                 <li>
                                 <a class="scritta" href="/"><img src="/Images/Scritta1.png" /></a>
 <%--                                <a runat="server" href="~/">Punt<img src="/Images/logo1Piccolo.png" /> Fitness</a>--%>
@@ -69,14 +89,15 @@
                             </ul>
                         </div>
                     <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
+                        <ul  class="nav navbar-nav">
                             <%--<li><a runat="server" href="~/">Home</a></li>--%>
                         </ul>
                         <asp:LoginView runat="server" ViewStateMode="Disabled">
                             <AnonymousTemplate>
-                                <ul class="nav navbar-nav navbar-right bordomenu">
+                                <ul id="menu" class="nav navbar-nav navbar-right bordomenu">
                                     <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
                                     <%--<li><a runat="server" href="~/Account/Login">Accedi</a></li> --%>
+                                    <li id="home"><a runat="server"  href="~/">Home</a></li>
                                     <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
                                     <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
                                     <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
