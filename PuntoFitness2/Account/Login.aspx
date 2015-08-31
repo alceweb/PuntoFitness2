@@ -69,7 +69,7 @@
             </section>--%>
                 <h4>L'accesso è riservato solo agli iscritti alla palestra.</h4>
                 <hr />
-                <asp:Button ID="Button1" runat="server" Text="Richiedi l'iscrizione alla palestra" CssClass="btn" data-toggle="modal" data-target="#myModal" />
+<%--                <asp:Button ID="Button1" runat="server" Text="Richiedi l'iscrizione alla palestra" CssClass="btn" data-toggle="modal" data-target="#myModal" CausesValidation="False" />
             </div>
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--%>
 
         </div>
     </div>
