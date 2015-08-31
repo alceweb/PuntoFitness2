@@ -4,22 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
             <div  class="body-page">
-                <asp:DropDownList ID="DropDownList1" SelectMethod="GetDataU" runat="server" DataTextField="Email" DataValueField="Email"></asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" AutoPostBack="true" SelectMethod="GetDataU" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" runat="server" DataTextField="Email" DataValueField="Email"></asp:DropDownList>
                 <div >
-                    <asp:ListView ID="lvu" SelectMethod="GetDataU" SelectedIndex="-1" DataKeyNames="Id" runat="server">
-                        <ItemSeparatorTemplate>
-                            <br />
-                        </ItemSeparatorTemplate>
-                        <ItemTemplate>
-                            <asp:LinkButton ID="LinkButton1" CommandName="Select" runat="server">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
-                            </asp:LinkButton>
-                        </ItemTemplate>
-                        <SelectedItemTemplate>
-                            <asp:Label CssClass="verde" ID="Label1" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
-                        </SelectedItemTemplate>
-                    </asp:ListView>
-               </div>
                 <asp:Label ID="Label3" runat="server" ></asp:Label>
+               </div>
                 </div>
 </asp:Content>

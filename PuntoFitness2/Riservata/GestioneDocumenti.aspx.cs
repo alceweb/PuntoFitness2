@@ -16,13 +16,20 @@ namespace PuntoFitness2.Riservata
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string utente = "";
         }
-        //Binding al model per generare la lista oggetti per attivita
-        // ESMPIO: <asp:ListView SelectMethod="GetDataA">
+        //Binding al model per generare la utenti
+        // ESEMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
-            return _db.Users;
+            return _db.Users.OrderBy(u=> u.Email);
         }
 
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string utente = DropDownList1.SelectedValue.ToString();
+            Label3.Text = "utente";
+
+        }
     }
 }

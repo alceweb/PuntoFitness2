@@ -22,15 +22,6 @@ namespace PuntoFitness2.Riservata {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// Controllo lvu.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvu;
-        
-        /// <summary>
         /// Controllo Label3.
         /// </summary>
         /// <remarks>
