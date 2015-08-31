@@ -264,7 +264,7 @@ a:hover {
 /* Responsive:  mobile */
 @media screen and (max-width: 767px) {
     .scritta img {
-        height:40px;
+        height:30px;
     }
     .social {
         text-align:center;
