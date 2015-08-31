@@ -152,7 +152,7 @@ footer{
     margin-right:auto;
     text-align:center;
 }
-.orario{
+.orario span{
     margin-left:30px
 }
 .myModal{
@@ -259,4 +259,27 @@ a:hover {
 }
 #menu {
     
+}
+
+/* Responsive:  mobile */
+@media screen and (max-width: 767px) {
+    .scritta img {
+        height:40px;
+    }
+    .social {
+        text-align:center;
+    }
+    .orario span{
+        margin:0;
+    }
+    #myCarousel {
+        display:none;
+    }
+    .container.body-content {
+        top:50px;
+       margin-bottom:50px;
+    }
+    .promoreg {
+        text-align:center
+    }
 }

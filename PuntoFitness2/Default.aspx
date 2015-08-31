@@ -50,11 +50,11 @@
                 <p>
                     Caravaggio (BG), in viale Papa Giovanni XXIII, 23
                 </p>
-                <div>
-                    <span class="orario">LUN-VEN: 10:00 - 22:00</span><br />
-                    <span class="orario">SAB: 14:30 - 17:30</span>
+                <div class="orario">
+                    <span >LUN-VEN: 10:00 - 22:00</span><br />
+                    <span >SAB: 14:30 - 17:30</span>
                 </div>
-                <div>
+                <div class="social">
                     <a target="_blank" href="https://twitter.com/PuntoFitness1">
                         <img class="img-social" src="Images/twt.png" /></a>
                     <a target="_blank" href="https://www.facebook.com/pages/Palestra-Punto-Fitness-Caravaggio/189024564443366">
@@ -142,9 +142,9 @@
             <div class="col-md-5">
                 <h2>Attività e promozioni</h2>
                 <h3><em>Non perdere l'occasione</em></h3>
-                <a class="btn btn-danger" href="Registrati/PromoReg.aspx">
+                <div class="promoreg"><a class="btn btn-danger" href="Registrati/PromoReg.aspx">
                     Riservate agli iscritti
-                </a>
+                </a></div>
             </div>
             <div class="col-md-2 text-center">
             </div>
