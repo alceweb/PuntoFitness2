@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>84b2ef69</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/b79356b8-1840-4a4d-9ce9-46687d4dfe83/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/PuntoFitness2</ApplicationInsightsResourceId>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -668,8 +669,8 @@
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
     <Content Include="Registrati\Web.config" />
     <Content Include="Registrati\Documenti\scheda.pdf" />
-    <Content Include="Registrati\Documenti\SchedaStorico.pdf" />
-    <Content Include="Registrati\Documenti\50e8f1e2-7f41-4543-8ea1-ac97742f88f4_scheda.pdf" />
+    <Content Include="Registrati\Documenti\palestra%40puntofitnesscaravaggio.it_storico.pdf" />
+    <Content Include="Registrati\Documenti\palestra%40puntofitnesscaravaggio.it_scheda.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />

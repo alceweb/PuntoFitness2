@@ -13,22 +13,10 @@ namespace PuntoFitness2.Registrati
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string utente = HttpContext.Current.User.Identity.Name.ToString();
+            if1.Src = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
+            if2.Src = "~/Registrati/Documenti/" + utente + "_storico.pdf";
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Label1.Text = "Tutte le tue schede";
-            if1.Src = "Documenti/SchedaStorico.pdf";
-            Button1.Visible = false;
-            Button2.Visible = true;
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Label1.Text = "La tua scheda";
-            if1.Src = "Documenti/Scheda.pdf";
-            Button2.Visible = false;
-            Button1.Visible = true;
-        }
     }
 }

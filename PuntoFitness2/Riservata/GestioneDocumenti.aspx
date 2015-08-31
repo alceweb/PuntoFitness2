@@ -4,21 +4,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
             <div  class="body-page">
-                <div class="row">
-                    <asp:ListView ID="lvu" SelectMethod="GetDataU" SelectedIndex="0" DataKeyNames="Id" runat="server">
+                <asp:DropDownList ID="DropDownList1" SelectMethod="GetDataU" runat="server" DataTextField="Email" DataValueField="Email"></asp:DropDownList>
+                <div >
+                    <asp:ListView ID="lvu" SelectMethod="GetDataU" SelectedIndex="-1" DataKeyNames="Id" runat="server">
                         <ItemSeparatorTemplate>
                             <br />
                         </ItemSeparatorTemplate>
                         <ItemTemplate>
                             <asp:LinkButton ID="LinkButton1" CommandName="Select" runat="server">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
                             </asp:LinkButton>
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
                         </ItemTemplate>
                         <SelectedItemTemplate>
-                            <asp:Label CssClass="verde" ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
-
+                            <asp:Label CssClass="verde" ID="Label1" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
                         </SelectedItemTemplate>
                     </asp:ListView>
                </div>

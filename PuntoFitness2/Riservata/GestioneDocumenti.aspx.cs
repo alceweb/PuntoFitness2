@@ -19,7 +19,7 @@ namespace PuntoFitness2.Riservata
         }
         //Binding al model per generare la lista oggetti per attivita
         // ESMPIO: <asp:ListView SelectMethod="GetDataA">
-        public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
+        public IOrderedQueryable<PuntoFitness2.Models.ApplicationUser> OrderBy< IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
             return _db.Users;
         }

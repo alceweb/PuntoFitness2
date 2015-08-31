@@ -10,8 +10,8 @@
         <div class="body-page">
         <h2>Benvenuto nell'area di gestione! </h2><hr />
         <ul>
-            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Riservata/promozionis/Default.aspx">Promozioni</asp:HyperLink></li>
-            <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Riservata/attivitas/Default.aspx">Attività (corsi)</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Riservata/promozionis/Default.aspx">Attività e Promozioni</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Riservata/attivitas/Default.aspx">Corsi</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Riservata/servizis/Default.aspx">Servizi</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Riservata/slides/Default.aspx">Immagini slide</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Riservata/GestioneDocumenti.aspx">Documenti</asp:HyperLink></li>

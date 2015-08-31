@@ -8,7 +8,7 @@
         <ol class="carousel-indicators">
             <asp:ListView ID="lvSlide" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
                 <ItemTemplate>
-                    <li data-target="#myCarousel" data-slide-to="<%# Eval("Id") %>" class="<%# Eval("Classe") %>"></li>
+                    <li data-target="#myCarousel" data-slide-to="<%# (Convert.ToInt32(Eval("Id")) - 1)%>" class="<%# Eval("Classe") %>"></li>
                 </ItemTemplate>
 
             </asp:ListView>
@@ -46,7 +46,7 @@
         <hr />
         <div class="row">
             <div class="col-md-5">
-                <h2>Info e Orari -  CIAO</h2>
+                <h2>Info e Orari</h2>
                 <p>
                     Caravaggio (BG), in viale Papa Giovanni XXIII, 23
                 </p>
@@ -201,7 +201,6 @@
                 <h2>Corsi</h2>
                 <div>
                     <h3><em>Tutti i corsi di Punto Fitness</em></h3>
-                    <div>Dammi una descrizione breve che riassuma i servizi che offre PuntoFitness</div>
                 </div>
             </div>
             <div class="col-md-2 text-center">

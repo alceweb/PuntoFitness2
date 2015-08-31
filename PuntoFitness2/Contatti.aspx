@@ -16,7 +16,9 @@
                     Punto Fitness<br />
                     24043 Caravaggio BG<br />
                     <abbr title="Phone">Tel:</abbr>
-                    0363 54040
+                    0363 54040<br />
+                    LUN-VEN: 10:00 - 22:00<br />
+                    SAB: 14:30 - 17:30 
                 </address>
                 <address>
                     <strong>Mail:</strong>   <a href="mailto:Support@example.com">palestra@puntofitnesscaravaggio.it</a><br />
