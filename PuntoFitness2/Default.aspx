@@ -169,7 +169,7 @@
                                         <h4 class="modal-title" id="myModalLabel"><%# Eval("Titolo") %></h4>
                                     </div>
                                     <div class="modal-body">
-                                        ...<%# Eval("Descrizione") %></div>
+                                        <%# Eval("Descrizione") %></div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
                                     </div>
@@ -186,7 +186,6 @@
                 <h2>Servizi</h2>
                 <div>
                     <h3><em>I servizi per il benessere</em></h3>
-                    <div>Dammi una descrizione breve che riassuma i servizi che offre PuntoFitness</div>
                 </div>
             </div>
             <div class="col-md-2 text-center">

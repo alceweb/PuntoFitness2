@@ -40,7 +40,7 @@ namespace PuntoFitness2.Account
                 return;
             }
 
-            ErrorMessage.Text = "An error has occurred";
+        ErrorMessage.Text = "An error has occurred";
         }
-    }
+}
 }

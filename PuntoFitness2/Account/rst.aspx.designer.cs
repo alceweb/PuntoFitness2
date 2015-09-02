@@ -7,45 +7,45 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Registrati {
+namespace PuntoFitness2.Account {
     
     
-    public partial class Main {
+    public partial class rst {
         
         /// <summary>
-        /// Controllo hl1.
+        /// Controllo ddlUser.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hl1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlUser;
         
         /// <summary>
-        /// Controllo if1.
+        /// Controllo txtPsw.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe if1;
+        protected global::System.Web.UI.WebControls.TextBox txtPsw;
         
         /// <summary>
-        /// Controllo hl2.
+        /// Controllo Button1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hl2;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Controllo if2.
+        /// Controllo lblOk.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe if2;
+        protected global::System.Web.UI.WebControls.Label lblOk;
     }
 }

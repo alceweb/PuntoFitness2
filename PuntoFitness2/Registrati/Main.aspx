@@ -13,14 +13,14 @@
         </div>
         <div class="row">
             <div class="col col-md-4 text-center">
-                <asp:HyperLink ID="hl" runat="server" NavigateUrl="~/Registrati/Documenti/palestra@puntofitnesscaravaggio.it_scheda.pdf" Text="Download scheda giornaliera"></asp:HyperLink><br />
+                <asp:HyperLink ID="hl1" runat="server" Text="Download scheda corrente" Target="_blank"></asp:HyperLink><br />
                 <br />
-                <iframe id="if1" runat="server" width="300" height="420" style="border: 0" />
+                <iframe id="if1" runat="server" width="330" height="450"  style="border: thin solid #FFFFFF"  />
             </div>
             <div class="col col-md-4 text-center">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registrati/Documenti/palestra@puntofitnesscaravaggio.it_storico.pdf" Text="Download scheda storico"></asp:HyperLink><br />
+                <asp:HyperLink ID="hl2" runat="server" Text="Download scheda storico" Target="_blank"></asp:HyperLink><br />
                 <br />
-                <iframe id="if2" runat="server" width="300" height="420" style="border: 0" />
+                <iframe id="if2" runat="server" width="330" height="450" style="border: thin solid #FFFFFF" />
             </div>
         </div>
     </div>

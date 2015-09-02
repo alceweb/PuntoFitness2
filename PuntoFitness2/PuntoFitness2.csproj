@@ -217,6 +217,7 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\rst.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="App_Data\Default.xml" />
@@ -612,10 +613,6 @@
     <Content Include="Images\ScrittaLogo.png" />
     <Content Include="Images\corsi.jpg" />
     <Content Include="Images\Servizi1.jpg" />
-    <Content Include="Images\slideshow\1.jpg" />
-    <Content Include="Images\slideshow\2.jpg" />
-    <Content Include="Images\slideshow\3.jpg" />
-    <Content Include="Images\slideshow\4.jpg" />
     <Content Include="Images\step.jpg" />
     <Content Include="Images\twt.png" />
     <Content Include="packages.config" />
@@ -813,6 +810,13 @@
     </Compile>
     <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\rst.aspx.cs">
+      <DependentUpon>rst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\rst.aspx.designer.cs">
+      <DependentUpon>rst.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
       <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>

@@ -16,6 +16,7 @@
             <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Riservata/slides/Default.aspx">Immagini slide</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Riservata/GestioneDocumenti.aspx">Documenti</asp:HyperLink></li>
             <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Account/Register.aspx">Registra utente</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Account/rst.aspx">Reset password</asp:HyperLink></li>
         </ul>
 </div>
 

@@ -5,8 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.ModelBinding;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data.Entity;
 using Microsoft.AspNet.FriendlyUrls.ModelBinding;
 using PuntoFitness2.Models;

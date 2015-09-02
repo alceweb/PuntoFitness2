@@ -65,5 +65,14 @@ namespace PuntoFitness2.Riservata {
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
+        
+        /// <summary>
+        /// Controllo HyperLink7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
     }
 }
