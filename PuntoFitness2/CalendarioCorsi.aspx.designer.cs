@@ -10,15 +10,24 @@
 namespace PuntoFitness2 {
     
     
-    public partial class Corsi {
+    public partial class CalendarioCorsi {
         
         /// <summary>
-        /// Controllo ListView3.
+        /// Controllo hl1.
         /// </summary>
         /// <remarks>
         /// Campo generato automaticamente.
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListView3;
+        protected global::System.Web.UI.WebControls.HyperLink hl1;
+        
+        /// <summary>
+        /// Controllo if1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlIframe if1;
     }
 }

@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Punto Fitness Caravaggio</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -76,9 +76,10 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                                <a class="scritta" href="/">PUNTO FITNESS
+                                </a>
                             <ul  class="nav navbar-nav navbar-right">
                                 <li>
-                                <a class="scritta" href="/"><img src="/Images/Scritta1.png" /></a>
 <%--                                <a runat="server" href="~/">Punt<img src="/Images/logo1Piccolo.png" /> Fitness</a>--%>
                                 </li>
                                 <li>

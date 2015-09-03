@@ -42,23 +42,24 @@ background-color: rgba(0,0,0,0.7);
 .scritta {
     transition: all 0.8s ease;
     margin-left:25px;
-    margin-top:5px;
+    margin-top:15px;
     float:left;
     font-size:3.5em;
     text-decoration: none;
     font-weight:bold;
-    font-family:Ruthie
+    color:#000;
+    text-shadow:0 0 8px #e8e4e4, 0 0 2px #fff;
 }
     .scritta img {
         height:80px;
     }
-    .scritta a {
+    .scritta:hover {
     transition: all 0.8s ease;
     text-decoration: none;
+    transform: scale(1.1);
     transition: all 0.8s ease;
-    font-size:1.5em;
-    color:#000;
-    text-shadow:0 0 8px #fff;
+    color:#cecece;
+    text-shadow:0 0 144px #fff;
     }
 
 .bianco {

@@ -221,6 +221,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="App_Data\Default.xml" />
+    <Content Include="CalendarioCorsi.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
     <Content Include="ckeditor\build-config.js" />
     <Content Include="ckeditor\ckeditor.js" />
@@ -627,6 +628,7 @@
     <Content Include="Riservata\attivitas\Details.aspx" />
     <Content Include="Riservata\attivitas\Edit.aspx" />
     <Content Include="Riservata\attivitas\Insert.aspx" />
+    <Content Include="Riservata\Calendario.aspx" />
     <Content Include="Riservata\Gestione.aspx" />
     <Content Include="Riservata\GestioneDocumenti.aspx" />
     <Content Include="Riservata\promozionis\Default.aspx" />
@@ -843,6 +845,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CalendarioCorsi.aspx.cs">
+      <DependentUpon>CalendarioCorsi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalendarioCorsi.aspx.designer.cs">
+      <DependentUpon>CalendarioCorsi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contatti.aspx.cs">
       <DependentUpon>Contatti.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1100,6 +1109,13 @@
     </Compile>
     <Compile Include="Riservata\attivitas\Insert.aspx.designer.cs">
       <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\Calendario.aspx.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\Calendario.aspx.designer.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Riservata\Gestione.aspx.cs">
       <DependentUpon>Gestione.aspx</DependentUpon>

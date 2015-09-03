@@ -21,7 +21,7 @@ namespace PuntoFitness2
         // ESMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.attivita> GetDataA()
         {
-            return _db.attivitas.Where(a => a.Attivo == true);
+            return _db.attivitas.Where(a => a.Attivo == true).OrderBy(n=> n.Nome);
         }
     }
 }
