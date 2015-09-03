@@ -1,10 +1,11 @@
-﻿<%@ Page Title="Calendario corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CalendarioCorsi.aspx.cs" Inherits="PuntoFitness2.CalendarioCorsi" %>
+﻿<%@ Page Title="Corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CalendarioCorsi.aspx.cs" Inherits="PuntoFitness2.CalendarioCorsi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "/Images/" + Title + ".jpg" %>'/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
             <h2 class="text-center" ><%: Title %></h2>
-                <a href="/Corsi"><h3><span class="glyphicon glyphicon-left"></span> Corsi</h3></a><hr />
+                <a href="/Corsi"><h3><span class="glyphicon glyphicon-left"></span>Lista corsi</h3></a><hr />
         <div class="row text-center">
             <div class="col col-md-3">
             </div>
