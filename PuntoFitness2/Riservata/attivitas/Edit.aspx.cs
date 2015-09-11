@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using System.Data.Entity;
 using Microsoft.AspNet.FriendlyUrls.ModelBinding;
 using PuntoFitness2.Models;
+
 namespace PuntoFitness2.Riservata.attivitas
 {
     public partial class Edit : System.Web.UI.Page

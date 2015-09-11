@@ -15,6 +15,9 @@ namespace PuntoFitness2.Models
     // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        public DateTime? DataIscrizione { get; set; }
+        public String Nome { get; set; }
+        public String Cognome{ get; set; }
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -65,6 +68,20 @@ namespace PuntoFitness2.Models
         public string Classe { get; set; }
         public string Classe1 { get; set; }
     }
+    public class documenti
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Descrizione { get; set; }
+    }
+    public class pagine
+    {
+        [Key]
+        public int Id { get; set;}
+        public string titolo { get; set; }
+    }
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -80,8 +97,10 @@ namespace PuntoFitness2.Models
          public System.Data.Entity.DbSet<PuntoFitness2.Models.servizi> servizis { get; set; }
          public System.Data.Entity.DbSet<PuntoFitness2.Models.promozioni> promozionis { get; set; }
          public System.Data.Entity.DbSet<PuntoFitness2.Models.slide> slides { get; set; }
+         public System.Data.Entity.DbSet<PuntoFitness2.Models.documenti> documentis { get; set; }
+        public System.Data.Entity.DbSet<PuntoFitness2.Models.pagine> pagines { get; set; }
     }
-   
+
 }
 
 #region Helpers

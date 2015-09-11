@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using PuntoFitness2.Models;
+using System.Web.UI.WebControls;
 
 namespace PuntoFitness2.Account
 {
@@ -15,7 +16,7 @@ namespace PuntoFitness2.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
+            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text, Nome = txtNome.Text, Cognome = txtCognome.Text };
             IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {

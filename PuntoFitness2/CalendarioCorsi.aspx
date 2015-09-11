@@ -12,7 +12,7 @@
             <div class="col col-md-6">
                 <asp:HyperLink CssClass="btn btn-primary" ID="hl1" runat="server" NavigateUrl="~/CalendarioCorsi.pdf" Text="Download" Target="_blank"></asp:HyperLink>
                 <br /><br />
-                <iframe id="if1" runat="server" width="430" height="590" src="/CalendarioCorsi.pdf" style="border: thin solid #FFFFFF" />
+                <iframe id="if1" frameborder="0" allowfullscreen="" runat="server" scrolling="no" width="650" height="480" src="/CalendarioCorsi.pdf" />
 
             </div>
             <div class="col col-md-3">

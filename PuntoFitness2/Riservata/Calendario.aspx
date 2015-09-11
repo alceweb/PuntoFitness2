@@ -14,7 +14,7 @@
                 <br />
                 <asp:Label ID="lbl1" runat="server"></asp:Label>
                 <p></p>
-                <iframe id="if1" runat="server" width="330" height="450" style="border: thin solid #FFFFFF" />
+                <iframe id="if1" runat="server" width="450" height="300" scrolling="no" frameborder="0" />
 
             </div>
             <div class="col col-md-4">

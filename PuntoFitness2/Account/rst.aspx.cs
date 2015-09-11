@@ -19,11 +19,17 @@ namespace PuntoFitness2.Account
         // ESEMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
-            return _db.Users.OrderBy(u => u.Email + u.Id);
+            return _db.Users.OrderBy(u => u.Email);
         }
 
+        public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU1()
+        {
+            var utente = ListView1.SelectedValue.ToString();
+            return _db.Users.Where(u => u.Id == utente);
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
         protected async void Button1_Click(object sender, EventArgs e)
         {
@@ -51,5 +57,6 @@ namespace PuntoFitness2.Account
         {
             lblOk.Text = "";
         }
+
     }
 }

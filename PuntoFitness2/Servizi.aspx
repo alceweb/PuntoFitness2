@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-    <h2 > <%: Title %></h2><hr />
+    <h2 class="text-center"> <%: Title %></h2><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="Id" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>
