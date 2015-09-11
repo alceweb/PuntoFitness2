@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="slide Details" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Details.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Details" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "../../Images/Riservata.jpg" %>'/>
+    <img class="imgBody" src='<%: "../../Images/Sfondi/Riservata.jpg" %>'/>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
         <div class="body-page">

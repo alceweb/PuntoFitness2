@@ -18,8 +18,8 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                         <asp:Label ID="Label1" CssClass="verde" runat="server" Text='<%# Eval("DataInizio", "{0:dddd dd-MMM-yyyy}") %>'></asp:Label> - 
-                         <asp:Label ID="Label2" CssClass="rosso" runat="server" Text='<%# Eval("DataFine", "{0:dddd dd-MMM-yyyy}") %>'></asp:Label>
+                         Inizio promo: <asp:Label ID="Label1" CssClass="verde" runat="server" Text='<%# Eval("DataInizio", "{0:dddd dd-MMM-yyyy}") %>'></asp:Label><br />
+                         Fine promo: <asp:Label ID="Label2" CssClass="rosso" runat="server" Text='<%# Eval("DataFine", "{0:dddd dd-MMM-yyyy}") %>'></asp:Label>
                     </div>
                 </div>
                 <!-- Modal -->

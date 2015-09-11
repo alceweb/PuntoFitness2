@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Servizi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Servizi.aspx.cs" Inherits="PuntoFitness2.Servizi" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+    <img class="imgBody" src='<%: "Images/Sfondi/" + Title + ".jpg" %>'/>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

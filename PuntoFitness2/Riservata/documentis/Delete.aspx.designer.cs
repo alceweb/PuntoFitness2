@@ -7,18 +7,9 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Riservata.slides {
+namespace PuntoFitness2.Riservata.documentis {
     
     
-    public partial class EditImg {
-        
-        /// <summary>
-        /// Controllo fv1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView fv1;
+    public partial class Delete {
     }
 }

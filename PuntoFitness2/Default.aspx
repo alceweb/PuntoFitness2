@@ -17,7 +17,7 @@
     <div class="carousel-inner" role="listbox">
         <asp:ListView ID="lvSlide1" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
             <ItemTemplate>
-                <div class="<%# Eval("Classe1") %>">
+                <div style="background-color:aqua" class="<%# Eval("Classe1") %>">
                     <div class="carousel-caption">
                         <h3><%# Eval("Titolo") %></h3>
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("Didascalia") %>'></asp:Label>

@@ -577,6 +577,7 @@
     <Content Include="Content\carousel.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Corsi.aspx" />
+    <Content Include="Documenti\Detail.aspx" />
     <Content Include="Documenti\Main.aspx" />
     <Content Include="DynamicData\FieldTemplates\Boolean.ascx" />
     <Content Include="DynamicData\FieldTemplates\Boolean_Edit.ascx" />
@@ -600,11 +601,6 @@
     <Content Include="FormContattiResponse.aspx" />
     <Content Include="FormPersonalTrainer.aspx" />
     <Content Include="FormPTResponse.aspx" />
-    <Content Include="Images\contatti.jpg" />
-    <Content Include="Images\login.jpg" />
-    <Content Include="Images\Documenti.jpg" />
-    <Content Include="Images\riservata.jpg" />
-    <Content Include="Images\servizi.jpg" />
     <Content Include="Images\corsi1.jpg" />
     <Content Include="Images\faceb.png" />
     <Content Include="Images\lavagna.jpg" />
@@ -617,7 +613,6 @@
     <Content Include="Images\promozioni.jpg" />
     <Content Include="Images\Scritta1.png" />
     <Content Include="Images\ScrittaLogo.png" />
-    <Content Include="Images\corsi.jpg" />
     <Content Include="Images\Servizi1.jpg" />
     <Content Include="Images\step.jpg" />
     <Content Include="Images\twt.png" />
@@ -645,6 +640,8 @@
     <Content Include="Riservata\documentis\Insert.aspx" />
     <Content Include="Riservata\Gestione.aspx" />
     <Content Include="Riservata\GestioneDocumenti.aspx" />
+    <Content Include="Riservata\Pagines\Default.aspx" />
+    <Content Include="Riservata\Pagines\EditImg.aspx" />
     <Content Include="Riservata\promozionis\Default.aspx" />
     <Content Include="Riservata\promozionis\Delete.aspx" />
     <Content Include="Riservata\promozionis\Details.aspx" />
@@ -678,7 +675,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Documenti\1.pdf" />
     <Content Include="Documenti\regolamento.pdf" />
     <None Include="Properties\PublishProfiles\puntifitness2 %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\puntifitness2.pubxml" />
@@ -897,6 +893,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documenti\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Documenti\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -1261,6 +1264,20 @@
     </Compile>
     <Compile Include="Riservata\GestioneDocumenti.aspx.designer.cs">
       <DependentUpon>GestioneDocumenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\Pagines\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\Pagines\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Riservata\Pagines\EditImg.aspx.cs">
+      <DependentUpon>EditImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Riservata\Pagines\EditImg.aspx.designer.cs">
+      <DependentUpon>EditImg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Riservata\promozionis\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

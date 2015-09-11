@@ -24,6 +24,7 @@
                         <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Riservata/attivitas/Default.aspx">Corsi</asp:HyperLink></li>
                         <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Riservata/servizis/Default.aspx">Servizi</asp:HyperLink></li>
                         <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Riservata/slides/Default.aspx">Immagini slide</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Riservata/pagines/Default.aspx">Immagini pagine</asp:HyperLink></li>
                         <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Riservata/Calendario.aspx">Calendario</asp:HyperLink></li>
                         <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/riservata/Documentis/default">Documenti</asp:HyperLink></li>
                    </ul>

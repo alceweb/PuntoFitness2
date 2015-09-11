@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="slideList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="PuntoFitness2.Riservata.slides.Default" %>
 <%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "../../Images/Riservata.jpg" %>'/>
+    <img class="imgBody" src='<%: "../../Images/Sfindi/Riservata.jpg" %>'/>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
          <div class="body-page">

@@ -18,6 +18,7 @@ namespace PuntoFitness2.Riservata
         protected void Page_Load(object sender, EventArgs e)
         {
             string utente = DropDownList1.SelectedValue.ToString();
+            Label1.Text = utente;
             string file = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
             string file1 = "~/Registrati/Documenti/" + utente + "_storico.pdf";
             if (File.Exists(Server.MapPath((file))))
@@ -45,7 +46,7 @@ namespace PuntoFitness2.Riservata
         // ESEMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
-            return _db.Users.OrderBy(u=> u.Email);
+            return _db.Users.OrderBy(u=>u.Email);
         }
 
         protected void Button1_Click(object sender, EventArgs e)

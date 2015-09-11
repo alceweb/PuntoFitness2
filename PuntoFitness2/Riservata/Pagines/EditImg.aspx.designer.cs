@@ -7,7 +7,7 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Riservata.slides {
+namespace PuntoFitness2.Riservata.Pagines {
     
     
     public partial class EditImg {

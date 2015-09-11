@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Dettaglio documento" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Details.aspx.cs" Inherits="PuntoFitness2.Riservata.documentis.Details" %>
-<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "/Images/Sfond1/Riservata.jpg" %>'/>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detail.aspx.cs" Inherits="PuntoFitness2.Documenti.Detail" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "/Images/Sfondi/Riservata.jpg" %>'/>
 </asp:Content>
-<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
         <h2 class="text-center">Dettaglio documento</h2><hr />
              <asp:FormView runat="server" ID="FormView1"
@@ -32,17 +32,10 @@
 									<asp:DynamicControl runat="server" DataField="Nome" ID="Nome" Mode="ReadOnly" />
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-2 text-right">
-									<strong>Descrizione</strong>
-								</div>
-								<div class="col-sm-4">
-									<asp:DynamicControl runat="server" DataField="Descrizione" ID="Descrizione" Mode="ReadOnly" />
-								</div>
-							</div>
 
                         </div>
                         <div class="col col-md-6">
+                <asp:HyperLink ID="hl2" CssClass="btn btn-primary" runat="server" NavigateUrl='<%#"~/Documenti/" + Eval("Id") + ".pdf" %>' Text="Download" Target="_blank"></asp:HyperLink><br />
                                     <iframe id="iframe" runat="server" src='<%#"~/Documenti/" + Eval("Id") + ".pdf" %>' width="300" height="420"  style="border: thin solid #FFFFFF"  />
                         </div>
                     </div>
@@ -56,4 +49,3 @@
         </asp:FormView>
     </div>
 </asp:Content>
-

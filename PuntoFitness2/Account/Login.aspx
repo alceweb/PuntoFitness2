@@ -3,7 +3,7 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "/Images/" + Title + ".jpg" %>' />
+    <img class="imgBody" src='<%: "/Images/Sfondi/" + Title + ".jpg" %>' />
 </asp:Content>
 
 

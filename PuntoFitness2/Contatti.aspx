@@ -2,7 +2,7 @@
 <%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "Images/" + Title + ".jpg" %>'/>
+    <img class="imgBody" src='<%: "Images/Sfondi/" + Title + ".jpg" %>'/>
 </asp:Content>
 
 
