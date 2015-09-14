@@ -11,13 +11,13 @@
         <h2 class="text-center">Benvenuto nell'area di gestione! </h2><hr />
             <div class="row">
                 <div class="col col-md-4">
-                    <h3>Contenuti</h3><hr />
+                    <h3><span class="glyphicon glyphicon-th-list"> </span>Contenuti</h3><hr />
                 </div>
                 <div class="col col-md-4">
-                    <h3>Immagini</h3><hr />
+                    <h3><span class="glyphicon glyphicon-film"> </span>Immagini</h3><hr />
                 </div>
                 <div class="col col-md-4">
-                    <h3>Utenti</h3><hr />
+                    <h3><span class="glyphicon glyphicon-user"> </span>Utenti</h3><hr />
                 </div>
             </div>
             <div class="row">
