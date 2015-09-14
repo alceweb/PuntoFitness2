@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-12">
 					    <asp:HyperLink class="btn btn-fitness" runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/Detail", Item.Id) %>' Text=<%# Eval("Nome") %> />
-                    </div>
+                    <hr /></div>
                 </div>
             </ItemTemplate>
         </asp:ListView>

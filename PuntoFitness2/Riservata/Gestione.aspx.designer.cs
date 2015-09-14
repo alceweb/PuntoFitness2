@@ -40,24 +40,6 @@ namespace PuntoFitness2.Riservata {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
         
         /// <summary>
-        /// Controllo HyperLink4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
-        
-        /// <summary>
-        /// Controllo HyperLink10.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink10;
-        
-        /// <summary>
         /// Controllo HyperLink8.
         /// </summary>
         /// <remarks>
@@ -74,6 +56,42 @@ namespace PuntoFitness2.Riservata {
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
+        
+        /// <summary>
+        /// Controllo HyperLink16.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink16;
+        
+        /// <summary>
+        /// Controllo HyperLink17.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink17;
+        
+        /// <summary>
+        /// Controllo HyperLink18.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink18;
+        
+        /// <summary>
+        /// Controllo HyperLink21.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink21;
         
         /// <summary>
         /// Controllo HyperLink5.

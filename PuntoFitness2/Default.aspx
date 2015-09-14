@@ -138,7 +138,7 @@
                 <br /><br />
                 <a href="CalendarioCorsi.aspx" class="btn btn-info">Calendario corsi</a>
                 <br /><br />
-                <a href="#nogo" class="btn btn-info">Galleria fotografica</a>
+                <a href="PhotoGallery/Main.aspx" class="btn btn-info">Galleria fotografica</a>
             </div>
         </div>
         <hr />

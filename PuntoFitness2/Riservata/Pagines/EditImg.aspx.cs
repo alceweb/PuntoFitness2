@@ -53,7 +53,7 @@ namespace PuntoFitness2.Riservata.Pagines
                 string savePath = saveDir + nomeFile + "." + Estensione;
                 fu1.SaveAs(savePath);
                 // Avvisa dell'avvenuto upload.
-                Label1.Text = "Immagine caricata corretamente.";
+                Response.Redirect("../Default");
             }
             else
             {

@@ -6,7 +6,7 @@
         <div class="body-page">
 		<h2 class="text-center">Modifica immagina sfondo</h2>
         <asp:FormView runat="server" ID="fv1"
-            ItemType="PuntoFitness2.Models.pagine" DefaultMode="Edit" DataKeyNames="Id"
+            ItemType="PuntoFitness2.Models.pagine" DefaultMode="Edit" DataKeyNames="Titolo"
             UpdateMethod="UpdateItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-md-4">
                             <asp:FileUpload ID="fu1" runat="server" /><br />
-                            <asp:Button CssClass="btn btn-success" ID="btnDownload" OnClick="btnDownload_Click" runat="server" Text="Download" /><br />
+                            <asp:Button CssClass="btn btn-success" ID="btnDownload" OnClick="btnDownload_Click" OnClientClick='return confirm("Lo sfondo verrà sostituito! Continuare?")' runat="server" Text="Download" /><br />
                             <asp:Label ID="Label1" runat="server" ></asp:Label>
                         </div>
                         <div class="col-md-6">
@@ -31,7 +31,7 @@
                     </div>             
                     <div class="form-group"><hr />
                         <div class="col-sm-offset-2 col-sm-10">
-							<asp:Button runat="server" ID="CancelButton" CommandName="Cancel" Text="Cancel" CausesValidation="false" CssClass="btn btn-default" />
+							<asp:Button runat="server" ID="CancelButton" CommandName="Cancel" Text="Torna" CausesValidation="false" CssClass="btn btn-default" />
 						</div>
 					</div>
                 </fieldset>

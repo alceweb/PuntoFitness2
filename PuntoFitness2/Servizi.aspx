@@ -5,7 +5,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-    <h2 class="text-center"> <%: Title %></h2><hr />
+    <h2 class="text-center"> <%: Title %></h2>
+                <h3><a href="/Documenti/Main"><span class="glyphicon glyphicon glyphicon-download-alt"></span> Download</a></h3><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="Id" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>

@@ -102,7 +102,6 @@
                                     <li><a runat="server" href="~/Contatti.aspx">Contatti</a></li>
                                     <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
                                     <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
-                                    <li><a runat="server" href="~/Documenti/Main">Download</a>
                                     <li><a runat="server" href="~/Registrati/Main.aspx">Area riservata</a>
 
                                         <ul class="dropdown-menu">
