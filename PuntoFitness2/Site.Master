@@ -78,16 +78,6 @@
                             </button>
                                 <a class="scritta" href="/">PUNTO FITNESS
                                 </a>
-                            <ul  class="nav navbar-nav navbar-right">
-                                <li>
-<%--                                <a runat="server" href="~/">Punt<img src="/Images/logo1Piccolo.png" /> Fitness</a>--%>
-                                </li>
-                                <li>
-                                    <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink>
-                                </li>
-                                <li><asp:HyperLink class="glyphicon glyphicon-home" ID="HL2" Visible="false" runat="server" NavigateUrl="/Registrati/Main.aspx"> Riservata</asp:HyperLink>
-                                </li>
-                            </ul>
                         </div>
                     <div class="navbar-collapse collapse">
                         <ul  class="nav navbar-nav">
@@ -103,7 +93,6 @@
                                     <li><a runat="server" href="~/Servizi.aspx">Servizi</a></li>
                                     <li><a runat="server" href="~/Corsi.aspx">Corsi</a>
                                     <li><a runat="server" href="~/Registrati/Main.aspx">Area riservata</a>
-
                                         <ul class="dropdown-menu">
                                         </ul>
                                     </li>
@@ -123,6 +112,13 @@
                                 </ul>
                             </LoggedInTemplate>
                         </asp:LoginView>
+                            <ul  class="nav navbar-nav">
+                                <li>
+                                    <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink>
+                                </li>
+                                <li><asp:HyperLink class="glyphicon glyphicon-home" ID="HL2" Visible="false" runat="server" NavigateUrl="/Registrati/Main.aspx"> Riservata</asp:HyperLink>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>

@@ -16,24 +16,26 @@ namespace PuntoFitness2.Registrati
             string utente = HttpContext.Current.User.Identity.Name.ToString();
             string file = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
             string file1 = "~/Registrati/Documenti/" + utente + "_storico.pdf";
-            if (File.Exists(Server.MapPath((file))))
-            {
-                if1.Src = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
-                hl1.NavigateUrl = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
-            }
-            else
-            {
-                if1.Src = "~/Registrati/Documenti/scheda.pdf";
-            }
-            if (File.Exists(Server.MapPath(file1)))
-            {
-                if2.Src = "~/Registrati/Documenti/" + utente + "_storico.pdf";
-                hl2.NavigateUrl= "~/Registrati/Documenti/" + utente + "_storico.pdf";
-            }
-            else
-            {
-                if2.Src = "~/Registrati/Documenti/scheda.pdf";
-            }
+            hl1.NavigateUrl = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
+            hl2.NavigateUrl = "~/Registrati/Documenti/" + utente + "_storico.pdf";
+            //if (File.Exists(Server.MapPath((file))))
+            //{
+            //    if1.Src = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
+            //    hl1.NavigateUrl = "~/Registrati/Documenti/" + utente + "_scheda.pdf";
+            //}
+            //else
+            //{
+            //    if1.Src = "~/Registrati/Documenti/scheda.pdf";
+            //}
+            //if (File.Exists(Server.MapPath(file1)))
+            //{
+            //    if2.Src = "~/Registrati/Documenti/" + utente + "_storico.pdf";
+            //    hl2.NavigateUrl= "~/Registrati/Documenti/" + utente + "_storico.pdf";
+            //}
+            //else
+            //{
+            //    if2.Src = "~/Registrati/Documenti/scheda.pdf";
+            //}
         }
 
     }

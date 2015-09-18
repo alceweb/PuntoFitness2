@@ -8,6 +8,9 @@
         <hr />
         <h3></h3>
         <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataR">
+            <EmptyDataTemplate>
+                Al momento non ci sono promo riservate agli iscritti
+            </EmptyDataTemplate>
             <ItemSeparatorTemplate>
 <br />            </ItemSeparatorTemplate>
             <ItemTemplate>

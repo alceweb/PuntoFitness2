@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <title></title>
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
     <script type="text/javascript">
@@ -20,20 +22,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>Mobile Master Page</h1>
+            <div class="text-center">
+        <img src="Images/logo.jpg" />
+        <h3>Questo sito è ottimizzato per la Desktop View </h3>
+        <friendlyUrls:ViewSwitcher runat="server" />
+
+            <asp:Panel ID="Panel1" Visible="false" runat="server">
+
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
         <section class="content-wrapper main-content clear-fix">
-            <asp:Panel ID="Panel1" Visible="false" runat="server">
-            <asp:ContentPlaceHolder ID="SlideshowContent" runat="server">
+            <asp:ContentPlaceHolder Visible="false" ID="SlideshowContent" runat="server">
            </asp:ContentPlaceHolder>
 
-            </asp:Panel>
 
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
-        <friendlyUrls:ViewSwitcher runat="server" />
-    </div>
-    </form>
+            </asp:Panel>
+             </div>
+   </form>
 </body>
 </html>

@@ -22,9 +22,6 @@
                     <thead>
                         <tr>
                             <th>
-								<asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
-							</th>
-                            <th>
 								<asp:LinkButton Text="Nome" CommandName="Sort" CommandArgument="Nome" runat="Server" />
 							</th>
                             <th>
@@ -47,9 +44,6 @@
             </LayoutTemplate>
             <ItemTemplate>
                 <tr>
-							<td>
-								<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
-							</td>
 							<td>
 								<asp:DynamicControl runat="server" DataField="Nome" ID="Nome" Mode="ReadOnly" />
 							</td>

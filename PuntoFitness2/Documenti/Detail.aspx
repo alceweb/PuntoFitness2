@@ -17,19 +17,11 @@
                     <div class="row">
                         <div class="col col-md-6">
 							<div class="row">
-								<div class="col-sm-2 text-right">
-									<strong>Id</strong>
-								</div>
-								<div class="col-sm-4">
-									<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-2 text-right">
-									<strong>Nome</strong>
-								</div>
 								<div class="col-sm-4">
 									<asp:DynamicControl runat="server" DataField="Nome" ID="Nome" Mode="ReadOnly" />
+								</div>
+								<div class="col-sm-6 text-left">
+									<asp:DynamicControl runat="server" DataField="Descrizione" ID="Descrizione" Mode="ReadOnly" />
 								</div>
 							</div>
 

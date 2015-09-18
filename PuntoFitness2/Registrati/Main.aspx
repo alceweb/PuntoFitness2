@@ -6,22 +6,36 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-        <h2>Benvenuto nell'area riservata ai clienti PUNTO FITNESS</h2>
+        <h2 class="text-center">Benvenuto nell'area riservata ai clienti PUNTO FITNESS</h2>
         <hr />
         <div>
-            <h2>Le tue schede</h2>
+            <p>Gli utenti accreditati avranno accesso a promozioni riservate, potranno scaricare la propria scheda di allenamento e documenti messi a disposizione</p>
+            <br />
         </div>
         <div class="row">
-            <div class="col col-md-4 text-center">
-                <asp:HyperLink ID="hl1" runat="server" Text="Download scheda corrente" Target="_blank"></asp:HyperLink><br />
-                <br />
-                <iframe id="if1" runat="server" width="330" height="450"  style="border: thin solid #FFFFFF"  />
+            <div class="col col-md-6 text-center">
+                <h2>Scheda allenamento</h2>
+                <asp:HyperLink ID="hl1" CssClass="btn btn-primary" runat="server" Target="_blank"><h2 class="glyphicon glyphicon-user"> Accedi</h2></asp:HyperLink><br />
+<%--                <br />
+                <iframe id="if1" runat="server" width="330" height="450"  style="border: thin solid #FFFFFF"  />--%>
             </div>
-            <div class="col col-md-4 text-center">
-                <asp:HyperLink ID="hl2" runat="server" Text="Download scheda storico" Target="_blank"></asp:HyperLink><br />
-                <br />
-                <iframe id="if2" runat="server" width="330" height="450" style="border: thin solid #FFFFFF" />
+            <div class="col col-md-6 text-center">
+                <h2>Scheda storico</h2>
+                <asp:HyperLink ID="hl2" CssClass="btn btn-primary" runat="server" Target="_blank"><h2 class="glyphicon glyphicon-user"> Accedi</h2></asp:HyperLink><br />
+<%--                <br />
+                <iframe id="if2" runat="server" width="330" height="450" style="border: thin solid #FFFFFF" />--%>
             </div>
         </div>
+        <div class="row text-center">
+            <div class="col col-md-6">
+                <h2>Area documenti</h2>
+                <a href="../Documenti/Main.aspx" class="btn btn-success"><h2 class="glyphicon glyphicon-user"> Accedi</h2></a>
+            </div>
+            <div class="col col-md-6">
+                <h2>Promo riservate</h2>
+                <a href="../Registrati/PromoReg" class="btn btn-success"><h2 class="glyphicon glyphicon-user"> Accedi</h2></a>
+            </div>
+        </div>
+    <hr />
     </div>
 </asp:Content>

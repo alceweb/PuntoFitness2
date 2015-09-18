@@ -7,7 +7,7 @@
 
         <div class="row text-center">
             <div class="col col-md-12 text-center"><hr />
-                <asp:DropDownList ID="DropDownList1" AutoPostBack="true" DataTextField="Nome" SelectMethod="GetDataU" runat="server" DataValueField="Email">
+                <asp:DropDownList ID="DropDownList1" SelectMethod="GetDataU" DataTextField="Cognome" DataValueField="Email" AutoPostBack="true" runat="server" >
                 </asp:DropDownList><br />
                 <h2><asp:Label ID="Label1" runat="server"></asp:Label></h2>
                 <hr />

@@ -8,7 +8,7 @@
         <h2 class="text-center">Gestione immagini per ModalBox! </h2>
         <h3>Dimensione consigliata 300x150</h3><hr />
 <asp:FileUpload ID="FileUpload1" runat="server" /><br />
-<asp:Button ID="btnUpload" CssClass="btn btn-success" runat="server" Text="Upload" OnClick="UploadFile" />
+<asp:Button ID="btnUpload" CssClass="btn btn-success" runat="server" Text="Upload" OnClick="UploadFile" /><asp:Label ID="Label1" CssClass="red" runat="server" ></asp:Label>
 <hr />
         <div class="row">
         <div id="main">

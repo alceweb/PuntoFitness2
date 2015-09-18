@@ -48,7 +48,7 @@
             <div class="col-md-5">
                 <h2>Info e Orari</h2>
                 <p>
-                    Caravaggio (BG), in viale Papa Giovanni XXIII, 23
+                    Viale Papa Giovanni XXIII, 23 Caravaggio Bg
                 </p>
                 <div class="orario">
                     <span >LUN-VEN: 10:00 - 22:00</span><br />

@@ -22,16 +22,22 @@ namespace PuntoFitness2.PhotoGallery
                 }
                 ListView1.DataSource = files;
                 ListView1.DataBind();
-                //GridView1.DataSource = files;
-                //GridView1.DataBind();
             }
 
         }
         protected void UploadFile(object sender, EventArgs e)
         {
+            if(FileUpload1.HasFile)
+            {
             string fileName = Path.GetFileName(FileUpload1.PostedFile.FileName);
             FileUpload1.PostedFile.SaveAs(Server.MapPath("~/PhotoGallery/modalbox/") + fileName);
             Response.Redirect(Request.Url.AbsoluteUri);
+                Label1.Text = "";
+            }
+            else
+            {
+                Label1.Text = "Nessun file selezionato";
+            }
         }
 
 

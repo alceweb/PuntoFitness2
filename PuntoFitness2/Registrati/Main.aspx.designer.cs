@@ -22,15 +22,6 @@ namespace PuntoFitness2.Registrati {
         protected global::System.Web.UI.WebControls.HyperLink hl1;
         
         /// <summary>
-        /// Controllo if1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe if1;
-        
-        /// <summary>
         /// Controllo hl2.
         /// </summary>
         /// <remarks>
@@ -38,14 +29,5 @@ namespace PuntoFitness2.Registrati {
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink hl2;
-        
-        /// <summary>
-        /// Controllo if2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe if2;
     }
 }

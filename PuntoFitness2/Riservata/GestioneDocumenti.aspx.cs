@@ -46,7 +46,7 @@ namespace PuntoFitness2.Riservata
         // ESEMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
-            return _db.Users.OrderBy(u=>u.Email);
+            return _db.Users.OrderBy(u=>u.Cognome);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
