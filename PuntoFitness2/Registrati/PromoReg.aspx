@@ -4,7 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-        <h2>Tutte le promo riservate solo agli utenti registrati</h2>
+        <div class="row">
+            <div class="col col-md-6 text-right">
+            <h2>Tutte le promo riservate solo agli utenti registrati</h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="/Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
         <hr />
         <h3></h3>
         <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataR">
