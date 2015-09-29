@@ -10,8 +10,14 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <div class="body-page">
-        <h2 class="text-center">Area riservata</h2>
-
+        <div class="row">
+            <div class="col col-md-6 text-right">
+            <h2>Area riservata</h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="/Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <section id="loginForm">
@@ -60,7 +66,7 @@
                         --%>
                     </p>
                     <p>Hai perso la password?</p>
-                    <p>Chiedi in palestra di resettare il tuo utente</p>
+                    <p>Chiedine una nuova in palestra</p>
                     <p></p>
                 </section>
             </div>
@@ -71,7 +77,7 @@
             </section>--%>
                 <hr />
                 <h4>L'accesso è riservato solo agli iscritti alla palestra. Chiedi nome utente e password a Giorgio in palestra.</h4>
-                <br /><br /><p>Gli utenti accreditati avranno accesso alle promozioni riservate agli iscritti, potranno scaricare la propria scheda di preparazione e i documenti messi a disposizione.</p>
+                <br /><br /><p>Gli utenti accreditati avranno accesso a promozioni riservate, potranno scaricare la propria scheda di allenamento e documenti messi a disposizione</p>
 
         </div>
     </div>

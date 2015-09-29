@@ -579,6 +579,7 @@
     <Content Include="Content\images\controls.png" />
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\Site.css" />
+    <Content Include="CookiesInfo.aspx" />
     <Content Include="Corsi.aspx" />
     <Content Include="Documenti\Detail.aspx" />
     <Content Include="Documenti\Main.aspx" />
@@ -891,6 +892,13 @@
     </Compile>
     <Compile Include="Contatti.aspx.designer.cs">
       <DependentUpon>Contatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CookiesInfo.aspx.cs">
+      <DependentUpon>CookiesInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CookiesInfo.aspx.designer.cs">
+      <DependentUpon>CookiesInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Corsi.aspx.cs">
       <DependentUpon>Corsi.aspx</DependentUpon>

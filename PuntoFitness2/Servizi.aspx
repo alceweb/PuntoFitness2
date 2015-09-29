@@ -5,7 +5,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-    <h2 class="text-center"> <%: Title %></h2>
+        <div class="row">
+            <div class="col col-md-6 text-right">
+            <h2><%: Title %></h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
                 <h3><a href="/Documenti/Main"><span class="glyphicon glyphicon glyphicon-download-alt"></span> Download</a></h3><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="Id" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>

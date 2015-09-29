@@ -8,12 +8,20 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
+        <div class="row">
+            <div class="col col-md-6 text-right">
             <h2><%: Title %></h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
             <hr />
         <div class="row">
             <div class="col-md-5 bianco">
                 <address>
                     Punto Fitness<br />
+                    Viale Papa Giovanni XXIII, 23 <br />
                     24043 Caravaggio BG<br />
                     <abbr title="Phone">Tel:</abbr>
                     0363 54040<br />

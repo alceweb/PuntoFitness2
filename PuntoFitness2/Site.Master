@@ -123,7 +123,21 @@
                 </div>
             </div>
         </div>
-        <asp:ContentPlaceHolder ID="SlideshowContent" runat="server">
+         <asp:Panel ID="PnlCookie" runat="server">
+            <div class="divCook">
+               <span>
+                Questo sito utilizza cookie di profilazione, propri o di altri.<br />
+                Se accedi a un qualunque elemento del sito acconsenti all'uso del cookie. 
+                 Se vuoi saperne di più o negare il consenso a tutti o alcuni cookie clicca <a href="CookiesInfo.aspx" runat="server" id="Cookies">qui</a>.
+               </span><br /><br />
+                <div style="text-align:center">
+                <asp:Button ID="CookieButton" runat="server" OnClick="CookieButton_Click" Text="Acconsenti"></asp:Button>
+
+                </div>
+            </div>
+
+        </asp:Panel>
+       <asp:ContentPlaceHolder ID="SlideshowContent" runat="server">
            </asp:ContentPlaceHolder>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

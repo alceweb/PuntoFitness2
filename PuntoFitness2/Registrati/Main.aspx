@@ -6,10 +6,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-        <h2 class="text-center">Benvenuto nell'area riservata ai clienti PUNTO FITNESS</h2>
+        <div class="row">
+            <div class="col col-md-10 text-right">
+            <h2>Benvenuto nell'area riservata ai clienti PUNTO FITNESS</h2>
+            </div>
+            <div class="col col-md-2 text-right">
+                <a href="/Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
         <hr />
         <div>
-            <p>Gli utenti accreditati avranno accesso a promozioni riservate, potranno scaricare la propria scheda di allenamento e documenti messi a disposizione</p>
+            <p class="text-center">Gli utenti accreditati avranno accesso a promozioni riservate, potranno scaricare la propria scheda di allenamento e documenti messi a disposizione</p>
             <br />
         </div>
         <div class="row">

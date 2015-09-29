@@ -5,7 +5,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
             <div  class="body-page">
-            <h2 class="text-center"><%: Title %></h2>
+        <div class="row">
+            <div class="col col-md-6 text-right">
+            <h2><%: Title %></h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
                 <a href="CalendarioCorsi.aspx"><h3><span class="glyphicon glyphicon-calendar"></span> Calendario</h3></a><hr />
                     <asp:ListView ID="ListView3" runat="server" SelectMethod="GetDataA">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>

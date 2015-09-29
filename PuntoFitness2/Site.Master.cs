@@ -94,10 +94,25 @@ namespace PuntoFitness2
                 HL2.Visible = false;
                 HL1.Visible = false;
             }
+            if (Request.Cookies["civis"] != null)
+            {
+                PnlCookie.Visible = false;
+            }
         }
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut();
+        }
+
+        protected void CookieButton_Click(object sender, EventArgs e)
+        {
+            HttpCookie myCookie = new HttpCookie("civis");
+            myCookie["Accettato"] = "Cookies accettati";
+            myCookie["Data"] = DateTime.Now.ToString();
+            myCookie.Expires = DateTime.Now.AddDays(180d);
+            Response.Cookies.Add(myCookie);
+            PnlCookie.Visible = false;
+
         }
     }
 
