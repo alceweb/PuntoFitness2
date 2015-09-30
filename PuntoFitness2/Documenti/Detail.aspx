@@ -4,7 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
-        <h2 class="text-center">Dettaglio documento</h2><hr />
+        <div class="row">
+            <div class="col col-md-6 text-right">
+        <h2>Dettaglio documento</h2>
+            </div>
+            <div class="col col-md-6 text-right">
+                <a href="/Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div><hr />
              <asp:FormView runat="server" ID="FormView1"
             ItemType="PuntoFitness2.Models.documenti" DataKeyNames="Id"
             SelectMethod="GetItem" 

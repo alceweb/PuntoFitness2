@@ -109,6 +109,41 @@ background-color: rgba(0,0,0,0.7);
 .img-slide-small {
     height:150px;
 }
+.divCook {
+    border-width: 0.7px;
+    border-color: rgba(248, 246, 246, 0.84);
+    width: 200px;
+    border-radius: 0px 0px 15px 15px;
+    text-align: justify;
+    background-color: rgba(5, 5, 5, 0.69);
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    -webkit-animation-name: cook; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: cook;
+    animation-duration: 3s;
+    animation-direction: normal;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    top:85px;
+    left:20px;
+    z-index:99999;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes cook {
+    0%   {left:50%; top:50%;}
+    100% {left:0px; top:85px;}
+}
+
+/* Standard syntax */
+@keyframes cook {
+    0%   {left:50%; top:50%;}
+    100% {left:20px; top:85px;}
+}    
+
+
 @media (max-width:768px) {
     .scritta{
         font-size:1.8em;

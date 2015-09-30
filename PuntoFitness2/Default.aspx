@@ -47,10 +47,12 @@
         <div class="row">
             <div class="col-md-5">
                 <h2>Info e Orari</h2>
-                <p>
-                    Viale Papa Giovanni XXIII, 23 Caravaggio Bg
-                </p>
-                <div class="orario">
+                <h3>
+                    <em>Viale Papa Giovanni XXIII, 23 Caravaggio Bg</em></h3>
+                <p>Tel. 0363-54040</p>
+                    
+                
+                <div >
                     <span >LUN-VEN: 10:00 - 22:00</span><br />
                     <span >SAB: 14:30 - 17:30</span>
                 </div>
