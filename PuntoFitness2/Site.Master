@@ -123,7 +123,6 @@
                 </div>
             </div>
         </div>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
          <asp:Panel ID="PnlCookie" runat="server">
             <div class="divCook">
                <span>
@@ -132,7 +131,7 @@
                  Se vuoi saperne di più o negare il consenso a tutti o alcuni cookie clicca <a href="CookiesInfo.aspx" runat="server" id="Cookies">qui</a>.
                </span><br /><br />
                 <div style="text-align:center">
-                <asp:Button CssClass="btn btn-success" ID="CookieButton" runat="server" OnClick="CookieButton_Click" Text="Acconsenti"></asp:Button>
+                <asp:Button ID="CookieButton" runat="server" OnClick="CookieButton_Click" Text="Acconsenti"></asp:Button>
 
                 </div>
             </div>

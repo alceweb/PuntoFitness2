@@ -112,6 +112,7 @@ namespace PuntoFitness2
             myCookie.Expires = DateTime.Now.AddDays(180d);
             Response.Cookies.Add(myCookie);
             PnlCookie.Visible = false;
+
         }
     }
 
