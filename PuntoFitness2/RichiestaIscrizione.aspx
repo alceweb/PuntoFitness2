@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="Richiesta registrazione" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RichiestaIscrizione.aspx.cs" Inherits="PuntoFitness2.RichiestaIscrizione" %>
+<%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
     <img class="imgBody" src='<%: "/Images/Sfondi/Riservata.jpg" %>'/>
 </asp:Content>
@@ -56,15 +58,18 @@
                        </div>
                     </div>
                     <div class="form-group">
+                           <cc1:Recaptcha ID="Recaptcha1" Theme="Blackglass" runat="server" />
+                       </div>
+                    <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                         </div>
                     </div>
                 </div><hr />
-                <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Text="Invia iscrizione" OnClick="Button1_Click"></asp:Button>
+                <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Invia richiesta iscrizione" OnClick="Button1_Click"></asp:Button>
 
             </div>
             <div class="col col-md-3">
-                <p>Compilando qesto modulo fai riciesta di registrazione come nuovo utente alla palestra <strong>Punto Finness</strong></p>
+                <p>Compilando questo modulo fai richiesta di registrazione come nuovo utente alla palestra <span class="rosso">"PUNTO FITNESS"</span></p>
                                         Registrandoti potrai utilizzare tutti i vantaggi riservati agli iscritti<br /><br />
                     <ul>
                         <li>Accesso alle promozioni stagionali</li>

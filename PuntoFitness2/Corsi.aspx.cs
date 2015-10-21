@@ -45,9 +45,9 @@ namespace PuntoFitness2
                     mMailMessage.From = new MailAddress(from);
                     //Aggiungo il destinatario 
                     mMailMessage.To.Add(new MailAddress(to));
-                    //mMailMessage.To.Add(new MailAddress("palestra@puntofitnesscaravaggio.it"));
-                    //L'oggetto 
-                    mMailMessage.Subject = "Richiesta iscrizione corso";
+                mMailMessage.To.Add(new MailAddress("palestra@puntofitnesscaravaggio.it"));
+                //L'oggetto 
+                mMailMessage.Subject = "Richiesta iscrizione corso";
                     //Il corpo 
                     mMailMessage.Body = "www.puntofitnesscaravaggio.it <strong> <br/>" + DateTime.Now.ToLongDateString() + "</strong><h2>" + txtMailI.Text + "</h2><h3>Ha fatto " + lblNomeI.Text + "</h3>";
                     //Setto la modalità testo, per il contenuto del messaggio. Sarebbe possibile inviare anche dell'HTML mettendo true 

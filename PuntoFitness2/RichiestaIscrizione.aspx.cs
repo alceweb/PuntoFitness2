@@ -25,7 +25,7 @@ namespace PuntoFitness2
             mMailMessage.From = new MailAddress(from);
             //Aggiungo il destinatario 
             mMailMessage.To.Add(new MailAddress(to));
-            //mMailMessage.To.Add(new MailAddress("palestra@puntofitnesscaravaggio.it"));
+            mMailMessage.To.Add(new MailAddress("palestra@puntofitnesscaravaggio.it"));
             //L'oggetto 
             mMailMessage.Subject = "Richiesta iscrizione corso";
             //Il corpo 
