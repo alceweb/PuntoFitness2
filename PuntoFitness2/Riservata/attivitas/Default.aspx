@@ -21,14 +21,14 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>
-                                    <asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
+                                <th class="text-center">
+                                    Immagine
                                 </th>
                                 <th>
                                     <asp:LinkButton Text="Nome" CommandName="Sort" CommandArgument="Nome" runat="Server" />
                                 </th>
                                 <th>
-                                    <asp:LinkButton Text="Descrizione" CommandName="Sort" CommandArgument="Descrizione" runat="Server" />
+                                    <asp:LinkButton Text="Orari" CommandName="Sort" CommandArgument="Orari" runat="Server" />
                                 </th>
                                 <th>
                                     <asp:LinkButton Text="Attivo" CommandName="Sort" CommandArgument="Attivo" runat="Server" />
@@ -50,23 +50,21 @@
                 </LayoutTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td>
-                            <asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
+                        <td class="text-center">
+                            <img class="img-circle img-lista" src='<%#"/Images/c" + Eval("iD") + ".jpg"%>' />
                         </td>
                         <td>
                             <asp:DynamicControl runat="server" DataField="Nome" ID="Nome" Mode="ReadOnly" />
                         </td>
                         <td>
-                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Descrizione") %>'></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Orari") %>'></asp:Label>
                         </td>
                         <td>
                             <asp:DynamicControl runat="server" DataField="Attivo" ID="Attivo" Mode="ReadOnly" />
                         </td>
                         <td>
-                            <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/attivitas/Details", Item.Id) %>' Text="Details" />
-                            | 
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/attivitas/Edit", Item.Id) %>' Text="Edit" />
-                            | 
+                            <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/attivitas/Details", Item.Id) %>' Text="Details" /><br />
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/attivitas/Edit", Item.Id) %>' Text="Edit" /><br />
                         <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Riservata/attivitas/Delete", Item.Id) %>' Text="Delete" />
                         </td>
                     </tr>

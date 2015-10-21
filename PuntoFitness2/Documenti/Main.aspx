@@ -21,13 +21,12 @@
             <EmptyDataTemplate>
                 Nessun docunmento disponibile
             </EmptyDataTemplate>
-            <ItemSeparatorTemplate><br /></ItemSeparatorTemplate>
+            <ItemSeparatorTemplate></ItemSeparatorTemplate>
             <ItemTemplate>
-                <div class="row">
-                    <div class="col-md-12">
-					    <asp:HyperLink class="btn btn-fitness" runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/Detail", Item.Id) %>' Text=<%# Eval("Nome") %> />
-                    <hr /></div>
-                </div>
+                <ul>
+                    <li>
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/", Item.Id + ".pdf") %>' Text=<%# Eval("Descrizione") %> Target="_blank" />
+                </ul>
             </ItemTemplate>
         </asp:ListView>
     </div>

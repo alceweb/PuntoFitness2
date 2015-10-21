@@ -13,14 +13,17 @@
                 <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
             </div>
         </div>
-                <h3><a href="/Documenti/Main"><span class="glyphicon glyphicon glyphicon-download-alt"></span> Download</a></h3><hr />
+                <a href="/Documenti/Main"><h2><span class="glyphicon glyphicon-share-alt"></span> Download</h2></a><hr />
                     <asp:ListView ID="ListView2" DataKeyNames="Id" runat="server" SelectMethod="GetDataS">
                     <ItemSeparatorTemplate><hr /></ItemSeparatorTemplate>
                     <ItemTemplate>
                                 <!-- Link trigger modal -->
                                 <div class="row">
-                                    <div class="col-md-4" >
-                                        <a href="#" class="btn btn-fitness" data-toggle="modal" data-target= '<%# "#SModal" + Eval("Id") %>'><%# Eval("Titolo") %></a>
+                                    <div class="col-md-2 text-center" >
+                                        <a data-toggle="modal" data-target= '<%# "#SModal" + Eval("Id") %>'><img class="img-circle img-lista" src='<%#"Images/s" + Eval("iD") + ".jpg"%>' /></a>
+                                    </div>
+                                    <div class="col-md-10" >
+                                        <a data-toggle="modal" data-target= '<%# "#SModal" + Eval("Id") %>'><h2><%# Eval("Titolo") %></h2></a>
                                     </div>
                                 </div>
                                     <!-- Modal -->

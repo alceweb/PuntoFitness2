@@ -38,6 +38,7 @@ namespace PuntoFitness2.Models
         public string Nome { get; set; }
         public string Descrizione { get; set; }
         public bool Attivo { get; set; }
+        public string Orari { get; set; }
     }
     public class promozioni
     {
@@ -74,6 +75,8 @@ namespace PuntoFitness2.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Descrizione { get; set; }
+        public bool Riservata { get; set; }
+        public bool Attivo { get; set; }
     }
     public class pagine
     {

@@ -7,6 +7,7 @@
         <div class="body-page">
 		<p>&nbsp;</p>
         <asp:FormView runat="server"
+            id="fw1"
             ItemType="PuntoFitness2.Models.attivita" DefaultMode="Edit" DataKeyNames="Id"
             UpdateMethod="UpdateItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
@@ -15,12 +16,30 @@
             </EmptyDataTemplate>
             <EditItemTemplate>
                 <fieldset class="form-horizontal">
-                    <legend>Edit attivita</legend>
-					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
+                    <legend>Modifica corso</legend>
+                    <div class="row">
+                        <div class="col col-md-8">
+					        <asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="Nome" runat="server" />
-                            <CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Descrizione") %>' BasePath="/ckeditor/" runat="server"></CKEditor:CKEditorControl>
+                            Orari:
+                            <CKEditor:CKEditorControl ID="CKEditor2" Text='<%# Bind("Orari") %>' BasePath="/ckeditor/" runat="server" AutoPostBack="False" CustomConfig="config1.js"></CKEditor:CKEditorControl><br />
+                            Descrizione:<CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Descrizione") %>' BasePath="/ckeditor/" runat="server"></CKEditor:CKEditorControl>
 						    <asp:DynamicControl Mode="Edit" DataField="Attivo" runat="server" />
-                    <div class="form-group">
+                        </div>
+                        <div class="col col-md-4 text-center">
+                                <h4 >Modifica immagine</h4><hr />
+                            <h5 class="text-left"><strong>Caratteristica immagine:</strong></h5>
+                            <ul class="text-left">
+                                <li>Dimensione in pixel 100x100</li>
+                                <li>formato jpg</li>
+                            </ul>
+                            <hr />
+                            <asp:FileUpload ID="fu1" runat="server" /><br /><br />
+                            <asp:Image ID="img1" CssClass="img-circle img-lista" runat="server" ImageUrl='<%#"/Images/c" + Eval("Id") + ".jpg"%>' />
+
+                        </div>
+                    </div>
+                    <div class="form-group"><hr />
                         <div class="col-sm-offset-2 col-sm-10">
 							<asp:Button runat="server" ID="UpdateButton" CommandName="Update" Text="Update" CssClass="btn btn-primary" />
 							<asp:Button runat="server" ID="CancelButton" CommandName="Cancel" Text="Cancel" CausesValidation="false" CssClass="btn btn-default" />

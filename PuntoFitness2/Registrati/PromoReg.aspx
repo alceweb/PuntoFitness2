@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="riservata" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PromoReg.aspx.cs" Inherits="PuntoFitness2.Registrati.PromoReg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "/Images/" + Title + ".jpg" %>'/>
+    <img class="imgBody" src='<%: "/Images/sfondi/" + Title + ".jpg" %>'/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
@@ -19,7 +19,8 @@
                 Al momento non ci sono promo riservate agli iscritti
             </EmptyDataTemplate>
             <ItemSeparatorTemplate>
-<br />            </ItemSeparatorTemplate>
+                <hr />
+            </ItemSeparatorTemplate>
             <ItemTemplate>
                 <!-- Link trigger modal -->
                 <div class="row">
@@ -52,6 +53,7 @@
                 </div>
             </ItemTemplate>
         </asp:ListView>
+        <hr />
     </div>
 
 </asp:Content>

@@ -1,9 +1,12 @@
-﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="PuntoFitness2.Account.ManagePassword" %>
+﻿<%@ Page Title="Cambia password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="PuntoFitness2.Account.ManagePassword" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="SlideshowContent" runat="server">
+    <img class="imgBody" src='<%: "/Images/Sfondi/Riservata.jpg" %>'/>
+</asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
          <div class="body-page">
 
-       <h2><%: Title %>.</h2>
+       <h2><%: Title %></h2>
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
@@ -50,11 +53,10 @@
 
             <asp:PlaceHolder runat="server" ID="changePasswordHolder" Visible="false">
                 <div class="form-horizontal">
-                    <h4>Change Password Form</h4>
                     <hr />
                     <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
                     <div class="form-group">
-                        <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword" CssClass="col-md-2 control-label">Current password</asp:Label>
+                        <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword" CssClass="col-md-2 control-label">Password corrente</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="CurrentPassword" TextMode="Password" CssClass="form-control" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="CurrentPassword"
@@ -63,7 +65,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword" CssClass="col-md-2 control-label">New password</asp:Label>
+                        <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword" CssClass="col-md-2 control-label">Nuova password</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="NewPassword" TextMode="Password" CssClass="form-control" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="NewPassword"
@@ -72,7 +74,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword" CssClass="col-md-2 control-label">Confirm new password</asp:Label>
+                        <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword" CssClass="col-md-2 control-label">Conferma password</asp:Label>
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="ConfirmNewPassword" TextMode="Password" CssClass="form-control" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmNewPassword"
@@ -85,7 +87,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <asp:Button runat="server" Text="Change Password" ValidationGroup="ChangePassword" OnClick="ChangePassword_Click" CssClass="btn btn-default" />
+                            <asp:Button runat="server" Text="Cambia Password" ValidationGroup="ChangePassword" OnClick="ChangePassword_Click" CssClass="btn btn-default" />
                         </div>
                     </div>
                 </div>

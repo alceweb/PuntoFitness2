@@ -19,7 +19,7 @@
                         <thead>
                             <tr>
                                 <th>
-                                    <asp:LinkButton Text="DataIscrizione" CommandName="Sort" CommandArgument="DataIscrizione" runat="Server" />
+                                    <asp:LinkButton Text="Email" CommandName="Sort" CommandArgument="Email" runat="Server" />
                                 </th>
                                 <th>
                                     <asp:LinkButton Text="Nome" CommandName="Sort" CommandArgument="Nome" runat="Server" />
@@ -46,7 +46,7 @@
                 <ItemTemplate>
                     <tr>
                         <td>
-                            <asp:DynamicControl runat="server" DataField="Email" ID="Email" Mode="ReadOnly" />
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "mailto:" + Eval("Email") %>'><%# Eval("Email") %></asp:HyperLink>
                         </td>
                         <td>
                             <asp:DynamicControl runat="server" DataField="Nome" ID="Nome" Mode="ReadOnly" />

@@ -39,6 +39,17 @@ namespace PuntoFitness2.Riservata.attivitas
                 if (ModelState.IsValid)
                 {
                     // Save changes here
+                    FileUpload fu1 = fw1.FindControl("fu1") as FileUpload;
+                    string saveDir = Server.MapPath("~/Images/");
+                    string nomeFile = "c" + Id.ToString();
+                    if (fu1.HasFile)
+                    {
+                        //Recupero l'estensione del file
+                        string Estensione = System.IO.Path.GetExtension(fu1.PostedFile.FileName).Substring(1);
+                        //Imposto il nuovo path completo del file
+                        string savePath = saveDir + nomeFile + "." + Estensione;
+                        fu1.SaveAs(savePath);
+                    }
                     _db.SaveChanges();
                     Response.Redirect("../Default");
                 }
@@ -67,5 +78,6 @@ namespace PuntoFitness2.Riservata.attivitas
                 Response.Redirect("../Default");
             }
         }
+
     }
 }

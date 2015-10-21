@@ -23,6 +23,14 @@
 								<div class="col-sm-4">
 									<asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
 								</div>
+                                </div>
+                            <div class="row">
+								<div class="col-sm-2 text-right">
+									<strong>Riservata</strong>
+								</div>
+								<div class="col-sm-4">
+									<asp:DynamicControl runat="server" DataField="Riservata" ID="Riservata" Mode="ReadOnly" />
+								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-2 text-right">

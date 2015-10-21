@@ -7,9 +7,9 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace PuntoFitness2.Riservata.attivitas {
+namespace PuntoFitness2.Riservata.documentis {
     
     
-    public partial class Details {
+    public partial class Insert {
     }
 }

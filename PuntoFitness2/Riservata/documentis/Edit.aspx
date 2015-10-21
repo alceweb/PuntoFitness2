@@ -20,6 +20,7 @@
 					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="Nome" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Descrizione" runat="server" />
+						    <asp:DynamicControl Mode="Edit" DataField="Riservata" runat="server" /><hr />
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
 							<asp:Button runat="server" ID="UpdateButton" CommandName="Update" Text="Update" CssClass="btn btn-primary" />

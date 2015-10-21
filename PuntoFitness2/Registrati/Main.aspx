@@ -36,7 +36,7 @@
         <div class="row text-center">
             <div class="col col-md-6">
                 <h2>Area documenti</h2>
-                <a href="../Documenti/Main.aspx" class="btn btn-success"><h2 class="glyphicon glyphicon-user"> Accedi</h2></a>
+                <a href="../Registrati/DocRis" class="btn btn-success"><h2 class="glyphicon glyphicon-user"> Accedi</h2></a>
             </div>
             <div class="col col-md-6">
                 <h2>Promo riservate</h2>

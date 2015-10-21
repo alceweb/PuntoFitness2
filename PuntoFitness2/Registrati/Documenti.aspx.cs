@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PuntoFitness2.Documenti
+namespace PuntoFitness2.Registrati
 {
-    public partial class Main : System.Web.UI.Page
+    public partial class Documenti : System.Web.UI.Page
     {
         protected PuntoFitness2.Models.ApplicationDbContext _db = new PuntoFitness2.Models.ApplicationDbContext();
         protected void Page_Load(object sender, EventArgs e)
@@ -15,10 +15,14 @@ namespace PuntoFitness2.Documenti
 
         }
         // Model binding method to get List of documenti entries
-        // USAGE: <asp:ListView SelectMethod="GetData">
+        // USAGE: <asp:ListView SelectMethod="GetDataR">
         public IQueryable<PuntoFitness2.Models.documenti> GetData()
         {
-            return _db.documentis.Where(r => r.Riservata != true);
+            return _db.documentis;
+        }
+        public IQueryable<PuntoFitness2.Models.documenti> GetDataR()
+        {
+            return _db.documentis.Where(r => r.Riservata == true);
         }
     }
 }

@@ -229,6 +229,7 @@
     <Content Include="ckeditor\build-config.js" />
     <Content Include="ckeditor\ckeditor.js" />
     <Content Include="ckeditor\config.js" />
+    <Content Include="ckeditor\config1.js" />
     <Content Include="ckeditor\contents.css" />
     <Content Include="ckeditor\lang\af.js" />
     <Content Include="ckeditor\lang\ar.js" />
@@ -574,6 +575,7 @@
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\carousel.css" />
     <Content Include="Content\colorbox.css" />
     <Content Include="Content\images\controls.png" />
@@ -603,23 +605,14 @@
     <Content Include="DynamicData\FieldTemplates\Url_Edit.ascx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="FormContattiResponse.aspx" />
+    <Content Include="FormIscrizioneCorsoResponse.aspx" />
     <Content Include="FormPersonalTrainer.aspx" />
     <Content Include="FormPTResponse.aspx" />
-    <Content Include="Images\corsi1.jpg" />
-    <Content Include="Images\faceb.png" />
-    <Content Include="Images\lavagna.jpg" />
-    <Content Include="Images\lkd.png" />
-    <Content Include="Images\logo.jpg" />
-    <Content Include="Images\logo.png" />
+    <Content Include="FormRegistrazioneResponse.aspx" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Images\Logo1Piccolo.png" />
-    <Content Include="Images\logo_trasp.png" />
-    <Content Include="Images\promo.jpg" />
-    <Content Include="Images\promozioni.jpg" />
-    <Content Include="Images\Scritta1.png" />
-    <Content Include="Images\ScrittaLogo.png" />
-    <Content Include="Images\Servizi1.jpg" />
-    <Content Include="Images\step.jpg" />
-    <Content Include="Images\twt.png" />
+    <Content Include="Images\LogoPiccolo.jpg" />
+    <Content Include="NotLogged.aspx" />
     <Content Include="packages.config" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config" />
@@ -628,8 +621,11 @@
     <Content Include="PhotoGallery\test.aspx" />
     <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="Registrati\ContentDoc.aspx" />
+    <Content Include="Registrati\DocRis.aspx" />
+    <Content Include="Registrati\Documenti.aspx" />
     <Content Include="Registrati\Main.aspx" />
     <Content Include="Registrati\PromoReg.aspx" />
+    <Content Include="RichiestaIscrizione.aspx" />
     <Content Include="Riservata\Anagraficas\Anagrafica.aspx" />
     <Content Include="Riservata\Anagraficas\Edit.aspx" />
     <Content Include="Riservata\Anagraficas\RstPsw.aspx" />
@@ -693,6 +689,7 @@
     <Content Include="Registrati\Documenti\scheda.pdf" />
     <Content Include="Registrati\Documenti\palestra%40puntofitnesscaravaggio.it_storico.pdf" />
     <Content Include="Registrati\Documenti\palestra%40puntofitnesscaravaggio.it_scheda.pdf" />
+    <Content Include="Registrati\Documenti\regolamento.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.js" />
     <Content Include="Scripts\ai.0.15.0-build32981.min.js" />
@@ -1061,6 +1058,13 @@
     <Compile Include="FormContattiResponse.aspx.designer.cs">
       <DependentUpon>FormContattiResponse.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormIscrizioneCorsoResponse.aspx.cs">
+      <DependentUpon>FormIscrizioneCorsoResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormIscrizioneCorsoResponse.aspx.designer.cs">
+      <DependentUpon>FormIscrizioneCorsoResponse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormPersonalTrainer.aspx.cs">
       <DependentUpon>FormPersonalTrainer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1074,6 +1078,13 @@
     </Compile>
     <Compile Include="FormPTResponse.aspx.designer.cs">
       <DependentUpon>FormPTResponse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrazioneResponse.aspx.cs">
+      <DependentUpon>FormRegistrazioneResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormRegistrazioneResponse.aspx.designer.cs">
+      <DependentUpon>FormRegistrazioneResponse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1142,8 +1153,23 @@
     <Compile Include="Migrations\201509100954495_pagine.Designer.cs">
       <DependentUpon>201509100954495_pagine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510081552282_orari.cs" />
+    <Compile Include="Migrations\201510081552282_orari.Designer.cs">
+      <DependentUpon>201510081552282_orari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510201223310_documentiRiservata.cs" />
+    <Compile Include="Migrations\201510201223310_documentiRiservata.Designer.cs">
+      <DependentUpon>201510201223310_documentiRiservata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="NotLogged.aspx.cs">
+      <DependentUpon>NotLogged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotLogged.aspx.designer.cs">
+      <DependentUpon>NotLogged.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PhotoGallery\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1173,6 +1199,20 @@
     <Compile Include="Registrati\ContentDoc.aspx.designer.cs">
       <DependentUpon>ContentDoc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registrati\DocRis.aspx.cs">
+      <DependentUpon>DocRis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrati\DocRis.aspx.designer.cs">
+      <DependentUpon>DocRis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrati\Documenti.aspx.cs">
+      <DependentUpon>Documenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrati\Documenti.aspx.designer.cs">
+      <DependentUpon>Documenti.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registrati\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1186,6 +1226,13 @@
     </Compile>
     <Compile Include="Registrati\PromoReg.aspx.designer.cs">
       <DependentUpon>PromoReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RichiestaIscrizione.aspx.cs">
+      <DependentUpon>RichiestaIscrizione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichiestaIscrizione.aspx.designer.cs">
+      <DependentUpon>RichiestaIscrizione.aspx</DependentUpon>
     </Compile>
     <Compile Include="Riservata\Anagraficas\Anagrafica.aspx.cs">
       <DependentUpon>Anagrafica.aspx</DependentUpon>
@@ -1542,6 +1589,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201509100954495_pagine.resx">
       <DependentUpon>201509100954495_pagine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510081552282_orari.resx">
+      <DependentUpon>201510081552282_orari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510201223310_documentiRiservata.resx">
+      <DependentUpon>201510201223310_documentiRiservata.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

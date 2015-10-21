@@ -101,8 +101,9 @@
                             </AnonymousTemplate>
                             <LoggedInTemplate>
                                 <ul class="navbar-right">
-                                    <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a>
-                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <li><a runat="server" href="~/Account/Manage" title="Modifica password">Ciao, <%: Context.User.Identity.GetUserName()  %> !</a>
+                                        <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /><br />
+                                        <a runat="server" class="glyphicon glyphicon-tags" href="~/Account/Manage" title="Modifica password"> Modifica password</a>
                                     </li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
