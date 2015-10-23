@@ -132,7 +132,7 @@
                  Se vuoi saperne di più o negare il consenso a tutti o alcuni cookie clicca <a href="CookiesInfo.aspx" runat="server" id="Cookies">qui</a>.
                </span><br /><br />
                 <div style="text-align:center">
-                <asp:Button ID="CookieButton" runat="server" OnClick="CookieButton_Click" Text="Acconsenti"></asp:Button>
+                <asp:Button ID="CookieButton" runat="server" OnClick="CookieButton_Click" Text="Acconsenti" ValidateRequestMode="Disabled"></asp:Button>
 
                 </div>
             </div>

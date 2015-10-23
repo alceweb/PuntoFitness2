@@ -5,17 +5,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div class="body-page response">
     <div class="row">
-        <div class="col col-md-3">
-            <img src="Images/Logo1Piccolo.png" />
+        <div class="col col-md-10 text-center">
+            <img class="img-logo" src="Images/Logo_trasp.png" />
         </div>
-        <div class="col col-md-6 text-center">
-<h3>La tua richiesta è stata inviata correttamente.</h3>
-<h4>Verrai contattato alla mail indicata o tramite telefono per confermare la tua iscrizione al corso.</h4>
+            <div class="col col-md-2 text-right">
+                <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col col-md-10 text-center">
+            <h3>La tua richiesta è stata inviata correttamente.</h3>
+            <h4>Verrai contattato alla mail indicata o tramite telefono per confermare la tua iscrizione al corso.</h4>
 
         </div>
         <div class="col col-md-3">
-
         </div>
-    </div>
+        </div>
 </div>
 </asp:Content>

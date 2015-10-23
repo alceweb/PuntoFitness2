@@ -17,7 +17,7 @@
 
         <div class="row">
             <div class="col col-md-3">
-                <img src="Images/Logo1Piccolo.png" />
+                <img class="img-logo" src="Images/logo_trasp.png" />
             </div>
             <div class="col col-md-6">
                 <div class="form-horizontal">
@@ -58,7 +58,9 @@
                        </div>
                     </div>
                     <div class="form-group">
+                        <div class="col-sm-10">
                            <cc1:Recaptcha ID="Recaptcha1" Theme="Blackglass" runat="server" />
+                            </div>
                        </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

@@ -63,7 +63,11 @@
                         <img class="img-social" src="Images/faceb.png" /></a>
                     <a target="_blank" href="https://www.linkedin.com/pub/punto-fitness-caravaggio/9a/743/b3b">
                         <img class="img-social" src="Images/lkd.png" /></a>
-
+                        <a target="_blank" href="https://instagram.com/puntofitnesscaravaggio/">
+                        <img class="img-social" src="Images/inst.png" /></a>
+<%-- collegamenti youtube in attesa dei link
+                    <a target="_blank" href="https://www.linkedin.com/pub/punto-fitness-caravaggio/9a/743/b3b">
+                        <img class="img-social" src="Images/youtube.png" /></a>--%>
                 </div>
             </div>
             <div class="col-md-2 text-center ">
@@ -81,10 +85,10 @@
                             </div>
                             <div class="modal-body">
                                 <p><strong>la prima prova la offriamo noi.</strong></p>
-                                <p>Compila e invia, ti contatteremo per accordarci sulla prova gratuita</p>
+                                <p>Contattaci per richiedere la prima prova</p>
                                 <asp:Label ID="lblMessage" ForeColor="red" runat="server" Text="" ></asp:Label>
                                 <hr />
-                                <div class="form-horizontal">
+<%--                                <div class="form-horizontal">
                                     <div class="form-group">
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtNome" CssClass="form-control" runat="server" placeholder="Il tuo nome"></asp:TextBox>
@@ -128,7 +132,7 @@
                                             <asp:Button ID="Button2" runat="server" CssClass="btn btn-default" Text="Invia messaggio" OnClick="Button1_Click"></asp:Button>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--%>
 
                             </div>
                             <div class="modal-footer">

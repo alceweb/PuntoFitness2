@@ -610,8 +610,10 @@
     <Content Include="FormPTResponse.aspx" />
     <Content Include="FormRegistrazioneResponse.aspx" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="Images\inst.png" />
     <Content Include="Images\Logo1Piccolo.png" />
     <Content Include="Images\LogoPiccolo.jpg" />
+    <Content Include="Images\youtube.png" />
     <Content Include="NotLogged.aspx" />
     <Content Include="packages.config" />
     <Content Include="Account\Web.config" />

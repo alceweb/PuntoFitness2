@@ -114,6 +114,9 @@ background-color: rgba(0,0,0,0.7);
     float:left;
     padding:10px;
 }
+.img-logo{
+    height:160px;
+}
 .img-lista{
     height:65px;
     transition: 1s all ease;
@@ -343,4 +346,8 @@ a:hover {
     .promoreg {
         text-align:center
     }
+.img-logo{
+    height:80px;
+    margin-bottom:10px;
+}
 }
