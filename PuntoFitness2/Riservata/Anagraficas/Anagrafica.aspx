@@ -7,6 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">
         <h2 class="text-center">Gestione anagrafica</h2><hr />
+        
             <asp:ListView ID="ListView1" runat="server"
                 DataKeyNames="Email"
                 ItemType="PuntoFitness2.Models.ApplicationUser"

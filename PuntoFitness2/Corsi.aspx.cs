@@ -37,7 +37,7 @@ namespace PuntoFitness2
             if (_db.Users.Where(em=>em.Email == txtMailI.Text).Count() > 0)
                 {
                     ////Preparo i campi della mail
-                    String from = "webservice@puntofitnesscaravaggio.it";
+                    String from = "webservice1@puntofitnesscaravaggio.it";
                     String to = "cesare@cr-consult.eu";
                     //Istanzio la classe che rappresenta il messaggio 
                     MailMessage mMailMessage = new MailMessage();

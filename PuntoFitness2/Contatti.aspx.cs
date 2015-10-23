@@ -28,7 +28,7 @@ namespace PuntoFitness2
                 if (result == RecaptchaVerificationResult.Success)
                 {
                     ////Preparo i campi della mail
-                    String from = "webservice@puntofitnesscaravaggio.it";
+                    String from = "webservice1@puntofitnesscaravaggio.it";
                     String to = "cesare@cr-consult.eu";
                     //Istanzio la classe che rappresenta il messaggio 
                     MailMessage mMailMessage = new MailMessage();

@@ -86,9 +86,10 @@
                             <div class="modal-body">
                                 <p><strong>la prima prova la offriamo noi.</strong></p>
                                 <p>Contattaci per richiedere la prima prova</p>
-                                <asp:Label ID="lblMessage" ForeColor="red" runat="server" Text="" ></asp:Label>
-                                <hr />
+                                <h3 >Tel. 0363-54040</h3>
+                                <a href="mailto:palestra@puntofitnesscaravaggio.it")><h2 class="glyphicon-envelope"></h2></a>
 <%--                                <div class="form-horizontal">
+                                <asp:Label ID="lblMessage" ForeColor="red" runat="server" Text="" ></asp:Label>
                                     <div class="form-group">
                                         <div class="col-sm-10">
                                             <asp:TextBox ID="txtNome" CssClass="form-control" runat="server" placeholder="Il tuo nome"></asp:TextBox>

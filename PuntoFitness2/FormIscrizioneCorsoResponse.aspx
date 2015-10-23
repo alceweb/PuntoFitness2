@@ -5,10 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div class="body-page response">
     <div class="row">
-        <div class="col col-md-10 text-center">
-            <img class="img-logo" src="Images/Logo_trasp.png" />
-        </div>
-            <div class="col col-md-2 text-right">
+            <div class="col col-md-12 text-right">
                 <a href="Default.aspx" class="glyphicon glyphicon-remove"></a>
             </div>
         </div>
