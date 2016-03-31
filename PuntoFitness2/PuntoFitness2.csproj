@@ -572,6 +572,7 @@
     <Content Include="ckeditor\skins\moono\images\refresh.png" />
     <Content Include="ckeditor\styles.js" />
     <Content Include="Contatti.aspx" />
+    <Content Include="Contatti1.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -733,7 +734,9 @@
     <Content Include="Site.Master" />
     <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -891,6 +894,13 @@
     </Compile>
     <Compile Include="Contatti.aspx.designer.cs">
       <DependentUpon>Contatti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contatti1.aspx.cs">
+      <DependentUpon>Contatti1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contatti1.aspx.designer.cs">
+      <DependentUpon>Contatti1.aspx</DependentUpon>
     </Compile>
     <Compile Include="CookiesInfo.aspx.cs">
       <DependentUpon>CookiesInfo.aspx</DependentUpon>

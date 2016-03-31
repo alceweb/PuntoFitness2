@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
 using Recaptcha.Web;
+using System.Threading;
+using System.Globalization;
 
 namespace PuntoFitness2
 {
@@ -15,6 +17,16 @@ namespace PuntoFitness2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("it-IT");
+            DateTime dataInizio = new DateTime(1997, 9, 1);
+            DateTime dataOggi = DateTime.Now;
+            TimeSpan ts = dataOggi - dataInizio;
+            DateTime dataFine = new DateTime(2017, 9, 2);
+            TimeSpan tf = dataFine - dataOggi;
+            int contoGiorni1 = tf.Days;
+            int contoGiorni = ts.Days;
+            Label2.Text = contoGiorni.ToString();
+            Label3.Text = contoGiorni1.ToString();
         }
         public IQueryable<PuntoFitness2.Models.promozioni> GetDataP()
         {

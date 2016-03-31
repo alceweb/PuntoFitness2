@@ -99,7 +99,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <hr />
+        <h3 class="text-center">Da <strong><asp:Label ID="Label2" runat="server"></asp:Label></strong> giorni a Caravaggio   -   
+            Tra <strong><asp:Label ID="Label3" runat="server"></asp:Label></strong> giorni, grande festa dei 20 anni!!!
+        </h3>
         </div>
 </asp:Content>

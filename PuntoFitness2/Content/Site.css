@@ -156,6 +156,10 @@ background-color: rgba(0,0,0,0.7);
     left:20px;
     z-index:99999;
 }
+.divSlideVideo{
+    width:100px;
+
+}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes cook {
     0%   {left:50%; top:50%;}
@@ -320,6 +324,33 @@ a:hover {
 }
 #menu {
     
+}
+
+/*Carousel fade*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
 
 /* Responsive:  mobile */

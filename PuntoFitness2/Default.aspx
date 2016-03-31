@@ -4,7 +4,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
     <%---Slide show ---%>
+<script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
         <ol class="carousel-indicators">
             <asp:ListView ID="lvSlide" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
                 <ItemTemplate>
@@ -44,6 +46,10 @@
     </div>
     <div class="jumbotron">
         <hr />
+        <h3 class="text-center">Da <strong><asp:Label ID="Label2" runat="server"></asp:Label></strong> giorni a Caravaggio   -   
+            Mancano <strong><asp:Label ID="Label3" runat="server"></asp:Label></strong> giorni alla grande festa dei 20 anni!!!
+        </h3>
+        <hr />
         <div class="row">
             <div class="col-md-5">
                 <h2>Info e Orari</h2>
@@ -70,7 +76,7 @@
                         <img class="img-social" src="Images/youtube.png" /></a>--%>
                 </div>
             </div>
-            <div class="col-md-2 text-center ">
+            <div class="col-md-2 ">
             </div>
             <div class="col-md-4 text-center">
                     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
@@ -159,7 +165,7 @@
             </div>
             <div class="col-md-2 text-center">
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-5 text-center">
                 <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" SelectMethod="GetDataP">
                     <ItemSeparatorTemplate>
                         <br />
@@ -189,6 +195,20 @@
                         </div>
                     </ItemTemplate>
                 </asp:ListView>
+            </div><hr />
+            <div id="fb-root col-md-4 text-center ">
+            <script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-video text-center" data-width="400px" data-allowfullscreen="1" data-href="/puntofitness.caravaggio/videos/vb.100002585487942/882648195164688/?type=3">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/puntofitness.caravaggio/videos/882648195164688/">
+                        <a href="https://www.facebook.com/puntofitness.caravaggio/videos/882648195164688/"></a>
+                        <p></p>
+                        Pubblicato da <a href="https://www.facebook.com/puntofitness.caravaggio">PuntoFitness Caravaggio</a> su Mercoledì 30 dicembre 2015
+                    </blockquote>
+
+                </div>
+            </div>
+
             </div>
         </div>
         <hr />
