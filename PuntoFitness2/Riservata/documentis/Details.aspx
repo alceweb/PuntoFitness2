@@ -51,7 +51,8 @@
 
                         </div>
                         <div class="col col-md-6">
-                                    <iframe id="iframe" runat="server" src='<%#"~/Documenti/" + Eval("Id") + ".pdf" %>' width="300" height="420"  style="border: thin solid #FFFFFF"  />
+                                    <iframe id="iframe" runat="server" src='<%#"~/Documenti/" + Eval("Id") + ".pdf" %>' width="300" height="420"  style="border: thin solid #FFFFFF"  /><br />
+                            <asp:Label ID="Label1" runat="server" Text='<%#"www.puntofitnesscaravaggio.it/Documenti/" + Eval("Id") + ".pdf" %>'></asp:Label>
                         </div>
                     </div>
 					<div class="form-group">

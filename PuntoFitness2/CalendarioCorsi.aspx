@@ -1,6 +1,8 @@
-﻿<%@ Page Title="Corsi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CalendarioCorsi.aspx.cs" Inherits="PuntoFitness2.CalendarioCorsi" %>
+﻿<%@ Page Title="Calendario" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CalendarioCorsi.aspx.cs" Inherits="PuntoFitness2.CalendarioCorsi" %>
+<%@ Register TagPrefix="FriendlyUrls" Namespace="Microsoft.AspNet.FriendlyUrls" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
-    <img class="imgBody" src='<%: "/Images/" + Title + ".jpg" %>'/>
+    <img class="imgBody" src='<%: "/Images/Sfondi/" + Title + ".jpg" %>'/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="body-page">

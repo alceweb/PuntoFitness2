@@ -76,7 +76,9 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                                <a class="scritta" href="/">PUNTO FITNESS
+                        <%--<img class="imgLogo" src="/Images/LogoBianco.png" /><img class="img-circle" src="/Images/c1.jpg" />--%>
+<%--                        <img class="imgLogo" src="/Images/TigreScrittaBiancaTrasparente.png" />--%>
+                        <a class="scritta" href="/">PUNTO FITNESS
                                 </a>
                         </div>
                     <div class="navbar-collapse collapse">

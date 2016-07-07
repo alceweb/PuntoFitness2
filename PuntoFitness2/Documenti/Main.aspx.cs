@@ -18,7 +18,7 @@ namespace PuntoFitness2.Documenti
         // USAGE: <asp:ListView SelectMethod="GetData">
         public IQueryable<PuntoFitness2.Models.documenti> GetData()
         {
-            return _db.documentis.Where(r => r.Riservata != true);
+            return _db.documentis;
         }
     }
 }

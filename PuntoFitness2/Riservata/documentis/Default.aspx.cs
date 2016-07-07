@@ -21,6 +21,8 @@ namespace PuntoFitness2.Riservata.documentis
         // USAGE: <asp:ListView SelectMethod="GetData">
         public IQueryable<PuntoFitness2.Models.documenti> GetData()
         {
+            int cnt = _db.documentis.Count();
+            lblCount.Text = cnt.ToString();
             return _db.documentis;
         }
     }

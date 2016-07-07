@@ -16,6 +16,7 @@
             <ItemTemplate>
                 <fieldset class="form-horizontal">
                     <legend>promozioni Details</legend>
+                    <div class="row">
 							<div class="row">
 								<div class="col-sm-2 text-right">
 									<strong>Id</strong>
@@ -64,6 +65,8 @@
 									<asp:DynamicControl runat="server" DataField="Riservata" ID="Attivo" Mode="ReadOnly" />
 								</div>
 							</div>
+
+                    </div>
                  	<div class="row">
 					  &nbsp;
 					</div>

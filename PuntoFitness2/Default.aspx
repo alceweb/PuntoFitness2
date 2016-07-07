@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="SlideshowContent" runat="server">
     <%---Slide show ---%>
 <script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
-<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
 
         <ol class="carousel-indicators">
             <asp:ListView ID="lvSlide" SelectMethod="GetDataSl" SelectedIndex="0" runat="server">
@@ -195,8 +195,7 @@
                         </div>
                     </ItemTemplate>
                 </asp:ListView>
-            </div><hr />
-            <div id="fb-root col-md-4 text-center ">
+            <div id="fb-root "><br /><br />
             <script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-video text-center" data-width="400px" data-allowfullscreen="1" data-href="/puntofitness.caravaggio/videos/vb.100002585487942/882648195164688/?type=3">
                 <div class="fb-xfbml-parse-ignore">
@@ -209,6 +208,7 @@
                 </div>
             </div>
 
+            </div>
             </div>
         </div>
         <hr />

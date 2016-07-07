@@ -5,12 +5,10 @@
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
         <div class="body-page">
-
-    <h2>servizis List</h2>
-    <p>
-        <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
-    </p>
-    <div>
+            <asp:HyperLink CssClass="btn btn-primary col-sm-1" runat="server" NavigateUrl="Insert">Nuovo <span class="badge"><asp:Label ID="lblCount" runat="server"></asp:Label></span></asp:HyperLink>
+        <h2 class="text-center">Servizi</h2>   <hr />
+        <div>
+      <span class="label label-default">Fai click sul nome della colonna per ordinare i record in base al contenuto</span>
         <asp:ListView id="ListView1" runat="server"
             DataKeyNames="Id" 
 			ItemType="PuntoFitness2.Models.servizi"
@@ -44,7 +42,7 @@
                         <tr runat="server" id="itemPlaceholder" />
                     </tbody>
                 </table>
-				<asp:DataPager PageSize="5"  runat="server">
+				<asp:DataPager PageSize="15"  runat="server">
 					<Fields>
                         <asp:NextPreviousPagerField ShowLastPageButton="False" ShowNextPageButton="False" ButtonType="Button" ButtonCssClass="btn" />
                         <asp:NumericPagerField ButtonType="Button"  NumericButtonCssClass="btn" CurrentPageLabelCssClass="btn disabled" NextPreviousButtonCssClass="btn" />

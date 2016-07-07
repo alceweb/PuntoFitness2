@@ -21,16 +21,16 @@ namespace PuntoFitness2.Riservata.promozionis
 
         // This is the Select methd to selects a single promozioni item with the id
         // USAGE: <asp:FormView SelectMethod="GetItem">
-        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? Id)
+        public PuntoFitness2.Models.promozioni GetItem([FriendlyUrlSegmentsAttribute(0)]int? IdPromozione)
         {
-            if (Id == null)
+            if (IdPromozione == null)
             {
                 return null;
             }
 
             using (_db)
             {
-	            return _db.promozionis.Where(m => m.Id == Id).FirstOrDefault();
+	            return _db.promozionis.Where(m => m.Id == IdPromozione).FirstOrDefault();
             }
         }
 

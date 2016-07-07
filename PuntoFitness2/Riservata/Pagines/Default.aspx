@@ -36,10 +36,9 @@
                 <div class="text-center"><hr />
 				<asp:DataPager PageSize="1"  runat="server">
 					<Fields>
-                        <asp:NumericPagerField ButtonType="Button"  NumericButtonCssClass="btn" CurrentPageLabelCssClass="btn disabled" NextPreviousButtonCssClass="btn" />
+                        <asp:NumericPagerField ButtonType="Button"  NumericButtonCssClass="btn" CurrentPageLabelCssClass="btn disabled" NextPreviousButtonCssClass="btn" ButtonCount="7" />
                     </Fields>
 				</asp:DataPager>
-
                 </div>
             </LayoutTemplate>
             <ItemTemplate>

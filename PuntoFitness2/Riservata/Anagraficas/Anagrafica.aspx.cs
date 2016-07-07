@@ -15,12 +15,14 @@ namespace PuntoFitness2.Riservata
         // ESEMPIO: <asp:ListView SelectMethod="GetDataA">
         public IQueryable<PuntoFitness2.Models.ApplicationUser> GetDataU()
         {
-            int cnt = _db.Users.Count();
             return _db.Users.OrderBy(u => u.Email);
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            int cnt = _db.Users.Count();
+            lblCount.Text = cnt.ToString();
         }
+
     }
 }

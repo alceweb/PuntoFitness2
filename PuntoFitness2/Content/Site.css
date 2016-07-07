@@ -41,9 +41,7 @@ background-color: rgba(0,0,0,0.7);
 }
 .scritta {
     transition: all 0.8s ease;
-    margin-left:25px;
     margin-top:15px;
-    float:left;
     font-size:3.5em;
     text-decoration: none;
     font-weight:bold;
@@ -264,6 +262,11 @@ footer{
     overflow:hidden;
     margin-top:-100px;
     display:block;
+}
+.imgLogo{
+    height:110px;
+    margin-right:15px;
+    margin-left:15px;
 }
 .padding0{
     padding:0;

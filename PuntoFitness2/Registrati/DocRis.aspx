@@ -20,7 +20,7 @@
             ItemType="PuntoFitness2.Models.documenti"
             SelectMethod="GetDataR">
             <EmptyDataTemplate>
-                Nessun docunmento disponibile
+                Nessun documento disponibile
             </EmptyDataTemplate>
             <ItemSeparatorTemplate></ItemSeparatorTemplate>
             <ItemTemplate>

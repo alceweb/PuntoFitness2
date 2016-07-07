@@ -21,6 +21,8 @@ namespace PuntoFitness2.Riservata.promozionis
         // USAGE: <asp:ListView SelectMethod="GetData">
         public IQueryable<PuntoFitness2.Models.promozioni> GetData()
         {
+            int cnt = _db.promozionis.Count();
+            lblCount.Text = cnt.ToString();
             return _db.promozionis;
         }
     }
