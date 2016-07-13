@@ -85,6 +85,14 @@ namespace PuntoFitness2.Models
         public string titolo { get; set; }
     }
 
+    public class splash
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Descrizione { get; set; }
+        public string Link { get; set; }
+    }
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -102,6 +110,7 @@ namespace PuntoFitness2.Models
          public System.Data.Entity.DbSet<PuntoFitness2.Models.slide> slides { get; set; }
          public System.Data.Entity.DbSet<PuntoFitness2.Models.documenti> documentis { get; set; }
         public System.Data.Entity.DbSet<PuntoFitness2.Models.pagine> pagines { get; set; }
+        public System.Data.Entity.DbSet<PuntoFitness2.Models.splash> splashs { get; set; }
     }
 
 }
