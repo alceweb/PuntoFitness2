@@ -76,16 +76,11 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                        <%--<img class="imgLogo" src="/Images/LogoBianco.png" /><img class="img-circle" src="/Images/c1.jpg" />--%>
-<%--                        <img class="imgLogo" src="/Images/TigreScrittaBiancaTrasparente.png" />--%>
-                        <a class="scritta" href="/">PUNTO FITNESS
-                                </a>
+                        <a class="scritta" href="/">PUNTO FITNESS</a>
                         </div>
                     <div class="navbar-collapse collapse">
-                        <ul  class="nav navbar-nav">
-                            <%--<li><a runat="server" href="~/">Home</a></li>--%>
-                        </ul>
                         <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <%--menu per utenti anonimi--%>
                             <AnonymousTemplate>
                                 <ul id="menu" class="nav navbar-nav navbar-right bordomenu">
                                     <%--<li><a runat="server" href="~/Account/Register">Register</a></li>--%>
@@ -101,6 +96,7 @@
 
                                 </ul>
                             </AnonymousTemplate>
+                        <%--menu per utenti registrati--%>
                             <LoggedInTemplate>
                                 <ul class="navbar-right">
                                     <li><a runat="server" href="~/Account/Manage" title="Modifica password">Ciao, <%: Context.User.Identity.GetUserName()  %> !</a>
@@ -115,6 +111,7 @@
                                 </ul>
                             </LoggedInTemplate>
                         </asp:LoginView>
+                        <%--menu per amministratori--%>
                             <ul  class="nav navbar-nav">
                                 <li>
                                     <asp:HyperLink class="glyphicon glyphicon-pencil" ID="HL1" Visible="false" runat="server" NavigateUrl="/Riservata/Gestione.aspx"></asp:HyperLink>

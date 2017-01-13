@@ -12,7 +12,7 @@
             </div>
             <div class="col col-md-6">
                 Nuova password <asp:TextBox ID="txtPsw" runat="server"></asp:TextBox>
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" OnClientClick="return confirm('Stai resettando una password! Continuare?')" Text="Modifica" /><br />
+                <asp:Button ID="Button1" CssClass="btn btn-danger" runat="server" OnClick="Button1_Click" OnClientClick="return confirm('Stai resettando una password! Continuare?')" Text="Modifica" /><br />
                 <asp:Label ID="lblOk" runat="server"></asp:Label>
             </div>
         </div>

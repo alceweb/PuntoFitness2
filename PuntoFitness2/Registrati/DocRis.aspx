@@ -14,6 +14,7 @@
             </div>
         </div>
         <hr />
+<%--        Documenti per gli utenti registrati--%>
         <h3>Utenti riservati</h3>
         <asp:ListView ID="ListView1" runat="server"
             DataKeyNames="Id"
@@ -26,12 +27,13 @@
             <ItemTemplate>
                 <ul>
                     <li>
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/", Item.Id + ".pdf") %>' Text=<%# Eval("Descrizione") %> Target="_blank" />
-
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/", Item.Id + ".pdf") %>' Text='<%# Eval("Nome")%>' Target="_blank" />
+					    <span> - <%# Eval("Descrizione") %></span>
                     </li>
                 </ul>
             </ItemTemplate>
         </asp:ListView><hr />
+<%--        Dpocumenti pubblici--%>
         <h3>Pubblici</h3>
         <asp:ListView ID="ListView2" runat="server"
             DataKeyNames="Id"
@@ -44,7 +46,8 @@
             <ItemTemplate>
                 <ul>
                     <li>
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/", Item.Id + ".pdf") %>' Text=<%# Eval("Descrizione") %> Target="_blank" />
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Documenti/", Item.Id + ".pdf") %>' Text='<%# Eval("Nome")%>' Target="_blank" />
+					    <span> - <%# Eval("Descrizione") %></span>
 
                     </li>
                 </ul>

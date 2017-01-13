@@ -78,7 +78,8 @@ namespace PuntoFitness2
             var user = HttpContext.Current.User.Identity.Name.ToString();
             if (HttpContext.Current.User.Identity.IsAuthenticated)
             {
-                if (HttpContext.Current.User.Identity.Name.ToString() == "palestra@puntofitnesscaravaggio.it")
+                //visualizzo i menu di gestione riservati all'amministratore'
+                if (HttpContext.Current.User.Identity.Name.ToString() == "palestra@puntofitnesscaravaggio.it" | HttpContext.Current.User.Identity.Name.ToString() == "cesare@cr-consult.eu")
                 {
                     HL1.Visible = true;
                     HL2.Visible = true;

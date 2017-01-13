@@ -372,6 +372,11 @@ a:hover {
     }
     #myCarousel {
         display:none;
+        height:300px;
+    }
+
+    .carousel .item{
+        height:300px;
     }
     .container.body-content {
         top:50px;

@@ -17,7 +17,7 @@
                     <legend>Edit documenti</legend>
                     <div class="row">
                         <div class="col col-md-8">
-					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
+					        <asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="Nome" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Descrizione" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="Riservata" runat="server" /><hr />

@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using System.ComponentModel.DataAnnotations;
 using PuntoFitness2.Models;
+using System.Data.Entity;
 
 
 namespace PuntoFitness2.Models
@@ -58,6 +59,28 @@ namespace PuntoFitness2.Models
         public string Descrizione { get; set; }
         public bool Attivo { get; set; }
         public bool Riservata { get; set; }
+    }
+
+    public class tipoAbbonamenti
+    {
+        [Key]
+        public int Id_TipoAbbonamenti { get; set; }
+        public string Tipo { get; set; }
+        public double Prezzo { get; set; }
+        public virtual System.Collections.Generic.ICollection<abbonamenti> abbonamentis { get; set; }
+    }
+
+    public class abbonamenti
+    {
+        [Key]
+        public int Id_Abbonamenti { get; set; }
+         public int Id_TipoAbbonamenti { get; set; }
+        public virtual tipoAbbonamenti Tipo { get; set; }
+        public DateTime Data_Pagamento { get; set; }
+        public DateTime Data_Scadenza { get; set; }
+        public double Euro { get; set; }
+        public string Id { get; set; }
+
     }
     public class slide
     {
@@ -111,6 +134,8 @@ namespace PuntoFitness2.Models
          public System.Data.Entity.DbSet<PuntoFitness2.Models.documenti> documentis { get; set; }
         public System.Data.Entity.DbSet<PuntoFitness2.Models.pagine> pagines { get; set; }
         public System.Data.Entity.DbSet<PuntoFitness2.Models.splash> splashs { get; set; }
+        public DbSet<PuntoFitness2.Models.abbonamenti> abbonamentis { get; set; }
+        public DbSet<tipoAbbonamenti> tipoabbonamentis { get; set; }
     }
 
 }
